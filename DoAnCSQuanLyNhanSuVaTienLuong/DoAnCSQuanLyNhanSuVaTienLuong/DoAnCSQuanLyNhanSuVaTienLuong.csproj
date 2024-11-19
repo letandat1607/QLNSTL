@@ -321,6 +321,7 @@
     <Content Include="mongocrypt.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Form-Con-ChamCong\" />
     <Folder Include="Form-Con-ThueTNCN\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
