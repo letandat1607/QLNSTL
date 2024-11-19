@@ -1,0 +1,12 @@
+.vs/
+.suo
+.user
+.userosscache
+.sln.docstates
+.vsidx
+.cache/
+.tmp
+.log
+bin/
+obj/
+/Properties/launchSettings.json
