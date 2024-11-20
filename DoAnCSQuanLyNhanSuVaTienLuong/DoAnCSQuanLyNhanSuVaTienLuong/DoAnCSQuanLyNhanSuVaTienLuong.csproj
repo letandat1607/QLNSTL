@@ -183,11 +183,35 @@
     <Compile Include="Form-Con-ChamCong\BangChamCongCT.Designer.cs">
       <DependentUpon>BangChamCongCT.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form-Con-ChamCong\DonDiSomVeMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\DonDiSomVeMuon.Designer.cs">
+      <DependentUpon>DonDiSomVeMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\DonXinNghi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\DonXinNghi.Designer.cs">
+      <DependentUpon>DonXinNghi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form-Con-ChamCong\ThemBangChamCongCT.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form-Con-ChamCong\ThemBangChamCongCT.Designer.cs">
       <DependentUpon>ThemBangChamCongCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\ThemDonDiSomVeMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\ThemDonDiSomVeMuon.Designer.cs">
+      <DependentUpon>ThemDonDiSomVeMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\ThemDonXinNghi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\ThemDonXinNghi.Designer.cs">
+      <DependentUpon>ThemDonXinNghi.cs</DependentUpon>
     </Compile>
     <Compile Include="Form-Con-TienLuong\BaoCao.cs">
       <SubType>Form</SubType>
