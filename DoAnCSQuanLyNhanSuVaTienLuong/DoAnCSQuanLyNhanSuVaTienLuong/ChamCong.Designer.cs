@@ -50,7 +50,7 @@
             this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1283, 64);
             this.panel1.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Green;
             this.panel2.Location = new System.Drawing.Point(317, 32);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(121, 6);
             this.panel2.TabIndex = 1;
@@ -83,14 +83,14 @@
             // 
             this.tấtCảỨngDụngToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.tấtCảỨngDụngToolStripMenuItem.Name = "tấtCảỨngDụngToolStripMenuItem";
-            this.tấtCảỨngDụngToolStripMenuItem.Size = new System.Drawing.Size(150, 28);
+            this.tấtCảỨngDụngToolStripMenuItem.Size = new System.Drawing.Size(150, 27);
             this.tấtCảỨngDụngToolStripMenuItem.Text = "Tất cả ứng dụng";
             // 
             // tsmiTongQuan
             // 
             this.tsmiTongQuan.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.tsmiTongQuan.Name = "tsmiTongQuan";
-            this.tsmiTongQuan.Size = new System.Drawing.Size(112, 28);
+            this.tsmiTongQuan.Size = new System.Drawing.Size(112, 27);
             this.tsmiTongQuan.Text = "Tổng quan ";
             // 
             // tsmiChamCong
@@ -101,7 +101,7 @@
             this.mitDuLieuChamCong});
             this.tsmiChamCong.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.tsmiChamCong.Name = "tsmiChamCong";
-            this.tsmiChamCong.Size = new System.Drawing.Size(129, 28);
+            this.tsmiChamCong.Size = new System.Drawing.Size(129, 27);
             this.tsmiChamCong.Text = "Chấm công ^";
             // 
             // mitBangChamCongCT
@@ -109,6 +109,7 @@
             this.mitBangChamCongCT.Name = "mitBangChamCongCT";
             this.mitBangChamCongCT.Size = new System.Drawing.Size(299, 28);
             this.mitBangChamCongCT.Text = "Bảng chấm công chi tiết";
+            this.mitBangChamCongCT.Click += new System.EventHandler(this.mitBangChamCongCT_Click);
             // 
             // mitBangChamCongTH
             // 
@@ -151,7 +152,7 @@
             this.ClientSize = new System.Drawing.Size(1283, 630);
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ChamCong";
             this.Text = "Chấm công";
             this.panel1.ResumeLayout(false);

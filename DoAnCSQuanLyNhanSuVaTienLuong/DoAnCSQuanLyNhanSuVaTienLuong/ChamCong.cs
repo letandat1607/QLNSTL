@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         public ChamCong()
         {
             InitializeComponent();
+        }
+
+        private void mitBangChamCongCT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BangChamCongCT bangChamCongCT = new BangChamCongCT();
+            bangChamCongCT.Show();
         }
     }
 }

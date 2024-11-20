@@ -77,6 +77,7 @@
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
       <Private>True</Private>
@@ -176,6 +177,18 @@
     <Compile Include="DanhGia.Designer.cs">
       <DependentUpon>DanhGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form-Con-ChamCong\BangChamCongCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\BangChamCongCT.Designer.cs">
+      <DependentUpon>BangChamCongCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\ThemBangChamCongCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\ThemBangChamCongCT.Designer.cs">
+      <DependentUpon>ThemBangChamCongCT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form-Con-TienLuong\BaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,6 +278,12 @@
     <EmbeddedResource Include="DanhGia.resx">
       <DependentUpon>DanhGia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form-Con-ChamCong\BangChamCongCT.resx">
+      <DependentUpon>BangChamCongCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form-Con-ChamCong\ThemBangChamCongCT.resx">
+      <DependentUpon>ThemBangChamCongCT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form-Con-TienLuong\DuLieuTienLuong.resx">
       <DependentUpon>DuLieuTienLuong.cs</DependentUpon>
     </EmbeddedResource>
@@ -321,7 +340,6 @@
     <Content Include="mongocrypt.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Form-Con-ChamCong\" />
     <Folder Include="Form-Con-ThueTNCN\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

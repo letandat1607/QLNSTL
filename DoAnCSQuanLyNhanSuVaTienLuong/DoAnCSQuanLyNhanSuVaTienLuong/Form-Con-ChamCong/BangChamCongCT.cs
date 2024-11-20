@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
 {
-    public partial class Form1 : Form
+    public partial class BangChamCongCT : Form
     {
-        public Form1()
+        public BangChamCongCT()
         {
             InitializeComponent();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThemBangChamCongCT themBangChamCongCT = new ThemBangChamCongCT();
+            themBangChamCongCT.Show();
         }
     }
 }

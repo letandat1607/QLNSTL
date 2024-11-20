@@ -19,18 +19,17 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
 
         private void btnChamCong_Click(object sender, EventArgs e)
         {
+            //this.Hide();
             ChamCong chamCong = new ChamCong();
-            this.Hide();
-            chamCong.Show();
-            this.Close();
+            chamCong.ShowDialog();
+            //this.Close();
         }
         private void btnTienLuong_Click(object sender, EventArgs e)
         {
-            TienLuong tienLuong = new TienLuong();
             this.Hide();
-            tienLuong.Show();
-            
-
+            TienLuong tienLuong = new TienLuong();
+            tienLuong.ShowDialog();
+            this.Close();
         }
         private void button1_Click(object sender, EventArgs e)
         {

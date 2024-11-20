@@ -302,3 +302,5 @@ F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaT
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQu.2778A3EA.Up2Date
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.exe
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.pdb
+F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.BangChamCongCT.resources
+F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.ThemBangChamCongCT.resources
