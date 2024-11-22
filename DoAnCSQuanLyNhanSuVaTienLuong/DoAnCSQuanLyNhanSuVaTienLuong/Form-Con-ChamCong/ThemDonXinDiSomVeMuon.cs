@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
 {
-    public partial class ThemDonDiSomVeMuon : Form
+    public partial class ThemDonXinDiSomVeMuon : Form
     {
-        public ThemDonDiSomVeMuon()
+        public ThemDonXinDiSomVeMuon()
         {
             InitializeComponent();
         }
