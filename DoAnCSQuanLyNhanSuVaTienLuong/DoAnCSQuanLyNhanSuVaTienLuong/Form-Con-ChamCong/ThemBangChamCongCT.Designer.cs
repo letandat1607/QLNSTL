@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.clbViTriCongViec = new System.Windows.Forms.CheckedListBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
             this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label6 = new System.Windows.Forms.Label();
@@ -40,10 +44,6 @@
             this.txtDonViCongTac = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.clbViTriCongViec = new System.Windows.Forms.CheckedListBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -68,9 +68,56 @@
             this.panel1.Size = new System.Drawing.Size(941, 692);
             this.panel1.TabIndex = 0;
             // 
+            // clbViTriCongViec
+            // 
+            this.clbViTriCongViec.FormattingEnabled = true;
+            this.clbViTriCongViec.Items.AddRange(new object[] {
+            "Tất cả các vị trí",
+            "Nhân sự",
+            "Trưởng phòng",
+            "Phó giám đốc",
+            "Giám đốc"});
+            this.clbViTriCongViec.Location = new System.Drawing.Point(231, 233);
+            this.clbViTriCongViec.Name = "clbViTriCongViec";
+            this.clbViTriCongViec.Size = new System.Drawing.Size(582, 89);
+            this.clbViTriCongViec.TabIndex = 27;
+            this.clbViTriCongViec.SelectedIndexChanged += new System.EventHandler(this.clbViTriCongViec_SelectedIndexChanged);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.panel2.Controls.Add(this.btnLuu);
+            this.panel2.Controls.Add(this.btnHuy);
+            this.panel2.Location = new System.Drawing.Point(0, 605);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(938, 87);
+            this.panel2.TabIndex = 26;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLuu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnLuu.Location = new System.Drawing.Point(803, 14);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(109, 45);
+            this.btnLuu.TabIndex = 1;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = false;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnHuy.Location = new System.Drawing.Point(607, 14);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(109, 45);
+            this.btnHuy.TabIndex = 0;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            // 
             // monthCalendar2
             // 
-            this.monthCalendar2.Location = new System.Drawing.Point(607, 312);
+            this.monthCalendar2.Location = new System.Drawing.Point(667, 312);
             this.monthCalendar2.Name = "monthCalendar2";
             this.monthCalendar2.TabIndex = 25;
             // 
@@ -84,7 +131,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.Location = new System.Drawing.Point(449, 312);
+            this.label6.Location = new System.Drawing.Point(479, 312);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(146, 20);
             this.label6.TabIndex = 23;
@@ -167,53 +214,6 @@
             this.label1.Size = new System.Drawing.Size(420, 32);
             this.label1.TabIndex = 14;
             this.label1.Text = "Thêm bảng chấm công chi tiết";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Info;
-            this.panel2.Controls.Add(this.btnLuu);
-            this.panel2.Controls.Add(this.btnHuy);
-            this.panel2.Location = new System.Drawing.Point(0, 605);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(938, 87);
-            this.panel2.TabIndex = 26;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnHuy.Location = new System.Drawing.Point(607, 14);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(109, 45);
-            this.btnHuy.TabIndex = 0;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnLuu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLuu.Location = new System.Drawing.Point(803, 14);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(109, 45);
-            this.btnLuu.TabIndex = 1;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = false;
-            // 
-            // clbViTriCongViec
-            // 
-            this.clbViTriCongViec.FormattingEnabled = true;
-            this.clbViTriCongViec.Items.AddRange(new object[] {
-            "Tất cả các vị trí",
-            "Nhân sự",
-            "Trưởng phòng",
-            "Phó giám đốc",
-            "Giám đốc"});
-            this.clbViTriCongViec.Location = new System.Drawing.Point(231, 233);
-            this.clbViTriCongViec.Name = "clbViTriCongViec";
-            this.clbViTriCongViec.Size = new System.Drawing.Size(582, 89);
-            this.clbViTriCongViec.TabIndex = 27;
-            this.clbViTriCongViec.SelectedIndexChanged += new System.EventHandler(this.clbViTriCongViec_SelectedIndexChanged);
             // 
             // ThemBangChamCongCT
             // 

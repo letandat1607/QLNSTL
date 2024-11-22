@@ -43,20 +43,20 @@
             this.lblBangChamCongCT = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lbl1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.colTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colChamCong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colViTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -90,7 +90,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1310, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1310, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -191,31 +191,6 @@
             this.panel3.Size = new System.Drawing.Size(1286, 560);
             this.panel3.TabIndex = 3;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.lbl1);
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Location = new System.Drawing.Point(5, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1278, 44);
-            this.panel4.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(86, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 22);
-            this.textBox1.TabIndex = 0;
-            // 
-            // lbl1
-            // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(18, 3);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(62, 16);
-            this.lbl1.TabIndex = 1;
-            this.lbl1.Text = "Tìm kiếm";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -267,6 +242,31 @@
             this.colTrangThai.Name = "colTrangThai";
             this.colTrangThai.Width = 260;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lbl1);
+            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Location = new System.Drawing.Point(5, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1278, 44);
+            this.panel4.TabIndex = 0;
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(18, 3);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(62, 16);
+            this.lbl1.TabIndex = 1;
+            this.lbl1.Text = "Tìm kiếm";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(86, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(237, 22);
+            this.textBox1.TabIndex = 0;
+            // 
             // BangChamCongCT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -285,9 +285,9 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

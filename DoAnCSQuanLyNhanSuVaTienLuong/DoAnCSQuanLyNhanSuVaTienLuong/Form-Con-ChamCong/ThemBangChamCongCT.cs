@@ -35,7 +35,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             if (clbViTriCongViec.SelectedItem != null)
             {
                 var selectedItem = clbViTriCongViec.SelectedItem;
-                if (!lbViTriCongViec.Items.Contains(selectedItem) && clbViTriCongViec.SelectedItem.C)
+                if (!lbViTriCongViec.Items.Contains(selectedItem) )
                 {
                     lbViTriCongViec.Items.Add(selectedItem.ToString());
                 }
