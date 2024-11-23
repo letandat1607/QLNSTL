@@ -21,8 +21,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         {
             try
             {
-                var connectionString = "mongodb://localhost:27017/";//mongo của Đạt nhaaa
-                //var connectionString = "mongodb://192.168.100.124:27017"; // ip ở nhà
+                //var connectionString = "mongodb://localhost:27017/";//mongo của Đạt nhaaa
+                var connectionString = "mongodb://192.168.100.124:27017"; // ip ở nhà
                 //var connectionString = "mongodb://192.168.28.115:27017";//ip ở csc
                 // var connectionString = "mongodb://         :27017";//ip của dữ liệu di động của mình
                 // var connectionString = "mongodb://         :27017";//ip của dữ liệu di động của đạt

@@ -17,6 +17,10 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         {
             InitializeComponent();
         }
+       
+
+
+
         private void btnTongquan_Click(object sender, EventArgs e)
         {
             TongQuan Tongquan = new TongQuan();
@@ -26,9 +30,9 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
 
         private void btnThanhPhanLuong_Click(object sender, EventArgs e)
         {
-            ThanhPhanLuong thanhphanluong = new ThanhPhanLuong();
-            this.Hide();
-            thanhphanluong.Show();
+            ThanhPhanLuong thanhPhanLuong = new ThanhPhanLuong();
+            //this.Hide();
+            thanhPhanLuong.Show();
         }
         private void btnMauBangLuong_Click(object sender, EventArgs e)
         {
@@ -63,6 +67,33 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void TextBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Nhập thông tin tìm kiếm...")
+            {
+                textBox1.Text = "";
+                textBox1.ForeColor = Color.Black;
+            }
+        }
+
+        private void TextBox1_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                textBox1.Text = "Nhập thông tin tìm kiếm...";
+                textBox1.ForeColor = Color.Gray;
+            }
         }
     }
 }
