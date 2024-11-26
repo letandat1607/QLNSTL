@@ -177,6 +177,10 @@
     <Compile Include="DanhGia.Designer.cs">
       <DependentUpon>DanhGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doi tuong\ChamCong.cs" />
+    <Compile Include="Doi tuong\DanhSachChamCong.cs" />
+    <Compile Include="Doi tuong\NhanVien.cs" />
+    <Compile Include="Doi tuong\UngVien.cs" />
     <Compile Include="Form-Con-ChamCong\BangChamCongCT.cs">
       <SubType>Form</SubType>
     </Compile>
