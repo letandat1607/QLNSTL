@@ -37,12 +37,8 @@
             this.thànhPhầnLươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mấuBảngLươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dữLiệuTínhLươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chấmCôngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doanhSốToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kPIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thuNhậpKhácToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.khấuTrừKhácToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tínhLươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bảngLươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tạmỨngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,9 +58,30 @@
             this.lịchSửLươngCủaNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tổngHợpCôngNợToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tìnhHìnhThToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnTenmau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDonVi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnViTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNhanVienApDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,7 +91,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2024, 100);
+            this.panel1.Size = new System.Drawing.Size(2188, 100);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -101,88 +118,60 @@
             this.báoCáoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(2024, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(2188, 42);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // tấtCảỨngDụngToolStripMenuItem
             // 
             this.tấtCảỨngDụngToolStripMenuItem.Name = "tấtCảỨngDụngToolStripMenuItem";
-            this.tấtCảỨngDụngToolStripMenuItem.Size = new System.Drawing.Size(209, 36);
+            this.tấtCảỨngDụngToolStripMenuItem.Size = new System.Drawing.Size(209, 38);
             this.tấtCảỨngDụngToolStripMenuItem.Text = "Tất cả ứng dụng";
             // 
             // tiềnLươngToolStripMenuItem
             // 
             this.tiềnLươngToolStripMenuItem.Name = "tiềnLươngToolStripMenuItem";
-            this.tiềnLươngToolStripMenuItem.Size = new System.Drawing.Size(149, 36);
+            this.tiềnLươngToolStripMenuItem.Size = new System.Drawing.Size(149, 38);
             this.tiềnLươngToolStripMenuItem.Text = "Tiền lương";
             // 
             // tổngQuanToolStripMenuItem
             // 
             this.tổngQuanToolStripMenuItem.Name = "tổngQuanToolStripMenuItem";
-            this.tổngQuanToolStripMenuItem.Size = new System.Drawing.Size(157, 36);
+            this.tổngQuanToolStripMenuItem.Size = new System.Drawing.Size(157, 38);
             this.tổngQuanToolStripMenuItem.Text = "Tổng quan ";
             // 
             // thànhPhầnLươngToolStripMenuItem
             // 
             this.thànhPhầnLươngToolStripMenuItem.Name = "thànhPhầnLươngToolStripMenuItem";
-            this.thànhPhầnLươngToolStripMenuItem.Size = new System.Drawing.Size(238, 36);
+            this.thànhPhầnLươngToolStripMenuItem.Size = new System.Drawing.Size(238, 38);
             this.thànhPhầnLươngToolStripMenuItem.Text = "Thành phần lương ";
             // 
             // mấuBảngLươngToolStripMenuItem
             // 
             this.mấuBảngLươngToolStripMenuItem.Name = "mấuBảngLươngToolStripMenuItem";
-            this.mấuBảngLươngToolStripMenuItem.Size = new System.Drawing.Size(219, 36);
+            this.mấuBảngLươngToolStripMenuItem.Size = new System.Drawing.Size(219, 38);
             this.mấuBảngLươngToolStripMenuItem.Text = "Mẫu bảng lương ";
             // 
             // dữLiệuTínhLươngToolStripMenuItem
             // 
             this.dữLiệuTínhLươngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.chấmCôngToolStripMenuItem,
             this.doanhSốToolStripMenuItem,
-            this.kPIToolStripMenuItem,
-            this.sảnPhẩmToolStripMenuItem,
-            this.thuNhậpKhácToolStripMenuItem,
-            this.khấuTrừKhácToolStripMenuItem});
+            this.kPIToolStripMenuItem});
             this.dữLiệuTínhLươngToolStripMenuItem.Name = "dữLiệuTínhLươngToolStripMenuItem";
-            this.dữLiệuTínhLươngToolStripMenuItem.Size = new System.Drawing.Size(252, 36);
-            this.dữLiệuTínhLươngToolStripMenuItem.Text = "Dữ liệu tính lương ^";
-            // 
-            // chấmCôngToolStripMenuItem
-            // 
-            this.chấmCôngToolStripMenuItem.Name = "chấmCôngToolStripMenuItem";
-            this.chấmCôngToolStripMenuItem.Size = new System.Drawing.Size(305, 44);
-            this.chấmCôngToolStripMenuItem.Text = "Chấm công";
+            this.dữLiệuTínhLươngToolStripMenuItem.Size = new System.Drawing.Size(180, 38);
+            this.dữLiệuTínhLươngToolStripMenuItem.Text = "Bảng lương ^";
             // 
             // doanhSốToolStripMenuItem
             // 
             this.doanhSốToolStripMenuItem.Name = "doanhSốToolStripMenuItem";
-            this.doanhSốToolStripMenuItem.Size = new System.Drawing.Size(305, 44);
-            this.doanhSốToolStripMenuItem.Text = "Doanh số";
+            this.doanhSốToolStripMenuItem.Size = new System.Drawing.Size(395, 44);
+            this.doanhSốToolStripMenuItem.Text = "Bảng lương theo tháng";
             // 
             // kPIToolStripMenuItem
             // 
             this.kPIToolStripMenuItem.Name = "kPIToolStripMenuItem";
-            this.kPIToolStripMenuItem.Size = new System.Drawing.Size(305, 44);
-            this.kPIToolStripMenuItem.Text = "KPI";
-            // 
-            // sảnPhẩmToolStripMenuItem
-            // 
-            this.sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
-            this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(305, 44);
-            this.sảnPhẩmToolStripMenuItem.Text = "Sản phẩm";
-            // 
-            // thuNhậpKhácToolStripMenuItem
-            // 
-            this.thuNhậpKhácToolStripMenuItem.Name = "thuNhậpKhácToolStripMenuItem";
-            this.thuNhậpKhácToolStripMenuItem.Size = new System.Drawing.Size(305, 44);
-            this.thuNhậpKhácToolStripMenuItem.Text = "Thu nhập khác";
-            // 
-            // khấuTrừKhácToolStripMenuItem
-            // 
-            this.khấuTrừKhácToolStripMenuItem.Name = "khấuTrừKhácToolStripMenuItem";
-            this.khấuTrừKhácToolStripMenuItem.Size = new System.Drawing.Size(305, 44);
-            this.khấuTrừKhácToolStripMenuItem.Text = "Khấu trừ khác";
+            this.kPIToolStripMenuItem.Size = new System.Drawing.Size(395, 44);
+            this.kPIToolStripMenuItem.Text = "Bảng lương theo năm";
             // 
             // tínhLươngToolStripMenuItem
             // 
@@ -195,7 +184,7 @@
             this.bảngThuếToolStripMenuItem,
             this.quyếtToánThuếToolStripMenuItem});
             this.tínhLươngToolStripMenuItem.Name = "tínhLươngToolStripMenuItem";
-            this.tínhLươngToolStripMenuItem.Size = new System.Drawing.Size(173, 36);
+            this.tínhLươngToolStripMenuItem.Size = new System.Drawing.Size(173, 38);
             this.tínhLươngToolStripMenuItem.Text = "Tính lương ^";
             // 
             // bảngLươngToolStripMenuItem
@@ -246,7 +235,7 @@
             this.bảngChiTrảToolStripMenuItem,
             this.tổngHợpChiTrảToolStripMenuItem});
             this.chiTrảLươngToolStripMenuItem.Name = "chiTrảLươngToolStripMenuItem";
-            this.chiTrảLươngToolStripMenuItem.Size = new System.Drawing.Size(196, 36);
+            this.chiTrảLươngToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.chiTrảLươngToolStripMenuItem.Text = "Chi trả lương ^";
             // 
             // bảngChiTrảToolStripMenuItem
@@ -272,7 +261,7 @@
             this.tổngHợpCôngNợToolStripMenuItem,
             this.tìnhHìnhThToolStripMenuItem});
             this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
-            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(141, 38);
             this.báoCáoToolStripMenuItem.Text = "Báo cáo ^";
             // 
             // tổngHợpThuThậpNhânViênToolStripMenuItem
@@ -317,22 +306,171 @@
             this.tìnhHìnhThToolStripMenuItem.Size = new System.Drawing.Size(549, 44);
             this.tìnhHìnhThToolStripMenuItem.Text = "Tình hình thực thiện ngân sách lương";
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.panel1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(2188, 552);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.dataGridView1);
+            this.panel6.Controls.Add(this.tableLayoutPanel1);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(0, 300);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(2188, 252);
+            this.panel6.TabIndex = 3;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnTenmau,
+            this.ColumnDonVi,
+            this.ColumnViTri,
+            this.ColumnNhanVienApDung,
+            this.ColumnTrangThai});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
+            this.dataGridView1.RowTemplate.Height = 33;
+            this.dataGridView1.Size = new System.Drawing.Size(2188, 252);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // ColumnTenmau
+            // 
+            this.ColumnTenmau.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnTenmau.HeaderText = "Tên mẫu bảng lương";
+            this.ColumnTenmau.MinimumWidth = 10;
+            this.ColumnTenmau.Name = "ColumnTenmau";
+            this.ColumnTenmau.ReadOnly = true;
+            // 
+            // ColumnDonVi
+            // 
+            this.ColumnDonVi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnDonVi.HeaderText = "Đơn vị áp dụng";
+            this.ColumnDonVi.MinimumWidth = 10;
+            this.ColumnDonVi.Name = "ColumnDonVi";
+            this.ColumnDonVi.ReadOnly = true;
+            // 
+            // ColumnViTri
+            // 
+            this.ColumnViTri.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnViTri.HeaderText = "Vị trí áp dụng ";
+            this.ColumnViTri.MinimumWidth = 10;
+            this.ColumnViTri.Name = "ColumnViTri";
+            this.ColumnViTri.ReadOnly = true;
+            // 
+            // ColumnNhanVienApDung
+            // 
+            this.ColumnNhanVienApDung.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnNhanVienApDung.HeaderText = "Nhân viên áp dụng ";
+            this.ColumnNhanVienApDung.MinimumWidth = 10;
+            this.ColumnNhanVienApDung.Name = "ColumnNhanVienApDung";
+            this.ColumnNhanVienApDung.ReadOnly = true;
+            // 
+            // ColumnTrangThai
+            // 
+            this.ColumnTrangThai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnTrangThai.HeaderText = "Trạng thái";
+            this.ColumnTrangThai.MinimumWidth = 10;
+            this.ColumnTrangThai.Name = "ColumnTrangThai";
+            this.ColumnTrangThai.ReadOnly = true;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.button3);
+            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 200);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(2188, 100);
+            this.panel5.TabIndex = 2;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(443, 38);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(128, 40);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Tìm kiếm";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(46, 38);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(400, 31);
+            this.textBox1.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 100);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(2188, 100);
+            this.panel4.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Green;
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(1879, 30);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(150, 40);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "+ Thêm mới ";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(845, 258);
+            this.button1.Location = new System.Drawing.Point(1639, 30);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 65);
+            this.button1.Size = new System.Drawing.Size(176, 40);
             this.button1.TabIndex = 1;
-            this.button1.Text = "quay về";
+            this.button1.Text = "Thư viện mẫu";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(39, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(287, 42);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mẫu bảng lương";
             // 
             // MauBangLuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2024, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(2188, 552);
+            this.Controls.Add(this.panel3);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MauBangLuong";
             this.Text = "MauBangLuong";
@@ -340,6 +478,13 @@
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -353,12 +498,8 @@
         private System.Windows.Forms.ToolStripMenuItem thànhPhầnLươngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mấuBảngLươngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dữLiệuTínhLươngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem chấmCôngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem doanhSốToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kPIToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sảnPhẩmToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thuNhậpKhácToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem khấuTrừKhácToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tínhLươngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bảngLươngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tạmỨngToolStripMenuItem;
@@ -378,7 +519,23 @@
         private System.Windows.Forms.ToolStripMenuItem lịchSửLươngCủaNhânViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tổngHợpCôngNợToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tìnhHìnhThToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTenmau;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDonVi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnViTri;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNhanVienApDung;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTrangThai;
     }
 }
