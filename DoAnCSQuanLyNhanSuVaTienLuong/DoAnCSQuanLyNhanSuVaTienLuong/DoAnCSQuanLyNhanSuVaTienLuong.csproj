@@ -225,11 +225,35 @@
     <Compile Include="Form-Con-TienLuong\ChiTraLuong.Designer.cs">
       <DependentUpon>ChiTraLuong.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form-Con-TienLuong\DuLieuTienLuong.cs">
+    <Compile Include="Form-Con-TienLuong\BangLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form-Con-TienLuong\DuLieuTienLuong.Designer.cs">
-      <DependentUpon>DuLieuTienLuong.cs</DependentUpon>
+    <Compile Include="Form-Con-TienLuong\BangLuong.Designer.cs">
+      <DependentUpon>BangLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-ChiTraLuong\BangChiTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-ChiTraLuong\BangChiTra.Designer.cs">
+      <DependentUpon>BangChiTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-ChiTraLuong\TongHopChiTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-ChiTraLuong\TongHopChiTra.Designer.cs">
+      <DependentUpon>TongHopChiTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-BangLuong\BangLuongTheoThang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-BangLuong\BangLuongTheoThang.Designer.cs">
+      <DependentUpon>BangLuongTheoThang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-BangLuong\BangLuongTheoNam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-BangLuong\BangLuongTheoNam.Designer.cs">
+      <DependentUpon>BangLuongTheoNam.cs</DependentUpon>
     </Compile>
     <Compile Include="Form-Con-TienLuong\Form-Con-ThanhPhanLuong\DanhMucCuaHeThong.cs">
       <SubType>Form</SubType>
@@ -242,6 +266,48 @@
     </Compile>
     <Compile Include="Form-Con-TienLuong\Form-Con-ThanhPhanLuong\ThemMoi.Designer.cs">
       <DependentUpon>ThemMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\BangLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\BangLuong.Designer.cs">
+      <DependentUpon>BangLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\BangThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\BangThue.Designer.cs">
+      <DependentUpon>BangThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\NganSachLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\NganSachLuong.Designer.cs">
+      <DependentUpon>NganSachLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\PhanBoLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\PhanBoLuong.Designer.cs">
+      <DependentUpon>PhanBoLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\QuyetToanThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\QuyetToanThue.Designer.cs">
+      <DependentUpon>QuyetToanThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\TamUng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\TamUng.Designer.cs">
+      <DependentUpon>TamUng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\TongHopLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-TienLuong\Form-Con-TinhLuong\TongHopLuong.Designer.cs">
+      <DependentUpon>TongHopLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="Form-Con-TienLuong\MauBangLuong.cs">
       <SubType>Form</SubType>
@@ -329,11 +395,14 @@
     <EmbeddedResource Include="Form-Con-ChamCong\ThemDonXinNghi.resx">
       <DependentUpon>ThemDonXinNghi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form-Con-TienLuong\DuLieuTienLuong.resx">
-      <DependentUpon>DuLieuTienLuong.cs</DependentUpon>
+    <EmbeddedResource Include="Form-Con-TienLuong\BangLuong.resx">
+      <DependentUpon>BangLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form-Con-TienLuong\Form-Con-ThanhPhanLuong\ThemMoi.resx">
       <DependentUpon>ThemMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form-Con-TienLuong\Form-Con-TinhLuong\BangLuong.resx">
+      <DependentUpon>BangLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form-Con-TienLuong\MauBangLuong.resx">
       <DependentUpon>MauBangLuong.cs</DependentUpon>

@@ -42,7 +42,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         }
         private void btnDuLieuTinhLuong_Click(object sender, EventArgs e)
         {
-            DuLieuTienLuong dulieutienluong = new DuLieuTienLuong();
+            BangLuong dulieutienluong = new BangLuong();
             this.Hide();
             dulieutienluong.Show();
         }
@@ -94,6 +94,11 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
                 textBox1.Text = "Nhập thông tin tìm kiếm...";
                 textBox1.ForeColor = Color.Gray;
             }
+        }
+
+        private void khấuTrừKhácToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

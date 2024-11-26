@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong
+namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_TinhLuong
 {
-    public partial class DuLieuTienLuong : Form
+    public partial class TongHopLuong : Form
     {
-        public DuLieuTienLuong()
+        public TongHopLuong()
         {
             InitializeComponent();
         }

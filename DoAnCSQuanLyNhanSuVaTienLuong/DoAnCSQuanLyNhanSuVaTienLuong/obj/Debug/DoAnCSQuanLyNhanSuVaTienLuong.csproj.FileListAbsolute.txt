@@ -359,7 +359,6 @@ C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNha
 C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.Form1.resources
 C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.ThemBangChamCongCT.resources
 C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.ThemDonXinNghi.resources
-C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.DuLieuTienLuong.resources
 C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.MauBangLuong.resources
 C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.ThanhPhanLuong.resources
 C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.TinhLuong.resources
@@ -374,3 +373,12 @@ C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNha
 C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.exe
 C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.pdb
 C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_ThanhPhanLuong.ThemMoi.resources
+<<<<<<< HEAD
+F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.DonDiSomVeMuon.resources
+F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.Form1.resources
+F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.ThemDonXinNghi.resources
+F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_ThanhPhanLuong.ThemMoi.resources
+=======
+C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.BangLuong.resources
+C:\Users\baotr\Source\Repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_TinhLuong.BangLuong.resources
+>>>>>>> 21b3762d734425a1779eacd98f58fca757272c2f
