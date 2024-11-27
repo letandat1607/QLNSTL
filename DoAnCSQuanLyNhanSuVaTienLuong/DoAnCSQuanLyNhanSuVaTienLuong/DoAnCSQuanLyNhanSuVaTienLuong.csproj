@@ -177,15 +177,22 @@
     <Compile Include="DanhGia.Designer.cs">
       <DependentUpon>DanhGia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doi tuong\ChamCong.cs" />
-    <Compile Include="Doi tuong\DanhSachChamCong.cs" />
-    <Compile Include="Doi tuong\NhanVien.cs" />
-    <Compile Include="Doi tuong\UngVien.cs" />
+    <Compile Include="DataAccess\MongoDataAccess.cs" />
+    <Compile Include="Doituong\ClassChamCong.cs" />
+    <Compile Include="Doituong\DanhSachChamCong.cs" />
+    <Compile Include="Doituong\NhanVien.cs" />
+    <Compile Include="Doituong\UngVien.cs" />
     <Compile Include="Form-Con-ChamCong\BangChamCongCT.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form-Con-ChamCong\BangChamCongCT.Designer.cs">
       <DependentUpon>BangChamCongCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\BangDuLieuChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\BangDuLieuChamCong.Designer.cs">
+      <DependentUpon>BangDuLieuChamCong.cs</DependentUpon>
     </Compile>
     <Compile Include="Form-Con-ChamCong\DonDiSomVeMuon.cs">
       <SubType>Form</SubType>
@@ -398,6 +405,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form-Con-ChamCong\BangChamCongCT.resx">
       <DependentUpon>BangChamCongCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form-Con-ChamCong\BangDuLieuChamCong.resx">
+      <DependentUpon>BangDuLieuChamCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form-Con-ChamCong\DonDiSomVeMuon.resx">
       <DependentUpon>DonDiSomVeMuon.cs</DependentUpon>

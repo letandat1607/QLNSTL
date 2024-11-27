@@ -20,9 +20,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
 
         private void mitBangChamCongCT_Click(object sender, EventArgs e)
         {
-            this.Hide();
             BangChamCongCT bangChamCongCT = new BangChamCongCT();
-            bangChamCongCT.Show();
+            bangChamCongCT.ShowDialog();
         }
     }
 }
