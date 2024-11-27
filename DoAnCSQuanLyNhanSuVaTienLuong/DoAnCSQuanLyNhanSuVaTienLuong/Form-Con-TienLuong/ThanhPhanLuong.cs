@@ -6,6 +6,9 @@ using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using System.Linq;
 using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_ThanhPhanLuong;
+using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_DuLieuTienLuong;
+using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_BangLuong;
+using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_ChiTraLuong;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong
 {
@@ -114,6 +117,48 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong
             ThemMoi themMoi = new ThemMoi();
             this.Hide();
             themMoi.Show();
+        }
+
+        private void mấuBảngLươngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MauBangLuong maubangluong = new MauBangLuong();
+            this.Hide();
+            maubangluong.Show();
+        }
+
+        private void tổngQuanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TienLuong tienLuong = new TienLuong();
+            this.Hide();
+            tienLuong.Show();
+        }
+
+        private void LuongTheoThangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BangLuongTheoThang bangLuongTheoThang = new BangLuongTheoThang();
+            this.Hide();
+            bangLuongTheoThang.Show();
+        }
+
+        private void BangLuongNamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BangLuongTheoNam bangLuongTheoNam = new BangLuongTheoNam();
+            this.Hide();
+            bangLuongTheoNam.Show();
+        }
+
+        private void bảngChiTrảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BangChiTra bangChiTra = new BangChiTra();
+            this.Hide();
+            bangChiTra.Show();
+        }
+
+        private void tổngHợpChiTrảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TongHopChiTra tongHopChiTra = new TongHopChiTra();
+            this.Hide();
+            tongHopChiTra.Show();
         }
     }
 

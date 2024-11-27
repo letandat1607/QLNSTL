@@ -1,4 +1,7 @@
 ﻿using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong;
+using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_BangLuong;
+using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_ChiTraLuong;
+using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_DuLieuTienLuong;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,16 +20,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         {
             InitializeComponent();
         }
-       
-
-
-
-        private void btnTongquan_Click(object sender, EventArgs e)
-        {
-            TongQuan Tongquan = new TongQuan();
-            this.Hide();
-            Tongquan.Show();
-        }
 
         private void btnThanhPhanLuong_Click(object sender, EventArgs e)
         {
@@ -37,14 +30,14 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         private void btnMauBangLuong_Click(object sender, EventArgs e)
         {
             MauBangLuong mauBangLuong = new MauBangLuong();
-            this.Hide();
+            //this.Hide();
             mauBangLuong.Show();
         }
-        private void btnDuLieuTinhLuong_Click(object sender, EventArgs e)
+        private void btnBangLuong_Click(object sender, EventArgs e)
         {
-            BangLuong dulieutienluong = new BangLuong();
-            this.Hide();
-            dulieutienluong.Show();
+            //BangLuong BangLuong = new BangLuong();
+            //this.Hide();
+            //BangLuong.Show();
         }
         private void btnTinhLuong_Click(object sender, EventArgs e)
         {
@@ -96,9 +89,34 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             }
         }
 
-        private void khấuTrừKhácToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        
 
+        private void BangLuongThangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BangLuongTheoThang bangLuongTheoThang = new BangLuongTheoThang();
+            //this.Hide();
+            bangLuongTheoThang.Show();
+        }
+
+        private void bảngLươngTheoNămToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BangLuongTheoNam bangLuongTheoNam = new BangLuongTheoNam();
+            //this.Hide();
+            bangLuongTheoNam.Show();
+        }
+
+        private void bảngChiTrảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BangChiTra bangChiTra = new BangChiTra();
+            //this.Hide();
+            bangChiTra.Show();
+        }
+
+        private void tổngHợpChiTrảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TongHopChiTra tongHopChiTra = new TongHopChiTra();
+            //this.Hide();
+            tongHopChiTra.Show();
         }
     }
 }
