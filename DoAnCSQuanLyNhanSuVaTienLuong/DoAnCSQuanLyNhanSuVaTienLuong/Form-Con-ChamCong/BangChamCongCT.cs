@@ -26,7 +26,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
         private void LoadBangChamCong()
         {
             _danhSachBangChamCong = _dataAccess.GetTatCaBangChamCong();
-            //dtgvBangChamCongCT.Columns.Clear();
+            dtgvBangChamCongCT.Columns.Clear();
             dtgvBangChamCongCT.Columns.Add("ThoiGianBatDau", "Thời gian bắt đầu");
             dtgvBangChamCongCT.Columns.Add("ThoiGianKetThuc", "Thời gian kết thúc");
             dtgvBangChamCongCT.Columns.Add("TenBangChamCong", "Tên bảng chấm công");
