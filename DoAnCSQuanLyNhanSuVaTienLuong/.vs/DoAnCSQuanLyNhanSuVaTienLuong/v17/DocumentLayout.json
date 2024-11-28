@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\baotr\\source\\repos\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\",
   "Documents": [
     {
@@ -39,6 +40,10 @@
       "RelativeMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|solutionrelative:doancsquanlynhansuvatienluong\\form-con-tienluong\\form-con-bangluong\\form-con-bangluongtheothang\\bangluongtheothangchitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
+=======
+  "WorkspaceRootPath": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\",
+  "Documents": [],
+>>>>>>> bf49f1d12e52f31055632e0bf2fbc59adb27df27
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -46,7 +51,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 4,
+=======
+          "SelectedChildIndex": -1,
+>>>>>>> bf49f1d12e52f31055632e0bf2fbc59adb27df27
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,6 +72,7 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+<<<<<<< HEAD
             },
             {
               "$type": "Document",
@@ -169,6 +179,8 @@
               "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\Form-Con-TienLuong\\Form-Con-BangLuong\\Form-Con-BangLuongTheoThang\\BangLuongTheoThangChiTiet.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T21:19:52.309Z"
+=======
+>>>>>>> bf49f1d12e52f31055632e0bf2fbc59adb27df27
             }
           ]
         }

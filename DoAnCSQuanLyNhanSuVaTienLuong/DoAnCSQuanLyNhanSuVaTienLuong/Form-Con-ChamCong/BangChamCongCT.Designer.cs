@@ -43,19 +43,14 @@
             this.lblBangChamCongCT = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.colTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colChamCong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colViTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgvBangChamCongCT = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lbl1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvBangChamCongCT)).BeginInit();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,7 +85,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1310, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1310, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -184,63 +179,24 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Controls.Add(this.dtgvBangChamCongCT);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(12, 97);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1286, 560);
             this.panel3.TabIndex = 3;
             // 
-            // dataGridView1
+            // dtgvBangChamCongCT
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colTime,
-            this.colName,
-            this.colChamCong,
-            this.colViTri,
-            this.colTrangThai});
-            this.dataGridView1.Location = new System.Drawing.Point(5, 53);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1278, 346);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // colTime
-            // 
-            this.colTime.HeaderText = "Thời gian";
-            this.colTime.MinimumWidth = 6;
-            this.colTime.Name = "colTime";
-            this.colTime.Width = 340;
-            // 
-            // colName
-            // 
-            this.colName.HeaderText = "Tên bảng chấm công";
-            this.colName.MinimumWidth = 6;
-            this.colName.Name = "colName";
-            this.colName.Width = 380;
-            // 
-            // colChamCong
-            // 
-            this.colChamCong.HeaderText = "Chấm công";
-            this.colChamCong.MinimumWidth = 6;
-            this.colChamCong.Name = "colChamCong";
-            this.colChamCong.Width = 180;
-            // 
-            // colViTri
-            // 
-            this.colViTri.HeaderText = "Vị trí công việc";
-            this.colViTri.MinimumWidth = 6;
-            this.colViTri.Name = "colViTri";
-            this.colViTri.Width = 200;
-            // 
-            // colTrangThai
-            // 
-            this.colTrangThai.HeaderText = "Trạng thái";
-            this.colTrangThai.MinimumWidth = 6;
-            this.colTrangThai.Name = "colTrangThai";
-            this.colTrangThai.Width = 260;
+            this.dtgvBangChamCongCT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvBangChamCongCT.Location = new System.Drawing.Point(5, 53);
+            this.dtgvBangChamCongCT.Name = "dtgvBangChamCongCT";
+            this.dtgvBangChamCongCT.RowHeadersWidth = 51;
+            this.dtgvBangChamCongCT.RowTemplate.Height = 24;
+            this.dtgvBangChamCongCT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvBangChamCongCT.Size = new System.Drawing.Size(1278, 346);
+            this.dtgvBangChamCongCT.TabIndex = 1;
+            this.dtgvBangChamCongCT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvBangChamCongCT_CellContentClick);
             // 
             // panel4
             // 
@@ -285,7 +241,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvBangChamCongCT)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
@@ -310,13 +266,8 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvBangChamCongCT;
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colChamCong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colViTri;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTrangThai;
     }
 }
