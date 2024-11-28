@@ -181,6 +181,7 @@
     <Compile Include="Doituong\ClassChamCong.cs" />
     <Compile Include="Doituong\DanhSachChamCong.cs" />
     <Compile Include="Doituong\NhanVien.cs" />
+    <Compile Include="Doituong\TaiKhoan.cs" />
     <Compile Include="Doituong\UngVien.cs" />
     <Compile Include="Form-Con-ChamCong\BangChamCongCT.cs">
       <SubType>Form</SubType>

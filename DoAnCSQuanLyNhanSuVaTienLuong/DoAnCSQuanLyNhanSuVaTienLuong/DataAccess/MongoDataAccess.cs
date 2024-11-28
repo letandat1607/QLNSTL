@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong;
+using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
 {
@@ -11,6 +12,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
     {
         private readonly IMongoCollection<BsonDocument> _nhanViencollection;
         private readonly IMongoCollection<BsonDocument> _chamCongcollection;
+        private readonly IMongoCollection<BsonDocument> _taiKhoancollection;
 
         public MongoDataAccess()
         {
@@ -18,6 +20,31 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
             var database = client.GetDatabase("cong_ty_dbpt");
             _nhanViencollection = database.GetCollection<BsonDocument>("nhan_vien");
             _chamCongcollection = database.GetCollection<BsonDocument>("cham_cong");
+            _taiKhoancollection = database.GetCollection<BsonDocument>("tai_khoan");
+        }
+        //public string XuLyDangNhap(string taikhoan, string matkhau)
+        //{
+        //    var taiKhoanData = _taiKhoancollection.Find(tk => tk["ten_tai_khoan"] == taikhoan && tk["mat_khau"] == matkhau).FirstOrDefault();
+        //    if (taiKhoanData == null)
+        //    {
+        //        return "null";
+        //    }
+        //    return taiKhoanData["loai_tai_khoan"].ToString();
+        //}
+        public List<TaiKhoan> GetTatCaTaiKhoan()
+        {
+            var taiKhoanDocs = _taiKhoancollection.Find(FilterDefinition<BsonDocument>.Empty).ToList();
+            var danhSachTaiKhoan = taiKhoanDocs.Select(x =>
+            {
+                return new TaiKhoan
+                {
+                    TenTaiKhoan = x["ten_tai_khoan"].ToString(),
+                    MatKhau = x["mat_khau"].ToString(),
+                    LoaiTaiKhoan = x["loai_tai_khoan"].ToString(),
+                    TrangThai = x["trang_thai"].ToBoolean()
+                };
+            }).ToList();
+            return danhSachTaiKhoan;
         }
         public List<DanhSachChamCong> GetTatCaBangChamCong()
         {

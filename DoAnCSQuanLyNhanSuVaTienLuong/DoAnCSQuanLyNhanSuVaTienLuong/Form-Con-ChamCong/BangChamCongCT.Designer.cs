@@ -41,7 +41,6 @@
             this.mitDonNghi = new System.Windows.Forms.ToolStripMenuItem();
             this.mitDiMuonVeSom = new System.Windows.Forms.ToolStripMenuItem();
             this.lblBangChamCongCT = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dtgvBangChamCongCT = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -85,7 +84,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1310, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1310, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -164,19 +163,6 @@
             this.lblBangChamCongCT.TabIndex = 1;
             this.lblBangChamCongCT.Text = "Bảng chấm công chi tiết";
             // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnAdd.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnAdd.Location = new System.Drawing.Point(1165, 53);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(101, 44);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "+ Thêm";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.dtgvBangChamCongCT);
@@ -229,7 +215,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1310, 588);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblBangChamCongCT);
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.menuStrip1;
@@ -263,7 +248,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblBangChamCongCT;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dtgvBangChamCongCT;

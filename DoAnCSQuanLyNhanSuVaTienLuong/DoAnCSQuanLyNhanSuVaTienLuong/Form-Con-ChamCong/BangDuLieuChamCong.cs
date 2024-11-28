@@ -34,19 +34,18 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
                 dtgvBangDuLieuChamCong.Columns.Add(columnName, columnName);
             }
             dtgvBangDuLieuChamCong.Columns[0].Width = 100;
-            dtgvBangDuLieuChamCong.Columns[1].Width = 150;
+            dtgvBangDuLieuChamCong.Columns[1].Width = 150; 
             foreach (DataGridViewColumn column in dtgvBangDuLieuChamCong.Columns.Cast<DataGridViewColumn>().Skip(2))
             {
                 column.Width = 140;
             }
-            
+
             var groupData = _duLieuChamCong.DSChamCong.GroupBy(x => new
             {
                 x.MaNhanVien,
                 x.HoTen
             }).ToList();
-
-            foreach(var group in groupData)
+            foreach (var group in groupData)
             {
                 var row = new DataGridViewRow();
                 row.CreateCells(dtgvBangDuLieuChamCong);
@@ -55,14 +54,22 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
                 foreach (var chamCong in group)
                 {
                     var cot = GetColumnIndexByDate(chamCong.NgayChamCong);
-                    if(cot != -1)
+                    if (cot != -1)
                     {
                         row.Cells[cot].Value = $"{chamCong.CheckIn:hh\\:mm} - {chamCong.CheckOut:hh\\:mm}";
+                    }
+                }
+                for (int i = 2; i < dtgvBangDuLieuChamCong.Columns.Count; i++)
+                {
+                    if (row.Cells[i].Value == null)
+                    {
+                        row.Cells[i].Value = "Null";
                     }
                 }
                 dtgvBangDuLieuChamCong.Rows.Add(row);
             }
         }
+
         private int GetColumnIndexByDate(DateTime date)
         {
             var columnName = date.ToString("dd/MM");
