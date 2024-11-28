@@ -56,7 +56,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong
         {
             try
             {
-                var connectionString = "mongodb://192.168.100.124:27017"; // ip ở nhà
+                var connectionString = "mongodb://192.168.31.195:27017"; //ip trên trường cs1
+                //var connectionString = "mongodb://192.168.100.124:27017"; // ip ở nhà
                 //var connectionString = "mongodb://192.168.0.125:27017/";//Nhà phúc 
                 var client = new MongoClient(connectionString);
                 var database = client.GetDatabase("database");

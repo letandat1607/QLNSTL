@@ -10,3 +10,5 @@
 bin/
 obj/
 /Properties/launchSettings.json
+listAbsolute.txt
+.FileListAbsolute.txt

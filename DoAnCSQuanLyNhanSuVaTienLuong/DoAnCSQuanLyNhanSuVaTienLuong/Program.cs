@@ -16,8 +16,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HeThongQuanLy());
-            //Application.Run(new DangNhap());
+            //Application.Run(new HeThongQuanLy());
+            Application.Run(new DangNhap());
         }
     }
 }
