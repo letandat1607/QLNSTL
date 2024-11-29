@@ -32,7 +32,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_DuLieuTienLu
         {
             try
             {
-                var connectionString = "mongodb://192.168.31.195:27017"; //ip trên trường cs1
+                var connectionString = "mongodb://172.16.1.195:27017"; // tân bình
+                //var connectionString = "mongodb://192.168.31.195:27017"; //ip trên trường cs1
                 //var connectionString = "mongodb://192.168.100.124:27017"; // ip ở nhà
                 //var connectionString = "mongodb://192.168.0.125:27017/";//Nhà phúc 
                 var client = new MongoClient(connectionString);
@@ -90,7 +91,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_DuLieuTienLu
         {
             if (e.RowIndex >= 0)
             {
-               
                 string tg = dataGridView1.Rows[e.RowIndex].Cells["TG"].Value.ToString();
                 string tenBangLuong = dataGridView1.Rows[e.RowIndex].Cells["tenBangLuong"].Value.ToString();
                 string donViApDung = dataGridView1.Rows[e.RowIndex].Cells["donViApDung"].Value.ToString();
@@ -143,6 +143,13 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_DuLieuTienLu
             TongHopChiTra tongHopChiTra = new TongHopChiTra();
             this.Hide();
             tongHopChiTra.Show();
+        }
+
+        private void tấtCảỨngDụngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
+            this.Hide();
+            heThongQuanLy.Show();
         }
     }
 

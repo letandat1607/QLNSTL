@@ -39,6 +39,7 @@
             this.mấuBảngLươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dữLiệuTínhLươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BangLuongThangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bảngLươngTheoNămToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tínhLươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bảngLươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tạmỨngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,7 +82,6 @@
             this.Xóa = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.bảngLươngTheoNămToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -136,6 +136,7 @@
             this.tấtCảỨngDụngToolStripMenuItem.Name = "tấtCảỨngDụngToolStripMenuItem";
             this.tấtCảỨngDụngToolStripMenuItem.Size = new System.Drawing.Size(230, 55);
             this.tấtCảỨngDụngToolStripMenuItem.Text = "Tất cả ứng dụng";
+            this.tấtCảỨngDụngToolStripMenuItem.Click += new System.EventHandler(this.tấtCảỨngDụngToolStripMenuItem_Click);
             // 
             // tiềnLươngToolStripMenuItem
             // 
@@ -151,7 +152,7 @@
             this.tổngQuanToolStripMenuItem.Name = "tổngQuanToolStripMenuItem";
             this.tổngQuanToolStripMenuItem.Size = new System.Drawing.Size(172, 55);
             this.tổngQuanToolStripMenuItem.Text = "Tổng quan ";
-            //           
+            // 
             // thànhPhầnLươngToolStripMenuItem
             // 
             this.thànhPhầnLươngToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -185,6 +186,13 @@
             this.BangLuongThangToolStripMenuItem.Size = new System.Drawing.Size(427, 46);
             this.BangLuongThangToolStripMenuItem.Text = "Bảng lương theo tháng";
             this.BangLuongThangToolStripMenuItem.Click += new System.EventHandler(this.BangLuongThangToolStripMenuItem_Click);
+            // 
+            // bảngLươngTheoNămToolStripMenuItem
+            // 
+            this.bảngLươngTheoNămToolStripMenuItem.Name = "bảngLươngTheoNămToolStripMenuItem";
+            this.bảngLươngTheoNămToolStripMenuItem.Size = new System.Drawing.Size(427, 46);
+            this.bảngLươngTheoNămToolStripMenuItem.Text = "Bảng lương theo năm";
+            this.bảngLươngTheoNămToolStripMenuItem.Click += new System.EventHandler(this.bảngLươngTheoNămToolStripMenuItem_Click);
             // 
             // tínhLươngToolStripMenuItem
             // 
@@ -257,14 +265,14 @@
             // bảngChiTrảToolStripMenuItem
             // 
             this.bảngChiTrảToolStripMenuItem.Name = "bảngChiTrảToolStripMenuItem";
-            this.bảngChiTrảToolStripMenuItem.Size = new System.Drawing.Size(359, 46);
+            this.bảngChiTrảToolStripMenuItem.Size = new System.Drawing.Size(348, 46);
             this.bảngChiTrảToolStripMenuItem.Text = "Bảng chi trả ";
             this.bảngChiTrảToolStripMenuItem.Click += new System.EventHandler(this.bảngChiTrảToolStripMenuItem_Click);
             // 
             // tổngHợpChiTrảToolStripMenuItem
             // 
             this.tổngHợpChiTrảToolStripMenuItem.Name = "tổngHợpChiTrảToolStripMenuItem";
-            this.tổngHợpChiTrảToolStripMenuItem.Size = new System.Drawing.Size(359, 46);
+            this.tổngHợpChiTrảToolStripMenuItem.Size = new System.Drawing.Size(348, 46);
             this.tổngHợpChiTrảToolStripMenuItem.Text = "Tổng hợp chi trả";
             this.tổngHợpChiTrảToolStripMenuItem.Click += new System.EventHandler(this.tổngHợpChiTrảToolStripMenuItem_Click);
             // 
@@ -488,6 +496,8 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Tìm kiếm";
             this.button3.UseVisualStyleBackColor = true;
+            
+
             // 
             // textBox1
             // 
@@ -500,6 +510,7 @@
             this.textBox1.Text = "Nhập thông tin tìm kiếm....";
             this.textBox1.Enter += new System.EventHandler(this.TextBox1_Enter);
             this.textBox1.Leave += new System.EventHandler(this.TextBox1_Leave);
+            //this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button2
             // 
@@ -532,13 +543,6 @@
             this.button1.Text = "+ Thêm";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // bảngLươngTheoNămToolStripMenuItem
-            // 
-            this.bảngLươngTheoNămToolStripMenuItem.Name = "bảngLươngTheoNămToolStripMenuItem";
-            this.bảngLươngTheoNămToolStripMenuItem.Size = new System.Drawing.Size(427, 46);
-            this.bảngLươngTheoNămToolStripMenuItem.Text = "Bảng lương theo năm";
-            this.bảngLươngTheoNămToolStripMenuItem.Click += new System.EventHandler(this.bảngLươngTheoNămToolStripMenuItem_Click);
             // 
             // TienLuong
             // 

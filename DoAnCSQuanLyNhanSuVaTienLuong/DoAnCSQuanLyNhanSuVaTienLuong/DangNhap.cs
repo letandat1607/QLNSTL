@@ -26,7 +26,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
                 //var connectionString = "mongodb://192.168.28.115:27017";//ip ở csc
                 //var connectionString = "mongodb://         :27017";//ip của dữ liệu di động của mình
                 //var connectionString = "mongodb://         :27017";//ip của dữ liệu di động của đạt
-                var connectionString = "mongodb://192.168.31.195:27017"; //ip trên trường cs1
+                //var connectionString = "mongodb://192.168.31.195:27017"; //ip trên trường cs1
+                var connectionString = "mongodb://172.16.1.195:27017"; // tân bình
                 Console.WriteLine("Đang kết nối đến MongoDB...");
                 var client = new MongoClient(connectionString);
                 var database = client.GetDatabase("database"); // Tên cơ sở dữ liệu

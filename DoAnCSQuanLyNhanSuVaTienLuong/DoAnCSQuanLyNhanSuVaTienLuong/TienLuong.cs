@@ -24,13 +24,13 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         private void btnThanhPhanLuong_Click(object sender, EventArgs e)
         {
             ThanhPhanLuong thanhPhanLuong = new ThanhPhanLuong();
-            //this.Hide();
+            this.Hide();
             thanhPhanLuong.Show();
         }
         private void btnMauBangLuong_Click(object sender, EventArgs e)
         {
             MauBangLuong mauBangLuong = new MauBangLuong();
-            //this.Hide();
+            this.Hide();
             mauBangLuong.Show();
         }
         private void btnBangLuong_Click(object sender, EventArgs e)
@@ -88,35 +88,65 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
                 textBox1.ForeColor = Color.Gray;
             }
         }
+        //private void textBox1_TextChanged(object sender, EventArgs e)
+        //{
+        //    string searchValue = textBox1.Text.ToLower();
+
+        //    // Duyệt qua các dòng trong DataGridView (giả sử tên DataGridView là dataGridView1)
+        //    foreach (DataGridViewRow row in dataGridView1.Rows)
+        //    {
+        //        bool isVisible = false;
+        
+        //        // Kiểm tra từng cột trong dòng để tìm kiếm giá trị khớp
+        //        foreach (DataGridViewCell cell in row.Cells)
+        //        {
+        //            if (cell.Value != null && cell.Value.ToString().ToLower().Contains(searchValue))
+        //            {
+        //                isVisible = true;
+        //                break;
+        //            }
+        //        }
+
+        //        // Ẩn hoặc hiển thị dòng dựa trên kết quả tìm kiếm
+        //        row.Visible = isVisible;
+        //    }
+        //}
 
         
 
         private void BangLuongThangToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BangLuongTheoThang bangLuongTheoThang = new BangLuongTheoThang();
-            //this.Hide();
+            this.Hide();
             bangLuongTheoThang.Show();
         }
 
         private void bảngLươngTheoNămToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BangLuongTheoNam bangLuongTheoNam = new BangLuongTheoNam();
-            //this.Hide();
+            this.Hide();
             bangLuongTheoNam.Show();
         }
 
         private void bảngChiTrảToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BangChiTra bangChiTra = new BangChiTra();
-            //this.Hide();
+            this.Hide();
             bangChiTra.Show();
         }
 
         private void tổngHợpChiTrảToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TongHopChiTra tongHopChiTra = new TongHopChiTra();
-            //this.Hide();
+            this.Hide();
             tongHopChiTra.Show();
+        }
+
+        private void tấtCảỨngDụngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
+            this.Hide();
+            heThongQuanLy.Show();
         }
     }
 }

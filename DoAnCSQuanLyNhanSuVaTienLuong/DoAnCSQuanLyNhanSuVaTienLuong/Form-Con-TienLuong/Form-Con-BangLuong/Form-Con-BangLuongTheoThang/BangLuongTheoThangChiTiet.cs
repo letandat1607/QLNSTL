@@ -75,7 +75,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_BangLuong.Fo
                     // Thêm dữ liệu vào DataGridView
                     foreach (var item in results)
                     {
-                        dataGridView1.Rows.Add(item.ChucDanh, item.HeSoLuong, item.LuongCoBan);
+                        dataGridView1.Rows.Add();
                     }
                 }
                 else
@@ -95,7 +95,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_BangLuong.Fo
         public ObjectId Id { get; set; }
 
         [BsonElement("tt")]
-        public int ThoiGian { get; set; }  // Thứ tự (1, 2, 3,...)
+        public int ThuTu { get; set; }  // Thứ tự (1, 2, 3,...)
 
         [BsonElement("HoTen")]
         public string HoTen { get; set; }

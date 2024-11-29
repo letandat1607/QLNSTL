@@ -61,5 +61,12 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong
             this.Hide();
             tongHopChiTra.Show();
         }
+
+        private void tấtCảỨngDụngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
+            this.Hide();
+            heThongQuanLy.Show();
+        }
     }
 }

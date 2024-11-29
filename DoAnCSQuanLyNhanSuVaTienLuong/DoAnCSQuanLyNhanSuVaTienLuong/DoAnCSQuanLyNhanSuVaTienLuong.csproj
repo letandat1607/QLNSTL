@@ -436,6 +436,12 @@
     <EmbeddedResource Include="Form-Con-TienLuong\Form-Con-BangLuong\Form-Con-BangLuongTheoThang\BangLuongTheoThangChiTiet.resx">
       <DependentUpon>BangLuongTheoThangChiTiet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form-Con-TienLuong\Form-Con-ChiTraLuong\BangChiTra.resx">
+      <DependentUpon>BangChiTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form-Con-TienLuong\Form-Con-ChiTraLuong\TongHopChiTra.resx">
+      <DependentUpon>TongHopChiTra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form-Con-TienLuong\Form-Con-ThanhPhanLuong\ThemMoi.resx">
       <DependentUpon>ThemMoi.cs</DependentUpon>
     </EmbeddedResource>

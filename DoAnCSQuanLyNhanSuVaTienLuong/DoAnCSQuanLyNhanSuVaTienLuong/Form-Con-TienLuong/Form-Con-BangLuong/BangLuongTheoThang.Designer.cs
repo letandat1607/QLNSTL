@@ -120,8 +120,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(2174, 546);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-
-
             // 
             // ColumnThoiGian
             // 
@@ -211,7 +209,6 @@
             this.label1.Size = new System.Drawing.Size(395, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bảng lương theo tháng";
-            
             // 
             // panel2
             // 
@@ -256,7 +253,7 @@
             this.báoCáoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(2174, 48);
+            this.menuStrip1.Size = new System.Drawing.Size(2174, 42);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -265,6 +262,7 @@
             this.tấtCảỨngDụngToolStripMenuItem.Name = "tấtCảỨngDụngToolStripMenuItem";
             this.tấtCảỨngDụngToolStripMenuItem.Size = new System.Drawing.Size(209, 38);
             this.tấtCảỨngDụngToolStripMenuItem.Text = "Tất cả ứng dụng";
+            this.tấtCảỨngDụngToolStripMenuItem.Click += new System.EventHandler(this.tấtCảỨngDụngToolStripMenuItem_Click);
             // 
             // tiềnLươngToolStripMenuItem
             // 
@@ -383,14 +381,14 @@
             // bảngChiTrảToolStripMenuItem
             // 
             this.bảngChiTrảToolStripMenuItem.Name = "bảngChiTrảToolStripMenuItem";
-            this.bảngChiTrảToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.bảngChiTrảToolStripMenuItem.Size = new System.Drawing.Size(324, 44);
             this.bảngChiTrảToolStripMenuItem.Text = "Bảng chi trả ";
             this.bảngChiTrảToolStripMenuItem.Click += new System.EventHandler(this.bảngChiTrảToolStripMenuItem_Click);
             // 
             // tổngHợpChiTrảToolStripMenuItem
             // 
             this.tổngHợpChiTrảToolStripMenuItem.Name = "tổngHợpChiTrảToolStripMenuItem";
-            this.tổngHợpChiTrảToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.tổngHợpChiTrảToolStripMenuItem.Size = new System.Drawing.Size(324, 44);
             this.tổngHợpChiTrảToolStripMenuItem.Text = "Tổng hợp chi trả";
             this.tổngHợpChiTrảToolStripMenuItem.Click += new System.EventHandler(this.tổngHợpChiTrảToolStripMenuItem_Click);
             // 
