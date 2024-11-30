@@ -11,3 +11,11 @@ bin/
 obj/
 *.launchSettings.json
 Properties/launchSettings.json
+DoAnCSQuanLyNhanSuVaTienLuong/DoAnCSQuanLyNhanSuVaTienLuong/obj/Debug/DoAnCSQuanLyNhanSuVaTienLuong.csproj.AssemblyReference.cache
+*.json
+*.cache
+*.pdb
+*.exe
+*.sqlite
+*.bin
+*.json

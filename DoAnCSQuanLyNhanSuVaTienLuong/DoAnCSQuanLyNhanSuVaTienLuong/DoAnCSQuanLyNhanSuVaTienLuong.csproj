@@ -179,6 +179,7 @@
     </Compile>
     <Compile Include="DataAccess\MongoDataAccess.cs" />
     <Compile Include="Doituong\ClassChamCong.cs" />
+    <Compile Include="Doituong\Const.cs" />
     <Compile Include="Doituong\DanhSachChamCong.cs" />
     <Compile Include="Doituong\NhanVien.cs" />
     <Compile Include="Doituong\TaiKhoan.cs" />

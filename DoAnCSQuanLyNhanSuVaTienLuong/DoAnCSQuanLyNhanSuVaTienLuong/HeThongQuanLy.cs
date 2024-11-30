@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DoAnCSQuanLyNhanSuVaTienLuong.DataAccess;
+using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong
 {
@@ -15,6 +17,15 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         public HeThongQuanLy()
         {
             InitializeComponent();
+            btnChamCong.Enabled = false;
+            btnTienLuong.Enabled = false;
+            btnTuyenDung.Enabled = false;
+            btnBHXH.Enabled = false;
+            btnDanhGia.Enabled = false;
+            btnMucTieu.Enabled = false;
+            btnThongTinNhanSu.Enabled = false;
+            btnThueTNCN.Enabled = false;
+            loadFormHeThongQuanLy();
         }
 
         private void btnChamCong_Click(object sender, EventArgs e)
@@ -32,6 +43,46 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+        public void loadFormHeThongQuanLy()
+        {
+            if (Const.taiKhoanActive.LoaiTaiKhoan == "admin")
+            {
+                btnChamCong.Enabled = true;
+                btnTienLuong.Enabled = true;
+                btnTuyenDung.Enabled = true;
+                btnBHXH.Enabled = true;
+                btnDanhGia.Enabled = true;
+                btnMucTieu.Enabled = true;
+                btnThongTinNhanSu.Enabled = true;
+                btnThueTNCN.Enabled = true;
+            }
+            else if (Const.taiKhoanActive.LoaiTaiKhoan == "quanlyns")
+            {
+                    btnChamCong.Enabled = true;
+                    btnTienLuong.Enabled = true;
+                    btnBHXH.Enabled = true;
+                    btnDanhGia.Enabled = true;
+                    btnMucTieu.Enabled = true;
+                    btnThongTinNhanSu.Enabled = true;
+                    btnThueTNCN.Enabled = true;
+            }
+            else if (Const.taiKhoanActive.LoaiTaiKhoan == "hr")
+            {
+                btnChamCong.Enabled = true;
+                btnTienLuong.Enabled = true;
+                btnBHXH.Enabled = true;
+                btnThueTNCN.Enabled = true;
+                btnTuyenDung.Enabled = true;
+            }
+            else
+            {
+                btnChamCong.Enabled = true;
+                btnTienLuong.Enabled = true;
+                btnBHXH.Enabled = true;
+                btnThueTNCN.Enabled = true;
+            }
+        
         }
 
         private void button7_Click(object sender, EventArgs e)

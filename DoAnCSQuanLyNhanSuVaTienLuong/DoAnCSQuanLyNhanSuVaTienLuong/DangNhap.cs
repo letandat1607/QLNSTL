@@ -66,6 +66,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
                 if (tk.TenTaiKhoan == tenTaiKhoanInput && tk.MatKhau == matKhauInput)
                 {
                     check = true;
+                    Const.taiKhoanActive = tk;
                     break;
                 }
             }
