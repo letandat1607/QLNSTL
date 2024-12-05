@@ -32,16 +32,17 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_DuLieuTienLu
         {
             try
             {
-                var connectionString = "mongodb://192.168.100.124:27017"; // ip ở nhà
+                var connectionString ="mongodb://172.16.1.195:27017/";   //Tân bình ticos
+                //var connectionString = "mongodb://192.168.100.124:27017"; // ip ở nhà
                 //var connectionString = "mongodb://192.168.0.125:27017/";//Nhà phúc 
                 var client = new MongoClient(connectionString);
-                var database = client.GetDatabase("database");
-                BangLuongTheoThangCollection = database.GetCollection<ThongTin>("BangLuongTheoThang");
+                var database = client.GetDatabase("cong_ty_dbpt");
+                BangLuongTheoThangCollection = database.GetCollection<ThongTin>("bang_luong_theo_thang");
 
-                var sampleData = BangLuongTheoThangCollection;
-                MessageBox.Show(sampleData != null
-                    ? "Kết nối thành công! Đã tìm thấy collection."
-                    : "Không tìm thấy thông tin trong cơ sở dữ liệu.");
+                //var sampleData = BangLuongTheoThangCollection;
+                //MessageBox.Show(sampleData != null
+                //    ? "Kết nối thành công! Đã tìm thấy collection."
+                //    : "Không tìm thấy thông tin trong cơ sở dữ liệu.");
 
             }
             catch (Exception ex)
@@ -49,7 +50,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_DuLieuTienLu
                 MessageBox.Show($"Không thể kết nối đến cơ sở dữ liệu: {ex.Message}");
             }
         }
-        // Trong hàm LoadDataIntoDataGridView
         private void LoadDataIntoDataGridView()
         {
             try
@@ -58,10 +58,9 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_DuLieuTienLu
 
                 if (results.Count > 0)
                 {
-                    // Xóa dữ liệu cũ trong DataGridView
+                   
                     dataGridView1.Rows.Clear();
 
-                    // Đảm bảo cột đã có tên (gán tên cho các cột của DataGridView)
                     dataGridView1.Columns[0].Name = "TG";
                     dataGridView1.Columns[1].Name = "tenBangLuong";
                     dataGridView1.Columns[2].Name = "donViApDung";

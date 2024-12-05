@@ -20,8 +20,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_BangLuong.Fo
         private string donViApDung;
         private string viTriApDung;
         private IMongoCollection<ChiTietBangLuong> BangLuongTheoThangChiTietCollection;
-
-        // Constructor nhận các tham số
         public BangLuongTheoThangChiTiet(string tg, string tenBangLuong, string donViApDung, string viTriApDung)
         {
             InitializeComponent();
@@ -32,10 +30,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_BangLuong.Fo
             this.donViApDung = donViApDung;
             this.viTriApDung = viTriApDung;
 
-            // Kết nối đến cơ sở dữ liệu MongoDB và lấy dữ liệu chi tiết
             ConnectToDatabase();
-
-            // Hiển thị dữ liệu chi tiết trong DataGridView
             LoadDataIntoDataGridView();
         }
 
@@ -44,16 +39,17 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_BangLuong.Fo
         {
             try
             {
-                var connectionString = "mongodb://192.168.100.124:27017"; // ip ở nhà
+                var connectionString = "mongodb://172.16.1.195:27017/";   //Tân bình ticos
+                //var connectionString = "mongodb://192.168.100.124:27017"; // ip ở nhà
                 //var connectionString = "mongodb://192.168.0.125:27017/";//Nhà phúc 
                 var client = new MongoClient(connectionString);
-                var database = client.GetDatabase("database");
-                BangLuongTheoThangChiTietCollection = database.GetCollection<ChiTietBangLuong>("BangLuongTheoThangChiTiet");
+                var database = client.GetDatabase("cong_ty_dbpt");
+                BangLuongTheoThangChiTietCollection = database.GetCollection<ChiTietBangLuong>("bang_luong_theo_thang_chi_tiet");
 
-                var sampleData = BangLuongTheoThangChiTietCollection;
-                MessageBox.Show(sampleData != null
-                    ? "Kết nối thành công! Đã tìm thấy collection."
-                    : "Không tìm thấy thông tin trong cơ sở dữ liệu.");
+                //var sampleData = BangLuongTheoThangChiTietCollection;
+                //MessageBox.Show(sampleData != null
+                //    ? "Kết nối thành công! Đã tìm thấy collection."
+                //    : "Không tìm thấy thông tin trong cơ sở dữ liệu.");
 
             }
             catch (Exception ex)
@@ -62,19 +58,37 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_BangLuong.Fo
             }
         }
 
-        // Hàm tải dữ liệu chi tiết vào DataGridView
         private void LoadDataIntoDataGridView()
         {
             try
             {
-                var filter = Builders<ChiTietBangLuong>.Filter.Eq("ThoiGian", thoiGian);
+                // Xóa dữ liệu cũ trong DataGridView
+                dataGridView1.Rows.Clear();
+
+                var filter = Builders<ChiTietBangLuong>.Filter.Eq("tt", thoiGian);  // Kiểu dữ liệu thoiGian phải khớp
                 var results = BangLuongTheoThangChiTietCollection.Find(filter).ToList();
+
                 if (results.Count > 0)
                 {
                     // Thêm dữ liệu vào DataGridView
                     foreach (var item in results)
                     {
-                        dataGridView1.Rows.Add(item.ChucDanh, item.HeSoLuong, item.LuongCoBan);
+                        dataGridView1.Rows.Add(
+                            item.ThuTu,
+                            item.HoTen,
+                            item.ChucDanh,
+                            item.LuongCoBan,
+                            item.ThemGio,
+                            item.Cong,
+                            item.BHXH,
+                            item.BHYT,
+                            item.BHTN,
+                            item.TongThuNhap,
+                            item.ThuNhapChiuThue,
+                            item.ThuNhapTinhThue,
+                            item.ThueTNCNKhauTru,
+                            item.SoTienLuongConPhaiTra
+                        );
                     }
                 }
                 else
@@ -87,6 +101,11 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_BangLuong.Fo
                 MessageBox.Show($"Lỗi khi tải dữ liệu vào DataGridView: {ex.Message}");
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     public class ChiTietBangLuong
     {
@@ -94,7 +113,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_BangLuong.Fo
         public ObjectId Id { get; set; }
 
         [BsonElement("tt")]
-        public int ThoiGian { get; set; }  // Thứ tự (1, 2, 3,...)
+        public int ThuTu { get; set; }  // Thứ tự (1, 2, 3,...)
 
         [BsonElement("HoTen")]
         public string HoTen { get; set; }
@@ -102,29 +121,14 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_BangLuong.Fo
         [BsonElement("ChucDanh")]
         public string ChucDanh { get; set; }
 
-        [BsonElement("HeSoLuong")]
-        public double HeSoLuong { get; set; }
-
         [BsonElement("LuongCoBan")]
         public double LuongCoBan { get; set; }
-
-        [BsonElement("PhuCapKhac")]
-        public double PhuCapKhac { get; set; }
-
-        [BsonElement("TienAnGiuaCa")]
-        public double TienAnGiuaCa { get; set; }
 
         [BsonElement("ThemGio")]
         public double ThemGio { get; set; }
 
-        [BsonElement("DongPhuc")]
-        public double DongPhuc { get; set; }
-
         [BsonElement("Cong")]
         public double Cong { get; set; }
-
-        [BsonElement("TamUngKy1")]
-        public double TamUngKy1 { get; set; }
 
         [BsonElement("BHXH")]
         public double BHXH { get; set; }
@@ -135,17 +139,11 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_TienLuong.Form_Con_BangLuong.Fo
         [BsonElement("BHTN")]
         public double BHTN { get; set; }
 
-        [BsonElement("SoNguoiPhuThuoc")]
-        public int SoNguoiPhuThuoc { get; set; }
-
         [BsonElement("TongThuNhap")]
         public double TongThuNhap { get; set; }
 
         [BsonElement("ThuNhapChiuThue")]
         public double ThuNhapChiuThue { get; set; }
-
-        [BsonElement("BHBB")]
-        public double BHBB { get; set; }
 
         [BsonElement("ThuNhapTinhThue")]
         public double ThuNhapTinhThue { get; set; }

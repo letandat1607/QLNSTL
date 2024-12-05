@@ -178,11 +178,15 @@
       <DependentUpon>DanhGia.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess\MongoDataAccess.cs" />
+    <Compile Include="Doituong\BangLuongTheoThang.cs" />
+    <Compile Include="Doituong\BangLuongTheoThangChiTiet.cs" />
     <Compile Include="Doituong\ClassChamCong.cs" />
     <Compile Include="Doituong\Const.cs" />
     <Compile Include="Doituong\DanhSachChamCong.cs" />
     <Compile Include="Doituong\NhanVien.cs" />
     <Compile Include="Doituong\TaiKhoan.cs" />
+    <Compile Include="Doituong\ThanhPhanLuong.cs" />
+    <Compile Include="Doituong\TongQuanTienLuong.cs" />
     <Compile Include="Doituong\UngVien.cs" />
     <Compile Include="Form-Con-ChamCong\BangChamCongCT.cs">
       <SubType>Form</SubType>

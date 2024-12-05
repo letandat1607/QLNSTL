@@ -16,21 +16,22 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
 
         public MongoDataAccess()
         {
-            var client = new MongoClient("mongodb://localhost:27017/");
+            //var client = new MongoClient("mongodb://localhost:27017/"); //của ae
+            //var client = new MongoClient("mongodb://192.168.100.124:27017"); // ip ở nhà
+            //var client = new MongoClient("mongodb://192.168.0.125:27017/");  //Nhà phúc 
+            var client = new MongoClient("mongodb://172.16.1.195:27017/");   //Tân bình ticos
+            //var client = new MongoClient("mongodb://192.168.28.115:27017");  //ip ở csc
+            //var client = new MongoClient("mongodb://192.168.31.195:27017");  //ip trên trường cs1
             var database = client.GetDatabase("cong_ty_dbpt");
             _nhanViencollection = database.GetCollection<BsonDocument>("nhan_vien");
             _chamCongcollection = database.GetCollection<BsonDocument>("cham_cong");
             _taiKhoancollection = database.GetCollection<BsonDocument>("tai_khoan");
+            //_thanhPhanLuongcollection = database.GetCollection<BsonDocument>("thanh_phan_tien_luong");
+            //_bangLuongTheoThangcollection = database.GetCollection<BsonDocument>("bang_luong_theo_thang");
+            //_bangLuongTheoThangChiTietcollection = database.GetCollection<BsonDocument>("bang_luong_theo_thang_chi_tiet");
+            //_tongQuanTienLuongcollection = database.GetCollection<BsonDocument>("tong_quan_tien_luong");
+
         }
-        //public string XuLyDangNhap(string taikhoan, string matkhau)
-        //{
-        //    var taiKhoanData = _taiKhoancollection.Find(tk => tk["ten_tai_khoan"] == taikhoan && tk["mat_khau"] == matkhau).FirstOrDefault();
-        //    if (taiKhoanData == null)
-        //    {
-        //        return "null";
-        //    }
-        //    return taiKhoanData["loai_tai_khoan"].ToString();
-        //}
         public List<TaiKhoan> GetTatCaTaiKhoan()
         {
             var taiKhoanDocs = _taiKhoancollection.Find(FilterDefinition<BsonDocument>.Empty).ToList();
@@ -86,6 +87,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
 
             return danhSachBangChamCong;
         }
+
 
         private DateTime ConvertToVietnamTime(DateTime utcDateTime)
         {
