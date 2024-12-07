@@ -138,6 +138,7 @@
             this.mitDonNghi.Name = "mitDonNghi";
             this.mitDonNghi.Size = new System.Drawing.Size(284, 28);
             this.mitDonNghi.Text = "Đơn xin nghỉ";
+            this.mitDonNghi.Click += new System.EventHandler(this.mitDonNghi_Click);
             // 
             // mitDiMuonVeSom
             // 

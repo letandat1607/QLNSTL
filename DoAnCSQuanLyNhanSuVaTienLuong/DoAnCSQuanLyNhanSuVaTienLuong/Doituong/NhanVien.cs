@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong
 {
-    public class NhanVien
+    public class NhanVien : HopDong
     {
         private string maNhanVien;
         private string hoTen;
@@ -31,9 +32,10 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong
         private string chuyenNganh;
         private string viTriCongViec;
         private string noiLamViec;
+        private int soNgayPhep;
         private string moTa;
 
-        public NhanVien(string maNhanVien, string hoTen, DateTime ngaySinh, string gioiTinh, string soDienThoai, string email, string soHoKhau, string tamTruTamVang, string diaChi, string noiSinh, string queQuan, string tonGiao, string danToc, string soCccd, DateTime ngayCap, string noiCap, DateTime ngayUngTuyen, DateTime ngayChinhThuc, string chucVu, string trinhDo, string chuyenNganh, string viTriCongViec, string noiLamViec, string moTa)
+        public NhanVien(string maNhanVien, string hoTen, DateTime ngaySinh, string gioiTinh, string soDienThoai, string email, string soHoKhau, string tamTruTamVang, string diaChi, string noiSinh, string queQuan, string tonGiao, string danToc, string soCccd, DateTime ngayCap, string noiCap, DateTime ngayUngTuyen, DateTime ngayChinhThuc, string chucVu, string trinhDo, string chuyenNganh, string viTriCongViec, string noiLamViec, int soNgayPhep, string moTa)
         {
             this.maNhanVien = maNhanVien;
             this.hoTen = hoTen;
@@ -58,6 +60,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong
             this.chuyenNganh = chuyenNganh;
             this.viTriCongViec = viTriCongViec;
             this.noiLamViec = noiLamViec;
+            this.soNgayPhep = soNgayPhep;
             this.moTa = moTa;
         }
 
@@ -69,6 +72,11 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong
 
         public NhanVien() { }
 
+        public int SoNgayPhep
+        {
+            get { return soNgayPhep; }
+            set { soNgayPhep = value; }
+        }
         public string MaNhanVien
         {
             get { return maNhanVien; }
