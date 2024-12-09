@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doituong
 {
     public class Const
     {
+        public static ClassChamCong chamCong;
         public static TaiKhoan taiKhoanActive;
     }
 }

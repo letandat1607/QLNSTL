@@ -29,5 +29,11 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             DonXinNghi donXinNghi = new DonXinNghi();
             donXinNghi.ShowDialog();
         }
+
+        private void mitChamCong_Click(object sender, EventArgs e)
+        {
+            ThucHienChamCong chamCong = new ThucHienChamCong();
+            chamCong.ShowDialog();
+        }
     }
 }

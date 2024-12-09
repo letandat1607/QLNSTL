@@ -238,6 +238,12 @@
     <Compile Include="Form-Con-ChamCong\ThemDonXinNghi.Designer.cs">
       <DependentUpon>ThemDonXinNghi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form-Con-ChamCong\ThucHienChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\ThucHienChamCong.Designer.cs">
+      <DependentUpon>ThucHienChamCong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form-Con-TienLuong\BaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -437,6 +443,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form-Con-ChamCong\ThemDonXinNghi.resx">
       <DependentUpon>ThemDonXinNghi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form-Con-ChamCong\ThucHienChamCong.resx">
+      <DependentUpon>ThucHienChamCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form-Con-TienLuong\BangLuong.resx">
       <DependentUpon>BangLuong.cs</DependentUpon>

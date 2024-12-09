@@ -391,3 +391,4 @@ F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaT
 C:\Users\baotr\source\repos\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.BangDuLieuChamCong.resources
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.DonXinNghi.resources
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.PheDuyetDonXinNghi.resources
+F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.ThucHienChamCong.resources
