@@ -25,6 +25,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             dtgvBangDuLieuChamCong.Columns.Clear();
             dtgvBangDuLieuChamCong.Columns.Add("MaNhanVien", "Mã nhân viên");
             dtgvBangDuLieuChamCong.Columns.Add("TenNhanVien", "Tên nhân viên");
+
             var startDate = new DateTime(_duLieuChamCong.ThoiGianBatDau.Year, _duLieuChamCong.ThoiGianBatDau.Month, 1);
             var endDate = startDate.AddMonths(1).AddDays(-1);
 
@@ -33,6 +34,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
                 var columnName = date.ToString("dd/MM");
                 dtgvBangDuLieuChamCong.Columns.Add(columnName, columnName);
             }
+
             dtgvBangDuLieuChamCong.Columns[0].Width = 100;
             dtgvBangDuLieuChamCong.Columns[1].Width = 150; 
             foreach (DataGridViewColumn column in dtgvBangDuLieuChamCong.Columns.Cast<DataGridViewColumn>().Skip(2))
@@ -51,6 +53,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
                 row.CreateCells(dtgvBangDuLieuChamCong);
                 row.Cells[0].Value = group.Key.MaNhanVien;
                 row.Cells[1].Value = group.Key.HoTen;
+
                 foreach (var chamCong in group)
                 {
                     var cot = GetColumnIndexByDate(chamCong.NgayChamCong);
@@ -61,9 +64,14 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
                 }
                 for (int i = 2; i < dtgvBangDuLieuChamCong.Columns.Count; i++)
                 {
-                    if (row.Cells[i].Value == null)
+                    var columnDate = GetThuByColumnIndex(i);
+                    if (columnDate.DayOfWeek == DayOfWeek.Saturday || columnDate.DayOfWeek == DayOfWeek.Sunday)
                     {
-                        row.Cells[i].Value = "Null";
+                        row.Cells[i].Value = "Không làm việc";
+                    }
+                    else if (row.Cells[i].Value == null)
+                    {
+                        row.Cells[i].Value = "Off";
                     }
                 }
                 dtgvBangDuLieuChamCong.Rows.Add(row);
@@ -82,6 +90,10 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             }
             return -1;
         }
-
+        private DateTime GetThuByColumnIndex(int columnIndex)
+        {
+            var columnName = dtgvBangDuLieuChamCong.Columns[columnIndex].HeaderText;
+            return DateTime.ParseExact(columnName, "dd/MM", null);
+        }
     }
 }

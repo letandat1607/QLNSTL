@@ -14,6 +14,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
         private readonly IMongoCollection<BsonDocument> _chamCongcollection;
         private readonly IMongoCollection<BsonDocument> _taiKhoancollection;
         private readonly IMongoCollection<BsonDocument> _donXinNghicollection;
+        private readonly IMongoCollection<BsonDocument> _ngayNghicollection;
         public MongoDataAccess()
         {
             var client = new MongoClient("mongodb://localhost:27017/"); //của ae
@@ -27,6 +28,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
             _chamCongcollection = database.GetCollection<BsonDocument>("cham_cong");
             _taiKhoancollection = database.GetCollection<BsonDocument>("tai_khoan");
             _donXinNghicollection = database.GetCollection<BsonDocument>("don_xin_nghi");
+            _ngayNghicollection = database.GetCollection<BsonDocument>("ngay_nghi");
             //_thanhPhanLuongcollection = database.GetCollection<BsonDocument>("thanh_phan_tien_luong");
             //_bangLuongTheoThangcollection = database.GetCollection<BsonDocument>("bang_luong_theo_thang");
             //_bangLuongTheoThangChiTietcollection = database.GetCollection<BsonDocument>("bang_luong_theo_thang_chi_tiet");
@@ -76,7 +78,35 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
             }).ToList();
             return danhSachDonXinNghi;
         }
+        public void CapNhatVaThemMoiNgayNghi(int soNPConLai, ClassDonXinNghi donXinNghi, string loaiNghi)
+        {
+            var filterDonXinNghi = Builders<BsonDocument>.Filter.Eq("ma_don_xin_nghi", donXinNghi.MaDonXinNghi);
+            var updateDonXinNghi = Builders<BsonDocument>.Update.Set("trang_thai", 1);
+            _donXinNghicollection.UpdateOne(filterDonXinNghi, updateDonXinNghi);
 
+            var filterNhanVien = Builders<BsonDocument>.Filter.Eq("ma_nhan_vien", donXinNghi.MaNhanVien);
+            var updateNhanVien = Builders<BsonDocument>.Update.Set("so_ngay_phep", soNPConLai);
+            _nhanViencollection.UpdateOne(filterNhanVien, updateNhanVien);
+
+            var nhanVienDocument = new BsonDocument
+            {
+                { "ma_nhan_vien", donXinNghi.MaNhanVien },
+                { "ho_ten", donXinNghi.HoTen },
+            };
+            var donXinNghiDocument = new BsonDocument
+            {
+                {"ma_don_xin_nghi", donXinNghi.MaDonXinNghi},
+                {"tu_ngay", donXinNghi.TuNgay},
+                {"den_ngay", donXinNghi.DenNgay},
+            };
+            var ngayNghi = new BsonDocument
+            {
+                {"nhan_vien", nhanVienDocument},
+                {"don_xin_nghi", donXinNghiDocument},
+                {"loai_nghi", loaiNghi}
+            };
+            _ngayNghicollection.InsertOne(ngayNghi);
+        }
         public string TaoMaDonXinNghiMoi()
         {
             var donXinCuoi = _donXinNghicollection
@@ -192,13 +222,11 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
 
             return danhSachBangChamCong;
         }
-
-
         private DateTime ConvertToVietnamTime(DateTime utcDateTime)
         {
             var vietnamTimeZone = TimeZoneInfo.FindSystemTimeZoneById("SE Asia Standard Time");
             return TimeZoneInfo.ConvertTimeFromUtc(utcDateTime, vietnamTimeZone);
         }
-
+        
     }
 }

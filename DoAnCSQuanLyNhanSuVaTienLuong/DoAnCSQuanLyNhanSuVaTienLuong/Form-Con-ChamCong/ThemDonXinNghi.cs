@@ -53,12 +53,12 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
                     MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if(dtpNgayNopDon.Value > dtpTuNgay.Value)
+                if (dtpNgayNopDon.Value > dtpTuNgay.Value)
                 {
                     MessageBox.Show("Ngày nộp đơn không được bé hơn ngày bắt đầu nghỉ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (dtpTuNgay.Value > dtpDenNgay.Value)
+                if (dtpDenNgay.Value <= dtpTuNgay.Value)
                 {
                     MessageBox.Show("Ngày kết thúc nghỉ không thể trước ngày bắt đầu nghỉ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;

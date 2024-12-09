@@ -93,14 +93,14 @@
             // 
             this.tsmiAll.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.tsmiAll.Name = "tsmiAll";
-            this.tsmiAll.Size = new System.Drawing.Size(150, 28);
+            this.tsmiAll.Size = new System.Drawing.Size(150, 27);
             this.tsmiAll.Text = "Tất cả ứng dụng";
             // 
             // tsmiTongQuan
             // 
             this.tsmiTongQuan.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.tsmiTongQuan.Name = "tsmiTongQuan";
-            this.tsmiTongQuan.Size = new System.Drawing.Size(112, 28);
+            this.tsmiTongQuan.Size = new System.Drawing.Size(112, 27);
             this.tsmiTongQuan.Text = "Tổng quan ";
             // 
             // tsmiChamCong
@@ -111,7 +111,7 @@
             this.mitDuLieuChamCong});
             this.tsmiChamCong.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.tsmiChamCong.Name = "tsmiChamCong";
-            this.tsmiChamCong.Size = new System.Drawing.Size(129, 28);
+            this.tsmiChamCong.Size = new System.Drawing.Size(129, 27);
             this.tsmiChamCong.Text = "Chấm công ^";
             // 
             // mitBangChamCongCT
@@ -139,7 +139,7 @@
             this.mitDiMuonVeSom});
             this.tsmiQLDon.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.tsmiQLDon.Name = "tsmiQLDon";
-            this.tsmiQLDon.Size = new System.Drawing.Size(135, 28);
+            this.tsmiQLDon.Size = new System.Drawing.Size(135, 27);
             this.tsmiQLDon.Text = "Quản lý đơn ^";
             // 
             // mitDonNghi
@@ -235,7 +235,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DonXinNghi";
-            this.Text = "Đơn xin nghỉ";
+            this.Text = "7";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

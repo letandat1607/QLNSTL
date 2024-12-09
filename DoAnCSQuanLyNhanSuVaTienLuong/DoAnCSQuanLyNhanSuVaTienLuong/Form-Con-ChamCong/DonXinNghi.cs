@@ -87,7 +87,10 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             {
                 var donXinNghi = danhSachDonXinNghi[e.RowIndex];
                 PheDuyetDonXinNghi pheDuyetDonXinNghi = new PheDuyetDonXinNghi(donXinNghi);
-                pheDuyetDonXinNghi.ShowDialog();
+                if(pheDuyetDonXinNghi.ShowDialog() == DialogResult.OK)
+                {
+                    LoadBangDonXinNghi();
+                }
             }
         }
     }
