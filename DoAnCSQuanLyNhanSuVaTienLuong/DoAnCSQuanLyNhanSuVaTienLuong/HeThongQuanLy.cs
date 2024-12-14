@@ -30,8 +30,10 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
 
         private void btnChamCong_Click(object sender, EventArgs e)
         {
+            this.Hide();
             ChamCong chamCong = new ChamCong();
             chamCong.ShowDialog();
+            this.Close();
         }
         private void btnTienLuong_Click(object sender, EventArgs e)
         {

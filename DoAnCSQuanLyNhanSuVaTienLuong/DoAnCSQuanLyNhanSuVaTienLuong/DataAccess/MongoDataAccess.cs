@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong;
 using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
+using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
 {
@@ -35,7 +36,57 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
             //_tongQuanTienLuongcollection = database.GetCollection<BsonDocument>("tong_quan_tien_luong");
 
         }
+        public List<NgayNghi> GetTatCaNgayNghi()
+        {
+            var ngayNghiDocs = _ngayNghicollection.Find(FilterDefinition<BsonDocument>.Empty).ToList();
+            var danhSachNgayNghi = ngayNghiDocs.Select(x =>
+            {
+                return new NgayNghi
+                {
+                    MaNhanVien = x["nhan_vien"]["ma_nhan_vien"].ToString(),
+                    HoTen = x["nhan_vien"]["ho_ten"].ToString(),
+                    MaDonXinNghi = x["don_xin_nghi"]["ma_don_xin_nghi"].ToString(),
+                    TuNgay = x["don_xin_nghi"]["tu_ngay"].ToUniversalTime(),
+                    DenNgay = x["don_xin_nghi"]["den_ngay"].ToUniversalTime(),
+                    LoaiNghi = x["loai_nghi"].ToString(),
+                };
 
+            })
+                .SelectMany(chiaNgay =>
+                {
+                    // Chia khoảng ngày theo từng tháng
+                    var chiaNgayTheoThang = new List<(DateTime Month, string LoaiNghi, int Days)>();
+                    DateTime ngayBatDau = chiaNgay.TuNgay;
+                    while (ngayBatDau <= chiaNgay.DenNgay)
+                    {
+                        var batDauThang = new DateTime(ngayBatDau.Year, ngayBatDau.Month, 1);
+                        var ketThucThang = batDauThang.AddMonths(1).AddDays(-1);
+                        DateTime ngayKetThuc = (chiaNgay.DenNgay < ketThucThang) ? chiaNgay.DenNgay : ketThucThang;
+                        chiaNgayTheoThang.Add((new DateTime(ngayBatDau.Year, ngayBatDau.Month, 1), chiaNgay.LoaiNghi, (ngayKetThuc - ngayBatDau).Days + 1));
+                        ngayBatDau = ngayKetThuc.AddDays(1);
+                    }
+                    return chiaNgayTheoThang.Select(r => new
+                    {
+                        chiaNgay.MaNhanVien,
+                        chiaNgay.HoTen,
+                        Thang = r.Month,
+                        LoaiNghi = r.LoaiNghi,
+                        Days = r.Days
+                    });
+                })
+                .GroupBy(x => new { x.MaNhanVien, x.HoTen, Thang = x.Thang.ToString("yyyy-MM") })
+                .Select(group => new NgayNghi
+                {
+                    MaNhanVien = group.Key.MaNhanVien,
+                    HoTen = group.Key.HoTen,
+                    Thang = group.Key.Thang,
+                    SoNgayNghi = group.Sum(g => g.Days),
+                    SoNgayNghiPhep = group.Where(g => g.LoaiNghi == "CoPhep").Sum(g => g.Days),
+                    SoNgayKhongPhep = group.Where(g => g.LoaiNghi == "KhongPhep").Sum(g => g.Days)
+                }).ToList();
+
+            return danhSachNgayNghi;
+        }
         public void InsertDonXinNghi(ClassDonXinNghi donXinNghi)
         {
             var nhanVienDocument = new BsonDocument
@@ -228,5 +279,32 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
             return TimeZoneInfo.ConvertTimeFromUtc(utcDateTime, vietnamTimeZone);
         }
         
+        public void InsertChamCong()
+        {
+            var checkIn = DateTime.UtcNow.Date.Add(Const.chamCong.CheckIn); 
+            var checkOut = DateTime.UtcNow.Date.Add(Const.chamCong.CheckOut);
+            var danhSachNhanVien = GetTatCaNhanVien();
+            NhanVien nhanVien;
+            foreach(var nv in danhSachNhanVien)
+            {
+                if(nv.MaNhanVien == Const.taiKhoanActive.TenTaiKhoan)
+                {
+                    nhanVien = nv;
+                    var nhanVienDocument = new BsonDocument
+                    {
+                        {"ma_nhan_vien", nhanVien.MaNhanVien },
+                        {"ho_ten", nhanVien.HoTen }
+                    };
+                    var chamCongDocument = new BsonDocument
+                    {
+                        {"ngay_cham_cong", Const.chamCong.NgayChamCong},
+                        {"check_in", checkIn },
+                        {"check_out", checkOut },
+                        {"nhan_vien", nhanVienDocument }
+                    };
+                    _chamCongcollection.InsertOne(chamCongDocument);
+                }
+            }
+        }
     }
 }

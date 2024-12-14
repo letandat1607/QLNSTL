@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,7 +18,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new HeThongQuanLy());
-            Application.Run(new DangNhap());
+            //Application.Run(new DangNhap());
+            Application.Run(new ThongKeSoNgayNghi());
         }
     }
 }

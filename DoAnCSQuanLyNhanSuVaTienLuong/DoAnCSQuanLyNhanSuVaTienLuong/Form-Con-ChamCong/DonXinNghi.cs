@@ -74,10 +74,13 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            //this.Hide();
             ThemDonXinNghi themDonXinNghi = new ThemDonXinNghi();
-            if (themDonXinNghi.ShowDialog() == DialogResult.OK) 
+            //themDonXinNghi.ShowDialog();
+            //this.Close();
+            if (themDonXinNghi.ShowDialog() == DialogResult.OK)
             {
-                LoadBangDonXinNghi();            
+                LoadBangDonXinNghi();
             }
         }
 

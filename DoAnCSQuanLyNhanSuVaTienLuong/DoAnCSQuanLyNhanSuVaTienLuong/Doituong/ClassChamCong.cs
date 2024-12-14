@@ -11,9 +11,11 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong
         private DateTime ngayChamCong;
         private TimeSpan checkIn;
         private TimeSpan checkOut;
-        public ClassChamCong() { }
-        public ClassChamCong(string maNhanVien, string hoTen, DateTime ngayChamCong, TimeSpan checkIn, TimeSpan checkOut)
-            : base(maNhanVien, hoTen)
+        public ClassChamCong() 
+        {
+            ngayChamCong = DateTime.Now;        
+        }
+        public ClassChamCong(DateTime ngayChamCong, TimeSpan checkIn, TimeSpan checkOut)
         {
             this.ngayChamCong = ngayChamCong;
             this.checkIn = checkIn;

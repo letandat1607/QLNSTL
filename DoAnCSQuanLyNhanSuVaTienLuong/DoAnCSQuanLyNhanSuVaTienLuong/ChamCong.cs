@@ -20,20 +20,26 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
 
         private void mitBangChamCongCT_Click(object sender, EventArgs e)
         {
+            this.Hide();
             BangChamCongCT bangChamCongCT = new BangChamCongCT();
             bangChamCongCT.ShowDialog();
+            this.Close();
         }
 
         private void mitDonNghi_Click(object sender, EventArgs e)
         {
+            this.Hide();
             DonXinNghi donXinNghi = new DonXinNghi();
             donXinNghi.ShowDialog();
+            this.Close();
         }
 
         private void mitChamCong_Click(object sender, EventArgs e)
         {
+            this.Hide();
             ThucHienChamCong chamCong = new ThucHienChamCong();
             chamCong.ShowDialog();
+            this.Close();
         }
     }
 }

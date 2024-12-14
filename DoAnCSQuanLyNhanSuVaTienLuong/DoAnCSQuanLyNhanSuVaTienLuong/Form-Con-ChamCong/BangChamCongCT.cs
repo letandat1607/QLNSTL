@@ -70,5 +70,19 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
                 formDuLieu.ShowDialog();
             }
         }
+
+        private void mitChamCong_Click(object sender, EventArgs e)
+        {
+            ThucHienChamCong chamCong = new ThucHienChamCong();
+            chamCong.ShowDialog();
+        }
+
+        private void mitDonNghi_Click(object sender, EventArgs e)
+        {
+            //this.Hide();    
+            DonXinNghi donXinNghi = new DonXinNghi();
+            donXinNghi.ShowDialog();
+            //this.Close();
+        }
     }
 }

@@ -35,11 +35,9 @@
             this.tsmiTongQuan = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiChamCong = new System.Windows.Forms.ToolStripMenuItem();
             this.mitBangChamCongCT = new System.Windows.Forms.ToolStripMenuItem();
-            this.mitBangChamCongTH = new System.Windows.Forms.ToolStripMenuItem();
-            this.mitDuLieuChamCong = new System.Windows.Forms.ToolStripMenuItem();
+            this.mitChamCong = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiQLDon = new System.Windows.Forms.ToolStripMenuItem();
             this.mitDonNghi = new System.Windows.Forms.ToolStripMenuItem();
-            this.mitDiMuonVeSom = new System.Windows.Forms.ToolStripMenuItem();
             this.lblBangChamCongCT = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dtgvBangChamCongCT = new System.Windows.Forms.DataGridView();
@@ -67,7 +65,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Green;
-            this.panel2.Location = new System.Drawing.Point(317, 32);
+            this.panel2.Location = new System.Drawing.Point(272, 31);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(121, 6);
@@ -106,8 +104,7 @@
             // 
             this.tsmiChamCong.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mitBangChamCongCT,
-            this.mitBangChamCongTH,
-            this.mitDuLieuChamCong});
+            this.mitChamCong});
             this.tsmiChamCong.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.tsmiChamCong.Name = "tsmiChamCong";
             this.tsmiChamCong.Size = new System.Drawing.Size(129, 27);
@@ -116,26 +113,20 @@
             // mitBangChamCongCT
             // 
             this.mitBangChamCongCT.Name = "mitBangChamCongCT";
-            this.mitBangChamCongCT.Size = new System.Drawing.Size(299, 28);
+            this.mitBangChamCongCT.Size = new System.Drawing.Size(280, 28);
             this.mitBangChamCongCT.Text = "Bảng chấm công chi tiết";
             // 
-            // mitBangChamCongTH
+            // mitChamCong
             // 
-            this.mitBangChamCongTH.Name = "mitBangChamCongTH";
-            this.mitBangChamCongTH.Size = new System.Drawing.Size(299, 28);
-            this.mitBangChamCongTH.Text = "Bảng chấm công tổng hợp";
-            // 
-            // mitDuLieuChamCong
-            // 
-            this.mitDuLieuChamCong.Name = "mitDuLieuChamCong";
-            this.mitDuLieuChamCong.Size = new System.Drawing.Size(299, 28);
-            this.mitDuLieuChamCong.Text = "Dữ liệu chấm công";
+            this.mitChamCong.Name = "mitChamCong";
+            this.mitChamCong.Size = new System.Drawing.Size(280, 28);
+            this.mitChamCong.Text = "Chấm công";
+            this.mitChamCong.Click += new System.EventHandler(this.mitChamCong_Click);
             // 
             // tsmiQLDon
             // 
             this.tsmiQLDon.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mitDonNghi,
-            this.mitDiMuonVeSom});
+            this.mitDonNghi});
             this.tsmiQLDon.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.tsmiQLDon.Name = "tsmiQLDon";
             this.tsmiQLDon.Size = new System.Drawing.Size(135, 27);
@@ -144,14 +135,9 @@
             // mitDonNghi
             // 
             this.mitDonNghi.Name = "mitDonNghi";
-            this.mitDonNghi.Size = new System.Drawing.Size(284, 28);
+            this.mitDonNghi.Size = new System.Drawing.Size(224, 28);
             this.mitDonNghi.Text = "Đơn xin nghỉ";
-            // 
-            // mitDiMuonVeSom
-            // 
-            this.mitDiMuonVeSom.Name = "mitDiMuonVeSom";
-            this.mitDiMuonVeSom.Size = new System.Drawing.Size(284, 28);
-            this.mitDiMuonVeSom.Text = "Đăng ký đi sớm về muộn";
+            this.mitDonNghi.Click += new System.EventHandler(this.mitDonNghi_Click);
             // 
             // lblBangChamCongCT
             // 
@@ -239,11 +225,9 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiTongQuan;
         private System.Windows.Forms.ToolStripMenuItem tsmiChamCong;
         private System.Windows.Forms.ToolStripMenuItem mitBangChamCongCT;
-        private System.Windows.Forms.ToolStripMenuItem mitBangChamCongTH;
-        private System.Windows.Forms.ToolStripMenuItem mitDuLieuChamCong;
+        private System.Windows.Forms.ToolStripMenuItem mitChamCong;
         private System.Windows.Forms.ToolStripMenuItem tsmiQLDon;
         private System.Windows.Forms.ToolStripMenuItem mitDonNghi;
-        private System.Windows.Forms.ToolStripMenuItem mitDiMuonVeSom;
         private System.Windows.Forms.Panel panel2;
         #endregion
 

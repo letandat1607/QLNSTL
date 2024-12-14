@@ -41,7 +41,7 @@
             // 
             // btnChamCong
             // 
-            this.btnChamCong.Location = new System.Drawing.Point(436, 225);
+            this.btnChamCong.Location = new System.Drawing.Point(436, 242);
             this.btnChamCong.Name = "btnChamCong";
             this.btnChamCong.Size = new System.Drawing.Size(153, 102);
             this.btnChamCong.TabIndex = 0;
@@ -72,7 +72,7 @@
             // 
             // btnTienLuong
             // 
-            this.btnTienLuong.Location = new System.Drawing.Point(207, 225);
+            this.btnTienLuong.Location = new System.Drawing.Point(207, 242);
             this.btnTienLuong.Margin = new System.Windows.Forms.Padding(2);
             this.btnTienLuong.Name = "btnTienLuong";
             this.btnTienLuong.Size = new System.Drawing.Size(153, 102);

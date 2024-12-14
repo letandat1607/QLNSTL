@@ -185,6 +185,7 @@
     <Compile Include="Doituong\DanhSachChamCong.cs" />
     <Compile Include="Doituong\ClassDonXinNghi.cs" />
     <Compile Include="Doituong\HopDong.cs" />
+    <Compile Include="Doituong\NgayNghi.cs" />
     <Compile Include="Doituong\NhanVien.cs" />
     <Compile Include="Doituong\TaiKhoan.cs" />
     <Compile Include="Doituong\ThanhPhanLuong.cs" />
@@ -201,12 +202,6 @@
     </Compile>
     <Compile Include="Form-Con-ChamCong\BangDuLieuChamCong.Designer.cs">
       <DependentUpon>BangDuLieuChamCong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form-Con-ChamCong\DonDiSomVeMuon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form-Con-ChamCong\DonDiSomVeMuon.Designer.cs">
-      <DependentUpon>DonDiSomVeMuon.cs</DependentUpon>
     </Compile>
     <Compile Include="Form-Con-ChamCong\DonXinNghi.cs">
       <SubType>Form</SubType>
@@ -226,17 +221,17 @@
     <Compile Include="Form-Con-ChamCong\ThemBangChamCongCT.Designer.cs">
       <DependentUpon>ThemBangChamCongCT.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form-Con-ChamCong\ThemDonXinDiSomVeMuon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form-Con-ChamCong\ThemDonXinDiSomVeMuon.Designer.cs">
-      <DependentUpon>ThemDonXinDiSomVeMuon.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form-Con-ChamCong\ThemDonXinNghi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form-Con-ChamCong\ThemDonXinNghi.Designer.cs">
       <DependentUpon>ThemDonXinNghi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\ThongKeSoNgayNghi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\ThongKeSoNgayNghi.Designer.cs">
+      <DependentUpon>ThongKeSoNgayNghi.cs</DependentUpon>
     </Compile>
     <Compile Include="Form-Con-ChamCong\ThucHienChamCong.cs">
       <SubType>Form</SubType>
@@ -429,9 +424,6 @@
     <EmbeddedResource Include="Form-Con-ChamCong\BangDuLieuChamCong.resx">
       <DependentUpon>BangDuLieuChamCong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form-Con-ChamCong\DonDiSomVeMuon.resx">
-      <DependentUpon>DonDiSomVeMuon.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form-Con-ChamCong\DonXinNghi.resx">
       <DependentUpon>DonXinNghi.cs</DependentUpon>
     </EmbeddedResource>
@@ -443,6 +435,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form-Con-ChamCong\ThemDonXinNghi.resx">
       <DependentUpon>ThemDonXinNghi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form-Con-ChamCong\ThongKeSoNgayNghi.resx">
+      <DependentUpon>ThongKeSoNgayNghi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form-Con-ChamCong\ThucHienChamCong.resx">
       <DependentUpon>ThucHienChamCong.cs</DependentUpon>
