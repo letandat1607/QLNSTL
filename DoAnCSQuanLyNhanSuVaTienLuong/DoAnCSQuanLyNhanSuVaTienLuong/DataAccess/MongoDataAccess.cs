@@ -189,7 +189,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
                 return new NhanVien
                 {
                     MaNhanVien = x["ma_nhan_vien"].ToString(),
-                    HoTen = x["ho_ten"].ToString(),
+                    HoTen = x["hop_dong"]["ho_ten"].ToString(),
                     NgaySinh = x["ngay_sinh"].ToUniversalTime(),
                     GioiTinh = x["gioi_tinh"].ToString(),
                     SoDienThoai = x["so_dien_thoai"].ToString(),
@@ -213,7 +213,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
                     SoNgayPhep = x["so_ngay_phep"].ToInt32(),
                     MoTa = x["mo_ta"].ToString(), 
                     MaHopDong = x["hop_dong"]["ma_hop_dong"].ToString(),
-                    ChucVu = x["hop_dong"]["chuc_vu"].ToString()
+                    ChucVu = x["hop_dong"]["chuc_vu"].ToString(),
+                    NgayKy = x["hop_dong"]["ngay_ky"].ToUniversalTime()
                 };
             }).ToList();
             return danhSachNhanVien;
