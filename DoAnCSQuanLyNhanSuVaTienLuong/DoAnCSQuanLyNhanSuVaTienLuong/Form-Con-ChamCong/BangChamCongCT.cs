@@ -84,5 +84,13 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             donXinNghi.ShowDialog();
             //this.Close();
         }
+
+        private void tsmiAll_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
+            heThongQuanLy.ShowDialog();
+            this.Close();
+        }
     }
 }

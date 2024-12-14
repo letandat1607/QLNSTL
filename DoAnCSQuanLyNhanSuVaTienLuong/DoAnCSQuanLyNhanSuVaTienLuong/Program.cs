@@ -19,9 +19,9 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new HeThongQuanLy());
-            //Application.Run(new DangNhap());
+            Application.Run(new DangNhap());
             //Application.Run(new ThongKeSoNgayNghi());
-            Application.Run(new TinhLuong());
+            //Application.Run(new TinhLuong());
         }
     }
 }

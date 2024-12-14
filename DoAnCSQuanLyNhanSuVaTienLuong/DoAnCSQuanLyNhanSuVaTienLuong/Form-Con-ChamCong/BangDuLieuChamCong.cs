@@ -95,5 +95,13 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             var columnName = dtgvBangDuLieuChamCong.Columns[columnIndex].HeaderText;
             return DateTime.ParseExact(columnName, "dd/MM", null);
         }
+
+        private void btnQuayVe_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BangChamCongCT bang = new BangChamCongCT();
+            bang.ShowDialog();
+            this.Close();
+        }
     }
 }

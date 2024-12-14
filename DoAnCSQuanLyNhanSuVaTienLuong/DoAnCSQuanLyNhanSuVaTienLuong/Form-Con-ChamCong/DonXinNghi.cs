@@ -96,5 +96,29 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
                 }
             }
         }
+
+        private void tsmiAll_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
+            heThongQuanLy.ShowDialog();
+            this.Close();
+        }
+
+        private void mitBangChamCongCT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BangChamCongCT bangChamCongCT = new BangChamCongCT();
+            bangChamCongCT.ShowDialog();
+            this.Close();
+        }
+
+        private void mitDuLieuChamCong_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThucHienChamCong chamCong = new ThucHienChamCong();
+            chamCong.ShowDialog();
+            this.Close();
+        }
     }
 }

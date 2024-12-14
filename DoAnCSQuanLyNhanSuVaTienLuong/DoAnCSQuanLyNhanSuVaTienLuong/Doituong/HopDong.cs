@@ -8,91 +8,42 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doituong
 {
     public class HopDong
     {
-        private string maHopDong;
-        private string tenHopDong;
-        private string loaiHopDong;
-        private string hoTen;
-        private DateTime ngayKy;
-        private string thoiHan;
-        private string chucVu;
-        private DateTime ngayBatDauHieuLuc;
-        private DateTime ngayHetHieuLuc;
-        private double luongCoBan;
-        private string ghiChu;
-        public string TinhTrang {  get; set; }
+        public string MaHopDong { get; set; } = "Chưa có";
+        public string TenHopDong { get; set; } = "Chưa có";
+        public string LoaiHopDong { get; set; } = "Chưa có";
+
+        /// 
+
+        //public string MaNhanVien { get; set; }
+        public string HoTen { get; set; } = "Chưa có";
+        public DateTime NgayKy { get; set; } = DateTime.Now;
+        public string ChucVu { get; set; } = "Chưa có";
+
+        /// 
+
+        public string ThoiHan { get; set; } = "Chưa có";
+        public DateTime NgayBatDauHieuLuc { get; set; } = DateTime.Now;
+        public DateTime NgayHetHieuLuc { get; set; } = DateTime.Now;
+        public double LuongCoBan { get; set; } = 0.0;
+        public string GhiChu { get; set; } = "Chưa có";
+        public string TinhTrang { get; set; } = "Chưa có";
 
         public HopDong(string maHopDong, string tenHopDong, string loaiHopDong, string hoTen, DateTime ngayKy, string thoiHan, string chucVu, DateTime ngayBatDauHieuLuc, DateTime ngayHetHieuLuc, double luongCoBan, string ghiChu, string tinhTrang)
         {
-            this.maHopDong = maHopDong;
-            this.tenHopDong = tenHopDong;
-            this.loaiHopDong = loaiHopDong;
-            this.hoTen = hoTen;
-            this.ngayKy = ngayKy;
-            this.thoiHan = thoiHan;
-            this.chucVu = chucVu;
-            this.ngayBatDauHieuLuc = ngayBatDauHieuLuc;
-            this.ngayHetHieuLuc = ngayHetHieuLuc;
-            this.luongCoBan = luongCoBan;
-            this.ghiChu = ghiChu;
+            MaHopDong = maHopDong;
+            TenHopDong = tenHopDong;
+            LoaiHopDong = loaiHopDong;
+            //MaNhanVien = maNhanVien;
+            HoTen = hoTen;
+            NgayKy = ngayKy;
+            ChucVu = chucVu;
+            ThoiHan = thoiHan;
+            NgayBatDauHieuLuc = ngayBatDauHieuLuc;
+            NgayHetHieuLuc = ngayHetHieuLuc;
+            LuongCoBan = luongCoBan;
+            GhiChu = ghiChu;
             TinhTrang = tinhTrang;
         }
         public HopDong() { }
-        public string MaHopDong
-        {
-            get { return this.maHopDong; }
-            set { maHopDong = value; }
-        }
-        public string TenHopDong
-        {
-            get { return this.tenHopDong; }
-            set { tenHopDong = value; }
-        }
-        public string LoaiHopDong
-        {
-            get { return loaiHopDong; }
-            set { loaiHopDong = value; }
-        }
-
-        public DateTime NgayKy
-        {
-            get { return ngayKy; }
-            set { ngayKy = value; }
-        }
-
-        public string HoTen
-        {
-            get { return hoTen; }
-            set { hoTen = value; }
-        } 
-        public string ChucVu 
-        { 
-            get { return chucVu; } 
-            set { chucVu = value; } 
-        }
-        public string ThoiHan
-        {
-            get { return thoiHan; }
-            set { thoiHan = value; }
-        }
-        public DateTime NgayBatDauHieuLuc
-        {
-            get { return ngayBatDauHieuLuc; }
-            set { ngayBatDauHieuLuc = value; }
-        }
-        public DateTime NgayHetHieuLuc
-        {
-            get { return ngayHetHieuLuc; }
-            set { ngayHetHieuLuc = value; }
-        }
-        public double LuongCoBan
-        {
-            get { return luongCoBan; }
-            set { luongCoBan = value; }
-        }
-        public string GhiChu 
-        { 
-            get { return ghiChu; } 
-            set { ghiChu = value; } 
-        }
     }
 }
