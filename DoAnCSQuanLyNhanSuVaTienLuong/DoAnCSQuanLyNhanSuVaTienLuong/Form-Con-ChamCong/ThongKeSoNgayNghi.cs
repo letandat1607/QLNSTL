@@ -35,8 +35,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             dataGridView1.Columns.Add("SoNgayKhongPhep", "số ngày không phép");
             dataGridView1.Columns.Add("Thang", "Tháng");
 
-
-
             foreach (var ngayNghi in _ngayNghiList)
             {
                 dataGridView1.Rows.Add(

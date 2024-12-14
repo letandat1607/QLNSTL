@@ -6,6 +6,7 @@ using System.Linq;
 using DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong;
 using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
 using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong;
+using System.Runtime.InteropServices;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
 {
@@ -16,6 +17,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
         private readonly IMongoCollection<BsonDocument> _taiKhoancollection;
         private readonly IMongoCollection<BsonDocument> _donXinNghicollection;
         private readonly IMongoCollection<BsonDocument> _ngayNghicollection;
+        private readonly IMongoCollection<BsonDocument> _hopDongcollection;
+        private readonly IMongoCollection<BsonDocument> _khenThuongcollection; 
         public MongoDataAccess()
         {
             var client = new MongoClient("mongodb://localhost:27017/"); //của ae
@@ -30,6 +33,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
             _taiKhoancollection = database.GetCollection<BsonDocument>("tai_khoan");
             _donXinNghicollection = database.GetCollection<BsonDocument>("don_xin_nghi");
             _ngayNghicollection = database.GetCollection<BsonDocument>("ngay_nghi");
+            _hopDongcollection = database.GetCollection<BsonDocument>("hop_dong");
+            _khenThuongcollection = database.GetCollection<BsonDocument>("khen_thuong");
             //_thanhPhanLuongcollection = database.GetCollection<BsonDocument>("thanh_phan_tien_luong");
             //_bangLuongTheoThangcollection = database.GetCollection<BsonDocument>("bang_luong_theo_thang");
             //_bangLuongTheoThangChiTietcollection = database.GetCollection<BsonDocument>("bang_luong_theo_thang_chi_tiet");
@@ -214,7 +219,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
                     MoTa = x["mo_ta"].ToString(), 
                     MaHopDong = x["hop_dong"]["ma_hop_dong"].ToString(),
                     ChucVu = x["hop_dong"]["chuc_vu"].ToString(),
-                    NgayKy = x["hop_dong"]["ngay_ky"].ToUniversalTime()
+                    NgayKy = x["hop_dong"]["ngay_ky"].ToUniversalTime(),
+                    LuongCoBan = x["hop_dong"]["luong_co_ban"].ToDouble(),
                 };
             }).ToList();
             return danhSachNhanVien;
@@ -307,5 +313,119 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
                 }
             }
         }
+
+
+        public List<HopDong> GetTatCaHopDong()
+        {
+            var hopDongDocs = _hopDongcollection.Find(FilterDefinition<BsonDocument>.Empty).ToList();
+            var danhSachHopDong = hopDongDocs.Select(HD => new HopDong
+            {
+                MaHopDong = HD["ma_hop_dong"].ToString(),
+                TenHopDong = HD["ten_hop_dong"].ToString(),
+                LoaiHopDong = HD["loai_hop_dong"].ToString(),
+                HoTen = HD["nhan_vien"]["ho_ten"].ToString(),
+                NgayKy = HD["nhan_vien"]["ngay_ky"].ToUniversalTime(),
+                ChucVu = HD["nhan_vien"]["chuc_vu"].ToString(),
+                ThoiHan = HD["thoi_han"].ToString(),
+                NgayBatDauHieuLuc = HD["ngay_bat_dau_hieu_luc"].ToUniversalTime(),
+                NgayHetHieuLuc = HD["ngay_het_hieu_luc"].ToUniversalTime(),
+                LuongCoBan = HD["luong_co_ban"].ToDouble(),
+                GhiChu = HD["ghi_chu"].ToString(),
+                TinhTrang = HD["tinh_trang"].ToString()
+            }).ToList();
+            return danhSachHopDong;
+        }
+
+        public List<KhenThuong> GetTatCaKhenThuong()
+        {
+            var KhenThuongDocs = _khenThuongcollection.Find(FilterDefinition<BsonDocument>.Empty).ToList();
+
+            var DanhSachKhenThuong = KhenThuongDocs.SelectMany(x =>
+            {
+                // Kiểm tra xem "danh_sach_nhan_vien" có phải là một BsonArray
+                if (x.Contains("danh_sach_nhan_vien") && x["danh_sach_nhan_vien"] is BsonArray danhSachNhanVienArray)
+                {
+                    // Duyệt qua từng nhân viên trong danh_sach_nhan_vien
+                    return danhSachNhanVienArray.Select(nv =>
+                    {
+                        return new KhenThuong
+                        {
+                            MaNhanVien = nv["MaNhanVien"].AsString,
+                            TienThuong = nv["TienThuong"].ToDouble()
+                        };
+                    }).ToList();
+                }
+                else
+                {
+                    // Nếu "danh_sach_nhan_vien" không phải là BsonArray, bỏ qua
+                    return new List<KhenThuong>();
+                }
+            }).ToList();
+
+            return DanhSachKhenThuong;
+        }
+        public List<BangLuong> GetBangLuong()
+        {
+
+            // Lấy danh sách hợp đồng, ngày nghỉ và khen thưởng
+            var nhanVienList = GetTatCaNhanVien(); // Danh sách hợp đồng nhân viên
+            var ngayNghiList = GetTatCaNgayNghi(); // Danh sách ngày nghỉ
+            var khenThuongList = GetTatCaKhenThuong(); // Danh sách khen thưởng
+            // Danh sách lương
+            List<BangLuong> bangLuongList = new List<BangLuong>();
+
+            // Lặp qua từng hợp đồng để tạo bảng lương
+            //foreach (var nn in ngayNghiList)
+            //{
+            //    // Lấy thông tin khen thưởng của nhân viên
+            //    //var khenThuong = khenThuongList.FirstOrDefault(kt => kt.MaNhanVien == nhanVien.MaNhanVien);
+            //    //Lấy thông tin ngày nghỉ của nhân viên
+            //    //var ngayNghi = ngayNghiList.Find(nn => nn.MaNhanVien == nhanVien.MaNhanVien);
+            //    var nhanVien = nhanVienList.FirstOrDefault(nv => nv.MaNhanVien == nn.MaNhanVien);
+            //    // Tạo đối tượng BangLuong
+
+            //        if (nhanVien == null)
+            //        {
+            //            var bangLuong = new BangLuong
+            //            {
+            //                MaNhanVien = nhanVien.MaNhanVien,
+            //                HoTen = nhanVien.HoTen,
+            //                ChucVu = nhanVien.ChucVu,
+            //                LuongCoBan = nhanVien.LuongCoBan,
+            //                SoNgayKhongPhep = 0,
+            //                SoNgayNghiPhep = 0,
+            //                Thang = "9",
+            //                TienKhenThuong = 200000, // Giá trị mặc định là 0 nếu không có khen thưởng
+            //                                         //TienKhenThuong = khenThuong?.TienThuong ?? 0, // Giá trị mặc định là 0 nếu không có khen thưởng
+            //                KhauTru = 100000 // Giá trị khấu trừ cố định
+            //            };
+
+            //            // Thêm đối tượng BangLuong vào danh sách
+            //            bangLuongList.Add(bangLuong);
+            //        }
+            //        else
+            //        {
+            //            var bangLuong = new BangLuong
+            //            {
+            //                MaNhanVien = nhanVien.MaNhanVien,
+            //                HoTen = nhanVien.HoTen,
+            //                ChucVu = nhanVien.ChucVu,
+            //                LuongCoBan = nhanVien.LuongCoBan,
+            //                SoNgayKhongPhep = 0,
+            //                SoNgayNghiPhep = 0,
+            //                Thang = "0",
+            //                TienKhenThuong = 200000, // Giá trị mặc định là 0 nếu không có khen thưởng
+            //                                         //TienKhenThuong = khenThuong?.TienThuong ?? 0, // Giá trị mặc định là 0 nếu không có khen thưởng
+            //                KhauTru = 100000 // Giá trị khấu trừ cố định
+            //            };
+
+            //            // Thêm đối tượng BangLuong vào danh sách
+            //            bangLuongList.Add(bangLuong);
+            //        }
+            //}
+            // Trả về danh sách bảng lương
+            return bangLuongList;
+        }
+
     }
 }

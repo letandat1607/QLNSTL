@@ -10,7 +10,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong
     public class NhanVien : HopDong
     {
         private string maNhanVien;
-        private string hoTen;
+        //private string hoTen;
         private DateTime ngaySinh;
         private string gioiTinh;
         private string soDienThoai;
@@ -35,10 +35,10 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong
         private int soNgayPhep;
         private string moTa;
 
-        public NhanVien(string maNhanVien, string hoTen, DateTime ngaySinh, string gioiTinh, string soDienThoai, string email, string soHoKhau, string tamTruTamVang, string diaChi, string noiSinh, string queQuan, string tonGiao, string danToc, string soCccd, DateTime ngayCap, string noiCap, DateTime ngayUngTuyen, DateTime ngayChinhThuc, string chucVu, string trinhDo, string chuyenNganh, string viTriCongViec, string noiLamViec, int soNgayPhep, string moTa)
+        public NhanVien(string maNhanVien, DateTime ngaySinh, string gioiTinh, string soDienThoai, string email, string soHoKhau, string tamTruTamVang, string diaChi, string noiSinh, string queQuan, string tonGiao, string danToc, string soCccd, DateTime ngayCap, string noiCap, DateTime ngayUngTuyen, DateTime ngayChinhThuc, string chucVu, string trinhDo, string chuyenNganh, string viTriCongViec, string noiLamViec, int soNgayPhep, string moTa)
         {
             this.maNhanVien = maNhanVien;
-            this.hoTen = hoTen;
+            //this.hoTen = hoTen;
             this.ngaySinh = ngaySinh;
             this.gioiTinh = gioiTinh;
             this.soDienThoai = soDienThoai;
@@ -67,7 +67,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong
         public NhanVien(string maNhanVien, string hoTen)
         {
             this.maNhanVien = maNhanVien;
-            this.hoTen = hoTen;
+            //this.hoTen = hoTen;
         }
 
         public NhanVien() { }
@@ -83,11 +83,11 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong
             set { maNhanVien = value; }
         }
 
-        public string HoTen
-        {
-            get { return hoTen; }
-            set { hoTen = value; }
-        }
+        //public string HoTen
+        //{
+        //    get { return hoTen; }
+        //    set { hoTen = value; }
+        //}
 
         public DateTime NgaySinh
         {

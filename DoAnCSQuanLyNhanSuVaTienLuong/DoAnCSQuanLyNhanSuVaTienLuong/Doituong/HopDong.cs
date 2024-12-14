@@ -19,8 +19,9 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doituong
         private DateTime ngayHetHieuLuc;
         private double luongCoBan;
         private string ghiChu;
+        public string TinhTrang {  get; set; }
 
-        public HopDong(string maHopDong, string tenHopDong, string loaiHopDong, string hoTen, DateTime ngayKy, string thoiHan, string chucVu, DateTime ngayBatDauHieuLuc, DateTime ngayHetHieuLuc, double luongCoBan, string ghiChu)
+        public HopDong(string maHopDong, string tenHopDong, string loaiHopDong, string hoTen, DateTime ngayKy, string thoiHan, string chucVu, DateTime ngayBatDauHieuLuc, DateTime ngayHetHieuLuc, double luongCoBan, string ghiChu, string tinhTrang)
         {
             this.maHopDong = maHopDong;
             this.tenHopDong = tenHopDong;
@@ -33,6 +34,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doituong
             this.ngayHetHieuLuc = ngayHetHieuLuc;
             this.luongCoBan = luongCoBan;
             this.ghiChu = ghiChu;
+            TinhTrang = tinhTrang;
         }
         public HopDong() { }
         public string MaHopDong

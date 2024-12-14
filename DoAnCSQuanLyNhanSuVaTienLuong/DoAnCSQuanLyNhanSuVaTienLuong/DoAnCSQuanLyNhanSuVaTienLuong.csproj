@@ -178,6 +178,7 @@
       <DependentUpon>DanhGia.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess\MongoDataAccess.cs" />
+    <Compile Include="Doituong\BangLuong.cs" />
     <Compile Include="Doituong\BangLuongTheoThang.cs" />
     <Compile Include="Doituong\BangLuongTheoThangChiTiet.cs" />
     <Compile Include="Doituong\ClassChamCong.cs" />
@@ -185,6 +186,8 @@
     <Compile Include="Doituong\DanhSachChamCong.cs" />
     <Compile Include="Doituong\ClassDonXinNghi.cs" />
     <Compile Include="Doituong\HopDong.cs" />
+    <Compile Include="Doituong\KhauTru.cs" />
+    <Compile Include="Doituong\KhenThuong.cs" />
     <Compile Include="Doituong\NgayNghi.cs" />
     <Compile Include="Doituong\NhanVien.cs" />
     <Compile Include="Doituong\TaiKhoan.cs" />
