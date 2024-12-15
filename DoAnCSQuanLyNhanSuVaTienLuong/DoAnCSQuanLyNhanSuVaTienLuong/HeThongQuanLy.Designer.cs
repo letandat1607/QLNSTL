@@ -37,6 +37,7 @@
             this.btnThueTNCN = new System.Windows.Forms.Button();
             this.btnTuyenDung = new System.Windows.Forms.Button();
             this.btnMucTieu = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnChamCong
@@ -132,11 +133,24 @@
             this.btnMucTieu.Text = "Mục Tiêu ";
             this.btnMucTieu.UseVisualStyleBackColor = true;
             // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDangXuat.Location = new System.Drawing.Point(881, 12);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(164, 39);
+            this.btnDangXuat.TabIndex = 9;
+            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
+            // 
             // HeThongQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1261, 495);
+            this.Controls.Add(this.btnDangXuat);
             this.Controls.Add(this.btnMucTieu);
             this.Controls.Add(this.btnTuyenDung);
             this.Controls.Add(this.btnThueTNCN);
@@ -163,5 +177,6 @@
         private System.Windows.Forms.Button btnThueTNCN;
         private System.Windows.Forms.Button btnTuyenDung;
         private System.Windows.Forms.Button btnMucTieu;
+        private System.Windows.Forms.Button btnDangXuat;
     }
 }

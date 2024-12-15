@@ -25,25 +25,28 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
             this.SideBar = new System.Windows.Forms.Panel();
-            this.btnPhucloi = new System.Windows.Forms.Button();
+            this.btnQuanLyTK = new System.Windows.Forms.Button();
             this.btnSuco = new System.Windows.Forms.Button();
             this.btnKhenthuong = new System.Windows.Forms.Button();
             this.btnNghiviec = new System.Windows.Forms.Button();
             this.btnHopdong = new System.Windows.Forms.Button();
             this.btnHoso = new System.Windows.Forms.Button();
             this.Header = new System.Windows.Forms.Panel();
+            this.picBMenu = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblThongtinnhansu = new System.Windows.Forms.Label();
             this.txtTimkiem = new System.Windows.Forms.TextBox();
             this.All = new System.Windows.Forms.Panel();
             this.chartNamnu = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.dtgvNV = new System.Windows.Forms.DataGridView();
             this.colManv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,21 +57,20 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.colGioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblHoso = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.SideBar.SuspendLayout();
             this.Header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.All.SuspendLayout();
             this.chartNamnu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvNV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvNV)).BeginInit();
             this.SuspendLayout();
             // 
             // SideBar
             // 
             this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.SideBar.Controls.Add(this.btnPhucloi);
+            this.SideBar.Controls.Add(this.btnQuanLyTK);
             this.SideBar.Controls.Add(this.btnSuco);
             this.SideBar.Controls.Add(this.btnKhenthuong);
             this.SideBar.Controls.Add(this.btnNghiviec);
@@ -80,16 +82,16 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.SideBar.Size = new System.Drawing.Size(250, 634);
             this.SideBar.TabIndex = 0;
             // 
-            // btnPhucloi
+            // btnQuanLyTK
             // 
-            this.btnPhucloi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnPhucloi.Location = new System.Drawing.Point(12, 362);
-            this.btnPhucloi.Name = "btnPhucloi";
-            this.btnPhucloi.Size = new System.Drawing.Size(223, 42);
-            this.btnPhucloi.TabIndex = 8;
-            this.btnPhucloi.Text = "Phúc lợi";
-            this.btnPhucloi.UseVisualStyleBackColor = true;
-            this.btnPhucloi.Click += new System.EventHandler(this.btnPhucloi_Click);
+            this.btnQuanLyTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnQuanLyTK.Location = new System.Drawing.Point(12, 362);
+            this.btnQuanLyTK.Name = "btnQuanLyTK";
+            this.btnQuanLyTK.Size = new System.Drawing.Size(223, 42);
+            this.btnQuanLyTK.TabIndex = 8;
+            this.btnQuanLyTK.Text = "Quản lý tài khoản";
+            this.btnQuanLyTK.UseVisualStyleBackColor = true;
+            this.btnQuanLyTK.Click += new System.EventHandler(this.btnPhucloi_Click);
             // 
             // btnSuco
             // 
@@ -155,6 +157,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.White;
+            this.Header.Controls.Add(this.picBMenu);
             this.Header.Controls.Add(this.pictureBox2);
             this.Header.Controls.Add(this.lblThongtinnhansu);
             this.Header.Controls.Add(this.txtTimkiem);
@@ -163,6 +166,17 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.Header.Name = "Header";
             this.Header.Size = new System.Drawing.Size(1375, 60);
             this.Header.TabIndex = 1;
+            // 
+            // picBMenu
+            // 
+            this.picBMenu.Image = global::DoAnCSQuanLyNhanSuVaTienLuong.Properties.Resources.menu;
+            this.picBMenu.Location = new System.Drawing.Point(12, 6);
+            this.picBMenu.Name = "picBMenu";
+            this.picBMenu.Size = new System.Drawing.Size(51, 48);
+            this.picBMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBMenu.TabIndex = 22;
+            this.picBMenu.TabStop = false;
+            this.picBMenu.Click += new System.EventHandler(this.picBMenu_Click);
             // 
             // pictureBox2
             // 
@@ -216,6 +230,43 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.chartNamnu.Name = "chartNamnu";
             this.chartNamnu.Size = new System.Drawing.Size(1125, 634);
             this.chartNamnu.TabIndex = 3;
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(178, 17);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn100;
+            series1.Legend = "Legend1";
+            series1.Name = "Nhân viên";
+            dataPoint1.Label = "Nam";
+            dataPoint2.Label = "Nữ";
+            series1.Points.Add(dataPoint1);
+            series1.Points.Add(dataPoint2);
+            series1.Points.Add(dataPoint3);
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(300, 300);
+            this.chart1.TabIndex = 14;
+            this.chart1.Text = "chart1";
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.Color.Red;
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnXoa.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.btnXoa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnXoa.Location = new System.Drawing.Point(1043, 291);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(69, 34);
+            this.btnXoa.TabIndex = 13;
+            this.btnXoa.Text = "- Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // dtgvNV
             // 
@@ -316,43 +367,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.lblHoso.TabIndex = 4;
             this.lblHoso.Text = "Hồ sơ";
             // 
-            // chart1
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(178, 17);
-            this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn100;
-            series3.Legend = "Legend1";
-            series3.Name = "Nhân viên";
-            dataPoint7.Label = "Nam";
-            dataPoint8.Label = "Nữ";
-            series3.Points.Add(dataPoint7);
-            series3.Points.Add(dataPoint8);
-            series3.Points.Add(dataPoint9);
-            this.chart1.Series.Add(series3);
-            this.chart1.Size = new System.Drawing.Size(300, 300);
-            this.chart1.TabIndex = 14;
-            this.chart1.Text = "chart1";
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.BackColor = System.Drawing.Color.Red;
-            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnXoa.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.btnXoa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnXoa.Location = new System.Drawing.Point(1043, 291);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(69, 34);
-            this.btnXoa.TabIndex = 13;
-            this.btnXoa.Text = "- Xóa";
-            this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
             // ThongTinNhanSuHoso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -367,12 +381,13 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.SideBar.ResumeLayout(false);
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.All.ResumeLayout(false);
             this.chartNamnu.ResumeLayout(false);
             this.chartNamnu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvNV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvNV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -385,7 +400,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
         private Button btnHopdong;
         private Panel chartNamnu;
         private Panel All;
-        private Button btnPhucloi;
+        private Button btnQuanLyTK;
         private Button btnSuco;
         private Button btnKhenthuong;
         private Button btnNghiviec;
@@ -406,6 +421,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
         private DataGridViewTextBoxColumn colEmail;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private Button btnXoa;
+        private PictureBox picBMenu;
 
         /// <summary>
         /// Required method for Designer support - do not modify

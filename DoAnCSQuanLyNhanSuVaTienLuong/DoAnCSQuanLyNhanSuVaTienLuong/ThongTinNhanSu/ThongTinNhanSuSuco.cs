@@ -61,7 +61,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
 
         private void btnPhucloi_Click(object sender, EventArgs e)
         {
-            ThongTinNhanSuPhucloi formPhucloi = new ThongTinNhanSuPhucloi();
+            QuanLyTaiKhoan formPhucloi = new QuanLyTaiKhoan();
             this.Hide();
             formPhucloi.ShowDialog();
             this.Close();
@@ -104,6 +104,14 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
                     suCo.soTienPhat
                 );
             }
+        }
+
+        private void picBMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
+            heThongQuanLy.ShowDialog();
+            this.Close();
         }
     }
 }

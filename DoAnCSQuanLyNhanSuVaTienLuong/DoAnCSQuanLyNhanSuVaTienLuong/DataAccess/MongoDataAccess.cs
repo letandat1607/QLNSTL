@@ -756,7 +756,9 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.DataAccess
                     TenTaiKhoan = x["ten_tai_khoan"].ToString(),
                     MatKhau = x["mat_khau"].ToString(),
                     LoaiTaiKhoan = x["loai_tai_khoan"].ToString(),
-                    TrangThai = x["trang_thai"].ToBoolean()
+                    TrangThai = x["trang_thai"].ToBoolean(),
+                    MaNhanVien = x["nhan_vien"]["ma_nhan_vien"].ToString(),
+                    HoTen = x["nhan_vien"]["ho_ten"].ToString()
                 };
             }).ToList();
             return danhSachTaiKhoan;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.Doituong
 {
-    public class TaiKhoan
+    public class TaiKhoan : NhanVien
     {
         private string tenTaiKhoan;
         private string matKhau;
@@ -18,5 +18,9 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doituong
         public string MatKhau { get { return matKhau; } set { matKhau = value; } }
         public string LoaiTaiKhoan { get {return loaiTaiKhoan; } set { loaiTaiKhoan= value; } }
         public bool TrangThai { get { return trangThai; } set { trangThai = value; } }
+        public TaiKhoan()
+        {
+            TrangThai = false;
+        }
     }
 }

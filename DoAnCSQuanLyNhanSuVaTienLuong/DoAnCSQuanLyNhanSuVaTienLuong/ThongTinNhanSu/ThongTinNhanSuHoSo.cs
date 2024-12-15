@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
 using System.Windows.Forms;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
@@ -21,6 +22,11 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
         {
             InitializeComponent();
             mongo = new MongoDataAccess();
+            btnQuanLyTK.Visible = false;
+            if(Const.taiKhoanActive.LoaiTaiKhoan == "admin")
+            {
+                btnQuanLyTK.Visible = true;
+            }
             Load();
         }
         public void Load()
@@ -134,7 +140,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
 
         private void btnPhucloi_Click(object sender, EventArgs e)
         {
-            ThongTinNhanSuPhucloi formPhucloi = new ThongTinNhanSuPhucloi();
+            QuanLyTaiKhoan formPhucloi = new QuanLyTaiKhoan();
             this.Hide();
             formPhucloi.ShowDialog();
             this.Close();
@@ -164,6 +170,14 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
         {
             
 
+        }
+
+        private void picBMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
+            heThongQuanLy.ShowDialog();
+            this.Close();
         }
     }
 }

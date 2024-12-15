@@ -391,7 +391,6 @@ F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaT
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.ThucHienChamCong.resources
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong.ThongKeSoNgayNghi.resources
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung.Thongtincanhan.resources
-F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung.TuyenDungTintuyendung.resources
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung.TuyenDungUngvien.resources
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\bin\Debug\Guna.UI2.dll
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu.Hosocanhan.resources
@@ -406,6 +405,6 @@ F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaT
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu.ThongTinNhanSuHoso.resources
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu.ThongTinNhanSuKhenthuong.resources
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu.ThongTinNhanSuNghiviec.resources
-F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu.ThongTinNhanSuPhucloi.resources
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu.ThongTinNhanSuSuco.resources
 F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu.DanhSachNhanVienKhenThuong.resources
+F:\Project_Dat\SGU\C#\QLNSTL\DoAnCSQuanLyNhanSuVaTienLuong\DoAnCSQuanLyNhanSuVaTienLuong\obj\Debug\DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu.QuanLyTaiKhoan.resources

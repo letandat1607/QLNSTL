@@ -29,8 +29,20 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
         private void LoadComboBoxNhanVien()
         {
             danhSachNhanVien = _mongoDataAccess.GetTatCaNhanVien();
-            var danhSachHienThi = danhSachNhanVien.Select(x => $"{x.HoTen} ({x.MaNhanVien})").ToList();
-            cbNhanVien.DataSource = danhSachHienThi;
+            if(Const.taiKhoanActive.LoaiTaiKhoan == "quanlys" || Const.taiKhoanActive.LoaiTaiKhoan == "admin")
+            {
+                var danhSachHienThi = danhSachNhanVien.Select(x => $"{x.HoTen} ({x.MaNhanVien})").ToList();
+                cbNhanVien.DataSource = danhSachHienThi;
+            }
+            else
+            {
+                var danhSachHienThi = danhSachNhanVien
+                                    .Where(x => $"{x.HoTen} ({x.MaNhanVien})" == $"{Const.taiKhoanActive.HoTen} ({Const.taiKhoanActive.MaNhanVien})")
+                                    .Select(x => $"{x.HoTen} ({x.MaNhanVien})")
+                                    .ToList();
+                cbNhanVien.DataSource = danhSachHienThi;
+            }
+            
             cbNhanVien.SelectedIndex = -1;
         }
         private void button1_Click(object sender, EventArgs e)
@@ -89,8 +101,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             else
             {
                 var selectedText = cbNhanVien.SelectedItem.ToString();
-                var nhanVien = danhSachNhanVien.FirstOrDefault(
-                    nv => $"{nv.HoTen} ({nv.MaNhanVien})" == selectedText);
+                var nhanVien = danhSachNhanVien.FirstOrDefault(nv => $"{nv.HoTen} ({nv.MaNhanVien})" == selectedText);
                 if (nhanVien != null)
                 {
                     txtNPDuocSuDung.Text = nhanVien.SoNgayPhep.ToString();

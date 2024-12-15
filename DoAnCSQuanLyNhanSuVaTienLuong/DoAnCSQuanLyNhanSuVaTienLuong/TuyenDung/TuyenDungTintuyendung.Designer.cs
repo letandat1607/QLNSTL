@@ -36,6 +36,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
             this.Header = new System.Windows.Forms.Panel();
             this.lblTuyendung = new System.Windows.Forms.Label();
             this.txtTimkiem = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnThemmoithongtintuyendung = new System.Windows.Forms.Button();
             this.Main = new System.Windows.Forms.Panel();
             this.btnSua = new System.Windows.Forms.Button();
@@ -49,13 +50,14 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
             this.colLienhe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblTittle = new System.Windows.Forms.Label();
             this.All = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picBMenu = new System.Windows.Forms.PictureBox();
             this.SideBar.SuspendLayout();
             this.Header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgtuyendung)).BeginInit();
             this.All.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // SideBar
@@ -97,6 +99,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.White;
+            this.Header.Controls.Add(this.picBMenu);
             this.Header.Controls.Add(this.lblTuyendung);
             this.Header.Controls.Add(this.txtTimkiem);
             this.Header.Controls.Add(this.pictureBox1);
@@ -125,6 +128,17 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.Size = new System.Drawing.Size(280, 32);
             this.txtTimkiem.TabIndex = 13;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::DoAnCSQuanLyNhanSuVaTienLuong.Properties.Resources._1200x630wa_removebg_preview;
+            this.pictureBox1.Image = global::DoAnCSQuanLyNhanSuVaTienLuong.Properties.Resources._1200x630wa_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(22, -3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(112, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // btnThemmoithongtintuyendung
             // 
@@ -187,8 +201,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
             // 
             // dtgtuyendung
             // 
-            this.dtgtuyendung.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dtgtuyendung.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgtuyendung.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dtgtuyendung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -278,16 +292,16 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
             this.All.Size = new System.Drawing.Size(1375, 685);
             this.All.TabIndex = 2;
             // 
-            // pictureBox1
+            // picBMenu
             // 
-            this.pictureBox1.BackgroundImage = global::DoAnCSQuanLyNhanSuVaTienLuong.Properties.Resources._1200x630wa_removebg_preview;
-            this.pictureBox1.Image = global::DoAnCSQuanLyNhanSuVaTienLuong.Properties.Resources._1200x630wa_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(22, -3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(112, 57);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.picBMenu.Image = global::DoAnCSQuanLyNhanSuVaTienLuong.Properties.Resources.menu;
+            this.picBMenu.Location = new System.Drawing.Point(3, 3);
+            this.picBMenu.Name = "picBMenu";
+            this.picBMenu.Size = new System.Drawing.Size(51, 48);
+            this.picBMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBMenu.TabIndex = 23;
+            this.picBMenu.TabStop = false;
+            this.picBMenu.Click += new System.EventHandler(this.picBMenu_Click);
             // 
             // TuyenDungTintuyendung
             // 
@@ -303,11 +317,12 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
             this.SideBar.ResumeLayout(false);
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Main.ResumeLayout(false);
             this.Main.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgtuyendung)).EndInit();
             this.All.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBMenu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -334,5 +349,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
         private DataGridViewTextBoxColumn c;
         private DataGridViewTextBoxColumn colThoigianketthuc;
         private DataGridViewTextBoxColumn colLienhe;
+        private PictureBox picBMenu;
     }
 }

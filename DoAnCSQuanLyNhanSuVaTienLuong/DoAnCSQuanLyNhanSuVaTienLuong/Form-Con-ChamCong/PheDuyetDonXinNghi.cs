@@ -26,6 +26,11 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             _mongoDataAccess = new MongoDataAccess();
             duLieuDonXinNghi = donXinNghi;
             LoadDonXinNghi();
+            btnPheDuyet.Enabled = false;
+            if(Const.taiKhoanActive.LoaiTaiKhoan == "quanlyns" || Const.taiKhoanActive.LoaiTaiKhoan == "admin")
+            {
+                btnPheDuyet.Enabled = true;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

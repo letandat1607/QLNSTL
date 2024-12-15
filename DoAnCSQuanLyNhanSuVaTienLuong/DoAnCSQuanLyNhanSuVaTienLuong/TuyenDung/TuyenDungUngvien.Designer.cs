@@ -54,12 +54,14 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
             this.lblUngvien = new System.Windows.Forms.Label();
             this.btnThemmoi = new System.Windows.Forms.Button();
             this.All = new System.Windows.Forms.Panel();
+            this.picBMenu = new System.Windows.Forms.PictureBox();
             this.SideBar.SuspendLayout();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvUngvien)).BeginInit();
             this.All.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // SideBar
@@ -101,6 +103,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.White;
+            this.Header.Controls.Add(this.picBMenu);
             this.Header.Controls.Add(this.lblTuyendung);
             this.Header.Controls.Add(this.txtTimkiem);
             this.Header.Controls.Add(this.pictureBox1);
@@ -331,6 +334,17 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
             this.All.Size = new System.Drawing.Size(1375, 685);
             this.All.TabIndex = 2;
             // 
+            // picBMenu
+            // 
+            this.picBMenu.Image = global::DoAnCSQuanLyNhanSuVaTienLuong.Properties.Resources.menu;
+            this.picBMenu.Location = new System.Drawing.Point(3, 6);
+            this.picBMenu.Name = "picBMenu";
+            this.picBMenu.Size = new System.Drawing.Size(51, 48);
+            this.picBMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBMenu.TabIndex = 23;
+            this.picBMenu.TabStop = false;
+            this.picBMenu.Click += new System.EventHandler(this.picBMenu_Click);
+            // 
             // TuyenDungUngvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -350,6 +364,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
             this.Main.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvUngvien)).EndInit();
             this.All.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBMenu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -380,5 +395,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
         private DataGridViewTextBoxColumn Trinhdo;
         private DataGridViewTextBoxColumn Chuyennganh;
         private DataGridViewTextBoxColumn Tinhtrang;
+        private PictureBox picBMenu;
     }
 }
