@@ -121,13 +121,5 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
                 MessageBox.Show("Hủy bỏ thao tác xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
-        private void picBMenu_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
-            heThongQuanLy.ShowDialog();
-            this.Close();
-        }
     }
 }

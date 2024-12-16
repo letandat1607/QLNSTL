@@ -2,7 +2,7 @@
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
 {
-    partial class QuanLyTaiKhoan
+    partial class ThongTinNhanSuPhucloi
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
         private void InitializeComponent()
         {
             this.SideBar = new System.Windows.Forms.Panel();
-            this.btnQuanLyTk = new System.Windows.Forms.Button();
+            this.btnPhucloi = new System.Windows.Forms.Button();
             this.btnSuco = new System.Windows.Forms.Button();
             this.btnKhenthuong = new System.Windows.Forms.Button();
             this.btnNghiviec = new System.Windows.Forms.Button();
@@ -48,11 +48,17 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.colManhanvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colVitricongviec = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNgaylamviec = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPhucloi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colHinhthuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNguoiduyet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.All = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picBMenu = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.SideBar.SuspendLayout();
             this.Header.SuspendLayout();
@@ -62,14 +68,13 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.All.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // SideBar
             // 
             this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.SideBar.Controls.Add(this.btnQuanLyTk);
+            this.SideBar.Controls.Add(this.btnPhucloi);
             this.SideBar.Controls.Add(this.btnSuco);
             this.SideBar.Controls.Add(this.btnKhenthuong);
             this.SideBar.Controls.Add(this.btnNghiviec);
@@ -81,19 +86,19 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.SideBar.Size = new System.Drawing.Size(250, 634);
             this.SideBar.TabIndex = 0;
             // 
-            // btnQuanLyTk
+            // btnPhucloi
             // 
-            this.btnQuanLyTk.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnQuanLyTk.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnQuanLyTk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnQuanLyTk.ForeColor = System.Drawing.Color.White;
-            this.btnQuanLyTk.Location = new System.Drawing.Point(12, 362);
-            this.btnQuanLyTk.Name = "btnQuanLyTk";
-            this.btnQuanLyTk.Size = new System.Drawing.Size(223, 42);
-            this.btnQuanLyTk.TabIndex = 8;
-            this.btnQuanLyTk.Text = "Quản lý tài khoản";
-            this.btnQuanLyTk.UseVisualStyleBackColor = false;
-            this.btnQuanLyTk.Click += new System.EventHandler(this.btnPhucloi_Click);
+            this.btnPhucloi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnPhucloi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPhucloi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnPhucloi.ForeColor = System.Drawing.Color.White;
+            this.btnPhucloi.Location = new System.Drawing.Point(12, 362);
+            this.btnPhucloi.Name = "btnPhucloi";
+            this.btnPhucloi.Size = new System.Drawing.Size(223, 42);
+            this.btnPhucloi.TabIndex = 8;
+            this.btnPhucloi.Text = "Phúc lợi";
+            this.btnPhucloi.UseVisualStyleBackColor = false;
+            this.btnPhucloi.Click += new System.EventHandler(this.btnPhucloi_Click);
             // 
             // btnSuco
             // 
@@ -167,7 +172,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.White;
-            this.Header.Controls.Add(this.picBMenu);
             this.Header.Controls.Add(this.pictureBox2);
             this.Header.Controls.Add(this.lblThongtinnhansu);
             this.Header.Controls.Add(this.txtTimkiem);
@@ -245,9 +249,9 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.lblPhucloicnhanvien.ForeColor = System.Drawing.Color.Olive;
             this.lblPhucloicnhanvien.Location = new System.Drawing.Point(81, 8);
             this.lblPhucloicnhanvien.Name = "lblPhucloicnhanvien";
-            this.lblPhucloicnhanvien.Size = new System.Drawing.Size(201, 24);
+            this.lblPhucloicnhanvien.Size = new System.Drawing.Size(186, 24);
             this.lblPhucloicnhanvien.TabIndex = 0;
-            this.lblPhucloicnhanvien.Text = "Tải khoản nhân viên";
+            this.lblPhucloicnhanvien.Text = "Phúc lợi nhân viên";
             // 
             // lblPhucloi
             // 
@@ -255,9 +259,9 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.lblPhucloi.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.lblPhucloi.Location = new System.Drawing.Point(24, 17);
             this.lblPhucloi.Name = "lblPhucloi";
-            this.lblPhucloi.Size = new System.Drawing.Size(102, 22);
+            this.lblPhucloi.Size = new System.Drawing.Size(87, 22);
             this.lblPhucloi.TabIndex = 18;
-            this.lblPhucloi.Text = "Tài khoản";
+            this.lblPhucloi.Text = "Phúc lợi";
             // 
             // btnSua
             // 
@@ -294,12 +298,76 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colManhanvien,
+            this.colTen,
+            this.colVitricongviec,
+            this.colNgaylamviec,
+            this.colPhucloi,
+            this.colHinhthuc,
+            this.colNguoiduyet});
             this.dataGridView1.Location = new System.Drawing.Point(28, 165);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1085, 457);
             this.dataGridView1.TabIndex = 6;
+            // 
+            // colManhanvien
+            // 
+            this.colManhanvien.HeaderText = "Mã nhân viên";
+            this.colManhanvien.MinimumWidth = 6;
+            this.colManhanvien.Name = "colManhanvien";
+            this.colManhanvien.ReadOnly = true;
+            this.colManhanvien.Width = 99;
+            // 
+            // colTen
+            // 
+            this.colTen.HeaderText = "Họ và tên";
+            this.colTen.MinimumWidth = 6;
+            this.colTen.Name = "colTen";
+            this.colTen.ReadOnly = true;
+            this.colTen.Width = 135;
+            // 
+            // colVitricongviec
+            // 
+            this.colVitricongviec.HeaderText = "Vị trí";
+            this.colVitricongviec.MinimumWidth = 6;
+            this.colVitricongviec.Name = "colVitricongviec";
+            this.colVitricongviec.ReadOnly = true;
+            this.colVitricongviec.Width = 99;
+            // 
+            // colNgaylamviec
+            // 
+            this.colNgaylamviec.HeaderText = "Ngày làm việc";
+            this.colNgaylamviec.MinimumWidth = 6;
+            this.colNgaylamviec.Name = "colNgaylamviec";
+            this.colNgaylamviec.ReadOnly = true;
+            this.colNgaylamviec.Width = 120;
+            // 
+            // colPhucloi
+            // 
+            this.colPhucloi.HeaderText = "Phúc lợi";
+            this.colPhucloi.MinimumWidth = 6;
+            this.colPhucloi.Name = "colPhucloi";
+            this.colPhucloi.ReadOnly = true;
+            this.colPhucloi.Width = 125;
+            // 
+            // colHinhthuc
+            // 
+            this.colHinhthuc.HeaderText = "Hình thức";
+            this.colHinhthuc.MinimumWidth = 6;
+            this.colHinhthuc.Name = "colHinhthuc";
+            this.colHinhthuc.ReadOnly = true;
+            this.colHinhthuc.Width = 99;
+            // 
+            // colNguoiduyet
+            // 
+            this.colNguoiduyet.HeaderText = "Người duyệt";
+            this.colNguoiduyet.MinimumWidth = 6;
+            this.colNguoiduyet.Name = "colNguoiduyet";
+            this.colNguoiduyet.ReadOnly = true;
+            this.colNguoiduyet.Width = 125;
             // 
             // comboBox1
             // 
@@ -347,17 +415,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
-            // picBMenu
-            // 
-            this.picBMenu.Image = global::DoAnCSQuanLyNhanSuVaTienLuong.Properties.Resources.menu;
-            this.picBMenu.Location = new System.Drawing.Point(13, 6);
-            this.picBMenu.Name = "picBMenu";
-            this.picBMenu.Size = new System.Drawing.Size(51, 48);
-            this.picBMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBMenu.TabIndex = 21;
-            this.picBMenu.TabStop = false;
-            this.picBMenu.Click += new System.EventHandler(this.picBMenu_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DoAnCSQuanLyNhanSuVaTienLuong.Properties.Resources.nhansu;
@@ -368,7 +425,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.pictureBox2.TabIndex = 20;
             this.pictureBox2.TabStop = false;
             // 
-            // QuanLyTaiKhoan
+            // ThongTinNhanSuPhucloi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -376,7 +433,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.Controls.Add(this.All);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "QuanLyTaiKhoan";
+            this.Name = "ThongTinNhanSuPhucloi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThongTinNhanSuPhucloi";
             this.SideBar.ResumeLayout(false);
@@ -390,7 +447,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.All.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -411,7 +467,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
         private Panel All;
         private Button btnSua;
         private Button btnXoa;
-        private Button btnQuanLyTk;
+        private Button btnPhucloi;
         private Button btnSuco;
         private Button btnKhenthuong;
         private Button btnNghiviec;
@@ -421,6 +477,12 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private PictureBox picBMenu;
+        private DataGridViewTextBoxColumn colManhanvien;
+        private DataGridViewTextBoxColumn colTen;
+        private DataGridViewTextBoxColumn colVitricongviec;
+        private DataGridViewTextBoxColumn colNgaylamviec;
+        private DataGridViewTextBoxColumn colPhucloi;
+        private DataGridViewTextBoxColumn colHinhthuc;
+        private DataGridViewTextBoxColumn colNguoiduyet;
     }
 }

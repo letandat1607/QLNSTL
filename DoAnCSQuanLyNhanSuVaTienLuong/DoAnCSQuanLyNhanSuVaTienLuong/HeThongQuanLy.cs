@@ -11,7 +11,6 @@ using DoAnCSQuanLyNhanSuVaTienLuong.DataAccess;
 using DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung;
 using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
 using DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu;
-using DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong;
 
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong
@@ -21,22 +20,30 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         public HeThongQuanLy()
         {
             InitializeComponent();
-            //btnChamCong.Enabled = false;
+            btnChamCong.Enabled = false;
             btnTienLuong.Enabled = false;
             btnTuyenDung.Enabled = false;
+<<<<<<< HEAD
             //btnBHXH.Enabled = false;
             //btnDanhGia.Enabled = false;
             //btnMucTieu.Enabled = false;
             //btnThongTinNhanSu.Enabled = false;
             //btnThueTNCN.Enabled = false;
+=======
+            btnBHXH.Enabled = false;
+            btnDanhGia.Enabled = false;
+            btnMucTieu.Enabled = false;
+            btnThongTinNhanSu.Enabled = false;
+            btnThueTNCN.Enabled = false;
+>>>>>>> parent of e3d248a (up20)
             loadFormHeThongQuanLy();
         }
 
         private void btnChamCong_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ThucHienChamCong thucHienChamCong = new ThucHienChamCong();
-            thucHienChamCong.ShowDialog();
+            ChamCong chamCong = new ChamCong();
+            chamCong.ShowDialog();
             this.Close();
         }
         private void btnTienLuong_Click(object sender, EventArgs e)
@@ -48,20 +55,10 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if(Const.taiKhoanActive.LoaiTaiKhoan == "quanlyns" || Const.taiKhoanActive.LoaiTaiKhoan == "admin")
-            {
-                this.Hide();
-                ThongTinNhanSuHoso thongTinNhanSuHoSo = new ThongTinNhanSuHoso();
-                thongTinNhanSuHoSo.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                this.Hide();
-                Hosocanhan hosocanhan = new Hosocanhan(Const.taiKhoanActive.MaNhanVien);
-                hosocanhan.ShowDialog();
-                this.Close();
-            }
+            this.Hide();
+            ThongTinNhanSuHoso thongTinNhanSuHoSo = new ThongTinNhanSuHoso();
+            thongTinNhanSuHoSo.ShowDialog();
+            this.Close();
         }
         public void loadFormHeThongQuanLy()
         {
@@ -78,7 +75,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             }
             else if (Const.taiKhoanActive.LoaiTaiKhoan == "quanlyns")
             {
-                    //btnChamCong.Enabled = true;
+                    btnChamCong.Enabled = true;
                     btnTienLuong.Enabled = true;
                     //btnBHXH.Enabled = true;
                     //btnDanhGia.Enabled = true;
@@ -88,7 +85,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             }
             else if (Const.taiKhoanActive.LoaiTaiKhoan == "hr")
             {
-                //btnChamCong.Enabled = true;
+                btnChamCong.Enabled = true;
                 btnTienLuong.Enabled = true;
                 //btnBHXH.Enabled = true;
                 //btnThueTNCN.Enabled = true;
@@ -96,7 +93,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             }
             else
             {
-                //btnChamCong.Enabled = true;
+                btnChamCong.Enabled = true;
                 btnTienLuong.Enabled = true;
                 //btnBHXH.Enabled = true;
                 //btnThueTNCN.Enabled = true;
@@ -110,14 +107,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             TuyenDungTintuyendung tuyenDungTintuyendung = new TuyenDungTintuyendung();
             tuyenDungTintuyendung.ShowDialog();
 
-        }
-
-        private void btnDangXuat_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            DangNhap dangNhap = new DangNhap();
-            dangNhap.ShowDialog();
-            this.Close();
         }
     }
 }

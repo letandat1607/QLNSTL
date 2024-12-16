@@ -207,11 +207,23 @@
     <Compile Include="Doituong\TongQuanTienLuong.cs" />
     <Compile Include="Doituong\Tuyendung.cs" />
     <Compile Include="Doituong\Ungvien.cs" />
+    <Compile Include="Form-Con-ChamCong\BangChamCongCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\BangChamCongCT.Designer.cs">
+      <DependentUpon>BangChamCongCT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form-Con-ChamCong\BangDuLieuChamCong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form-Con-ChamCong\BangDuLieuChamCong.Designer.cs">
       <DependentUpon>BangDuLieuChamCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\DonXinNghi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form-Con-ChamCong\DonXinNghi.Designer.cs">
+      <DependentUpon>DonXinNghi.cs</DependentUpon>
     </Compile>
     <Compile Include="Form-Con-ChamCong\PheDuyetDonXinNghi.cs">
       <SubType>Form</SubType>
@@ -236,18 +248,6 @@
     </Compile>
     <Compile Include="Form-Con-ChamCong\ThongKeSoNgayNghi.Designer.cs">
       <DependentUpon>ThongKeSoNgayNghi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form-Con-ChamCong\BangChamCongCT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form-Con-ChamCong\BangChamCongCT.Designer.cs">
-      <DependentUpon>BangChamCongCT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form-Con-ChamCong\DonXinNghi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form-Con-ChamCong\DonXinNghi.Designer.cs">
-      <DependentUpon>DonXinNghi.cs</DependentUpon>
     </Compile>
     <Compile Include="Form-Con-ChamCong\ThucHienChamCong.cs">
       <SubType>Form</SubType>
@@ -482,11 +482,11 @@
     <Compile Include="ThongTinNhanSu\ThongTinNhanSuNghiviec.Designer.cs">
       <DependentUpon>ThongTinNhanSuNghiviec.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongTinNhanSu\QuanLyTaiKhoan.cs">
+    <Compile Include="ThongTinNhanSu\ThongTinNhanSuPhucloi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThongTinNhanSu\QuanLyTaiKhoan.Designer.cs">
-      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    <Compile Include="ThongTinNhanSu\ThongTinNhanSuPhucloi.Designer.cs">
+      <DependentUpon>ThongTinNhanSuPhucloi.cs</DependentUpon>
     </Compile>
     <Compile Include="ThongTinNhanSu\ThongTinNhanSuSuco.cs">
       <SubType>Form</SubType>
@@ -649,8 +649,8 @@
     <EmbeddedResource Include="ThongTinNhanSu\ThongTinNhanSuNghiviec.resx">
       <DependentUpon>ThongTinNhanSuNghiviec.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThongTinNhanSu\QuanLyTaiKhoan.resx">
-      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    <EmbeddedResource Include="ThongTinNhanSu\ThongTinNhanSuPhucloi.resx">
+      <DependentUpon>ThongTinNhanSuPhucloi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinNhanSu\ThongTinNhanSuSuco.resx">
       <DependentUpon>ThongTinNhanSuSuco.cs</DependentUpon>
@@ -665,6 +665,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TuyenDung\Thongtincanhan.resx">
       <DependentUpon>Thongtincanhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TuyenDung\TuyenDungTintuyendung.resx">
+      <DependentUpon>TuyenDungTintuyendung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TuyenDung\TuyenDungUngvien.resx">
       <DependentUpon>TuyenDungUngvien.cs</DependentUpon>
@@ -702,7 +705,6 @@
     <None Include="Hinh\tl.png" />
     <None Include="Hinh\ns.png" />
     <Content Include="mongocrypt.dll" />
-    <None Include="ThongTinNhanSu\Hinh\menu.jpg" />
     <None Include="ThongTinNhanSu\Hinh\Suco.png" />
     <None Include="ThongTinNhanSu\Hinh\Succoden.png" />
     <None Include="ThongTinNhanSu\Hinh\phucloithantai-removebg-preview.png" />

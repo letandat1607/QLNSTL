@@ -7,7 +7,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
 using System.Windows.Forms;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
@@ -28,20 +27,10 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            if(Const.taiKhoanActive.LoaiTaiKhoan == "quanlyns" || Const.taiKhoanActive.LoaiTaiKhoan == "admin")
-            {
-                ThongTinNhanSuHoso formHoso = new ThongTinNhanSuHoso();
-                this.Hide();
-                formHoso.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                this.Hide();
-                HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
-                heThongQuanLy.ShowDialog();
-                this.Close();
-            }
+            ThongTinNhanSuHoso formHoso = new ThongTinNhanSuHoso();
+            this.Hide();
+            formHoso.ShowDialog();
+            this.Close();
         }
         public void Load()
         {

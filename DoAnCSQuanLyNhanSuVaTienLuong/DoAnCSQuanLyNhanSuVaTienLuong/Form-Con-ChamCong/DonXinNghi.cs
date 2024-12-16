@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DoAnCSQuanLyNhanSuVaTienLuong.DataAccess;
+using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,13 +9,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DoAnCSQuanLyNhanSuVaTienLuong.DataAccess;
-using DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong;
-using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
 {
-    partial class DonXinNghi : Form
+    public partial class DonXinNghi : Form
     {
         private MongoDataAccess _dataAccess;
         private List<ClassDonXinNghi> danhSachDonXinNghi;
@@ -21,13 +20,9 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
         {
             InitializeComponent();
             _dataAccess = new MongoDataAccess();
-            btnBangChamCongCT.Visible = false;
-            if(Const.taiKhoanActive.LoaiTaiKhoan == "quanlyns" || Const.taiKhoanActive.LoaiTaiKhoan == "admin")
-            {
-                btnBangChamCongCT.Visible = true;
-            }
             LoadBangDonXinNghi();
         }
+
         private void LoadBangDonXinNghi()
         {
             danhSachDonXinNghi = _dataAccess.GetTatCaDonXinNghi();
@@ -56,7 +51,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
 
             foreach (var donNghi in danhSachDonXinNghi)
             {
-                if (donNghi.TrangThai == 1)
+                if(donNghi.TrangThai == 1)
                 {
                     trangThai = "Đã phê duyệt";
                 }
@@ -64,9 +59,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
                 {
                     trangThai = "Chưa phê duyệt";
                 }
-                if(Const.taiKhoanActive.LoaiTaiKhoan == "quanlyns" || Const.taiKhoanActive.LoaiTaiKhoan == "admin")
-                {
-                    dtgvBangDonXinNghi.Rows.Add(
+                dtgvBangDonXinNghi.Rows.Add(
                         donNghi.MaDonXinNghi,
                         donNghi.MaNhanVien,
                         donNghi.HoTen,
@@ -77,77 +70,11 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
                         donNghi.LoaiNghi,
                         trangThai
                     );
-                }
-                else
-                {
-                    if(donNghi.MaNhanVien == Const.taiKhoanActive.MaNhanVien)
-                    {
-                        dtgvBangDonXinNghi.Rows.Add(
-                        donNghi.MaDonXinNghi,
-                        donNghi.MaNhanVien,
-                        donNghi.HoTen,
-                        donNghi.ViTriCongViec,
-                        donNghi.NgayNopDon.ToString("yyyy-MM-dd"),
-                        donNghi.TuNgay.ToString("yyyy-MM-dd"),
-                        donNghi.DenNgay.ToString("yyyy-MM-dd"),
-                        donNghi.LoaiNghi,
-                        trangThai
-                        );
-                    }
-                }
             }
         }
-
-
-        private void btnTintuyendung_Click(object sender, EventArgs e)
-        {
-            DonXinNghi formTuyendung = new DonXinNghi();
-            this.Hide();
-            formTuyendung.ShowDialog();
-            this.Close();
-
-        }
-
-        private void btnUngvien_Click(object sender, EventArgs e)
-        {
-        }
-        private void btnThemmoithongtintuyendung_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void dtgtuyendung_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                var donXinNghi = danhSachDonXinNghi[e.RowIndex];
-                PheDuyetDonXinNghi pheDuyetDonXinNghi = new PheDuyetDonXinNghi(donXinNghi);
-                if (pheDuyetDonXinNghi.ShowDialog() == DialogResult.OK)
-                {
-                    LoadBangDonXinNghi();
-                }
-            }
-
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-        }
-
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void picBMenu_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
-            heThongQuanLy.ShowDialog();
-            this.Close();
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            //this.Hide();
             ThemDonXinNghi themDonXinNghi = new ThemDonXinNghi();
             //themDonXinNghi.ShowDialog();
             //this.Close();
@@ -157,19 +84,40 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             }
         }
 
-        private void btnChamCong_Click(object sender, EventArgs e)
+        private void dtgvBangDonXinNghi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                var donXinNghi = danhSachDonXinNghi[e.RowIndex];
+                PheDuyetDonXinNghi pheDuyetDonXinNghi = new PheDuyetDonXinNghi(donXinNghi);
+                if(pheDuyetDonXinNghi.ShowDialog() == DialogResult.OK)
+                {
+                    LoadBangDonXinNghi();
+                }
+            }
+        }
+
+        private void tsmiAll_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ThucHienChamCong chamCong = new ThucHienChamCong();
-            chamCong.ShowDialog();
+            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
+            heThongQuanLy.ShowDialog();
             this.Close();
         }
 
-        private void btnBangChamCongCT_Click(object sender, EventArgs e)
+        private void mitBangChamCongCT_Click(object sender, EventArgs e)
         {
             this.Hide();
             BangChamCongCT bangChamCongCT = new BangChamCongCT();
             bangChamCongCT.ShowDialog();
+            this.Close();
+        }
+
+        private void mitDuLieuChamCong_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThucHienChamCong chamCong = new ThucHienChamCong();
+            chamCong.ShowDialog();
             this.Close();
         }
     }

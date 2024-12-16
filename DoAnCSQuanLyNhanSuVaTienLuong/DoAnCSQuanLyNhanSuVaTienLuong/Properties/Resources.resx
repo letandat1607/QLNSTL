@@ -118,6 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+<<<<<<< HEAD
   <data name="khungthongtin2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThongTinNhanSu\Hinh\khungthongtin2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,10 +142,15 @@
   </data>
   <data name="khenthuong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThongTinNhanSu\Hinh\khenthuong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+=======
+  <data name="LikeChingchong-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\LikeChingchong-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+>>>>>>> parent of e3d248a (up20)
   </data>
   <data name="angry-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThongTinNhanSu\Hinh\angry-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="Phucloi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThongTinNhanSu\Hinh\Phucloi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -198,8 +204,84 @@
   </data>
   <data name="khungthongtin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\TuyenDung\Hinh\khungthongtin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+=======
+  <data name="dead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\dead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Phucloi-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\Phucloi-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+>>>>>>> parent of e3d248a (up20)
   </data>
   <data name="banggia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThongTinNhanSu\Hinh\banggia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
+=======
+  <data name="khungthongtin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\khungthongtin1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="khungthongtin3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\khungthongtin3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="duoiviec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\duoiviec.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Succoden" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\Succoden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="khungngang1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\khungngang1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1200x630wa-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TuyenDung\Hinh\1200x630wa-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hoso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\Hoso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="khungthongtin2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\khungthongtin2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nhansu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\nhansu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="khenthuong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\khenthuong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Phucloi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\Phucloi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="khungthongtin5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\khungthongtin5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dentoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\dentoi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="khungthongtin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TuyenDung\Hinh\khungthongtin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phucloithantai-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\phucloithantai-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="khungthongtin6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\khungthongtin6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="khungthongtin4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\khungthongtin4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Suco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\Suco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angry-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\angry-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hóo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\hóo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dautichxanh-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\dautichxanh-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hoso1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThongTinNhanSu\Hinh\Hoso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+>>>>>>> parent of e3d248a (up20)
 </root>

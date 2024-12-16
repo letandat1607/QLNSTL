@@ -38,6 +38,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             this.btnTienLuong = new System.Windows.Forms.Button();
             this.btnThongTinNhanSu = new System.Windows.Forms.Button();
             this.btnTuyenDung = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.btnChamCong = new System.Windows.Forms.Button();
             this.Header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,6 +47,9 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             this.All.SuspendLayout();
             this.panel1.SuspendLayout();
             this.Header.SuspendLayout();
+=======
+            this.btnMucTieu = new System.Windows.Forms.Button();
+>>>>>>> parent of e3d248a (up20)
             this.SuspendLayout();
             // 
             // button5
@@ -160,6 +164,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             this.btnChamCong.UseVisualStyleBackColor = false;
             this.btnChamCong.Click += new System.EventHandler(this.btnChamCong_Click);
             // 
+<<<<<<< HEAD
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.Transparent;
@@ -208,12 +213,21 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             this.lblProfile.TabIndex = 97;
             this.lblProfile.Text = "Trang chủ";
             // 
+=======
+>>>>>>> parent of e3d248a (up20)
             // HeThongQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1517, 807);
             this.Controls.Add(this.All);
+=======
+            this.ClientSize = new System.Drawing.Size(1261, 495);
+            this.Controls.Add(this.btnMucTieu);
+            this.Controls.Add(this.btnTuyenDung);
+            this.Controls.Add(this.btnThueTNCN);
+>>>>>>> parent of e3d248a (up20)
             this.Controls.Add(this.button5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "HeThongQuanLy";
@@ -235,6 +249,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         private System.Windows.Forms.Button btnTienLuong;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnTuyenDung;
+<<<<<<< HEAD
         private System.Windows.Forms.Panel Header;
         private System.Windows.Forms.Panel All;
         private System.Windows.Forms.Panel panel1;
@@ -242,5 +257,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         private Label lblChaomung;
         private Label label1;
         private Label label2;
+=======
+        private System.Windows.Forms.Button btnMucTieu;
+>>>>>>> parent of e3d248a (up20)
     }
 }

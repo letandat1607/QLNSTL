@@ -57,7 +57,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.colPhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNguoiduyet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.All = new System.Windows.Forms.Panel();
-            this.picBMenu = new System.Windows.Forms.PictureBox();
             this.SideBar.SuspendLayout();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -66,7 +65,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuCo)).BeginInit();
             this.All.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // SideBar
@@ -167,7 +165,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.White;
-            this.Header.Controls.Add(this.picBMenu);
             this.Header.Controls.Add(this.pictureBox2);
             this.Header.Controls.Add(this.lblThongtinnhansu);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
@@ -380,17 +377,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.All.Size = new System.Drawing.Size(1375, 694);
             this.All.TabIndex = 2;
             // 
-            // picBMenu
-            // 
-            this.picBMenu.Image = global::DoAnCSQuanLyNhanSuVaTienLuong.Properties.Resources.menu;
-            this.picBMenu.Location = new System.Drawing.Point(13, 6);
-            this.picBMenu.Name = "picBMenu";
-            this.picBMenu.Size = new System.Drawing.Size(51, 48);
-            this.picBMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBMenu.TabIndex = 22;
-            this.picBMenu.TabStop = false;
-            this.picBMenu.Click += new System.EventHandler(this.picBMenu_Click);
-            // 
             // ThongTinNhanSuSuco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -414,7 +400,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuCo)).EndInit();
             this.All.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picBMenu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -448,6 +433,5 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
         private DataGridViewTextBoxColumn colNguoiduyet;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private PictureBox picBMenu;
     }
 }

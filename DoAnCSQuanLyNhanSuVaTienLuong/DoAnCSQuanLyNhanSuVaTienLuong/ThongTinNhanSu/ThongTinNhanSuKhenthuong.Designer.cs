@@ -59,7 +59,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.colHinhthuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNguoiduyet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThemmoi = new System.Windows.Forms.Button();
-            this.picBMenu = new System.Windows.Forms.PictureBox();
             this.SideBar.SuspendLayout();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -69,7 +68,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.pnlKhenthuong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhenThuong)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // SideBar
@@ -167,7 +165,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.White;
-            this.Header.Controls.Add(this.picBMenu);
             this.Header.Controls.Add(this.pictureBox2);
             this.Header.Controls.Add(this.lblThongtinnhansu);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
@@ -409,17 +406,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.btnThemmoi.UseVisualStyleBackColor = false;
             this.btnThemmoi.Click += new System.EventHandler(this.btnThemmoi_Click);
             // 
-            // picBMenu
-            // 
-            this.picBMenu.Image = global::DoAnCSQuanLyNhanSuVaTienLuong.Properties.Resources.menu;
-            this.picBMenu.Location = new System.Drawing.Point(14, 6);
-            this.picBMenu.Name = "picBMenu";
-            this.picBMenu.Size = new System.Drawing.Size(51, 48);
-            this.picBMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBMenu.TabIndex = 22;
-            this.picBMenu.TabStop = false;
-            this.picBMenu.Click += new System.EventHandler(this.picBMenu_Click);
-            // 
             // ThongTinNhanSuKhenthuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -444,7 +430,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
             this.pnlKhenthuong.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhenThuong)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBMenu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -480,6 +465,5 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
         private DataGridViewTextBoxColumn colHinhthuc;
         private DataGridViewTextBoxColumn colNguoiduyet;
         private DataGridView dgvChiTietNhanVien;
-        private PictureBox picBMenu;
     }
 }

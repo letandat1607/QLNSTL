@@ -60,17 +60,17 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             var tenTaiKhoanInput = textBox1.Text.Trim();
             var matKhauInput = textBox2.Text.Trim();
             _danhSachTaiKhoan = _dataAccess.GetTatCaTaiKhoan();
-            //bool check = false;
+            bool check = false;
             foreach (TaiKhoan tk in _danhSachTaiKhoan)
             {
                 if (tk.TenTaiKhoan == tenTaiKhoanInput && tk.MatKhau == matKhauInput)
                 {
-                    //check = true;
+                    check = true;
                     Const.taiKhoanActive = tk;
                     break;
                 }
             }
-            if (Const.taiKhoanActive.TrangThai)
+            if (check)
             {
                 MessageBox.Show("Đăng nhập thành công!");
                 HeThongQuanLy hethongquanly = new HeThongQuanLy();
@@ -79,7 +79,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             }
             else
             {
-                MessageBox.Show("Tên người dùng hoặc mật khẩu không đúng hoặc tài khoản đã bị khóa.");
+                MessageBox.Show("Tên người dùng hoặc mật khẩu không đúng.");
             }
 
             ////string loaiTaiKhoan = _dataAccess.XuLyDangNhap(tenTaiKhoan, matKhau);

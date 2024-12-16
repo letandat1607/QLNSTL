@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
 {
-    public partial class QuanLyTaiKhoan : Form
+    public partial class ThongTinNhanSuPhucloi : Form
     {
-        public QuanLyTaiKhoan()
+        public ThongTinNhanSuPhucloi()
         {
             InitializeComponent();
         }
@@ -57,7 +57,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
 
         private void btnPhucloi_Click(object sender, EventArgs e)
         {
-            QuanLyTaiKhoan formPhucloi = new QuanLyTaiKhoan();
+            ThongTinNhanSuPhucloi formPhucloi = new ThongTinNhanSuPhucloi();
             this.Hide();
             formPhucloi.ShowDialog();
             this.Close();
@@ -67,14 +67,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu
         {
             Themphucloi themphucloi = new Themphucloi();
             themphucloi.ShowDialog();
-        }
-
-        private void picBMenu_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
-            heThongQuanLy.ShowDialog();
-            this.Close();
         }
     }
 }

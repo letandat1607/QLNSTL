@@ -1,6 +1,4 @@
-﻿using DoAnCSQuanLyNhanSuVaTienLuong.DataAccess;
-using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,27 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DoAnCSQuanLyNhanSuVaTienLuong.DataAccess;
 using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
-using ZstdSharp.Unsafe;
-
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
 {
-    partial class ThucHienChamCong : Form
+    public partial class ThucHienChamCong : Form
     {
         private MongoDataAccess _mongoDataAccess;
-        public static string checkin;
-        public static string checkout;
         public ThucHienChamCong()
         {
             InitializeComponent();
             _mongoDataAccess = new MongoDataAccess();
-            btnBangChamCongCT.Visible = false;
-            if (Const.taiKhoanActive.LoaiTaiKhoan == "quanlyns" || Const.taiKhoanActive.LoaiTaiKhoan == "admin")
-            {
-                btnBangChamCongCT.Visible = true;
-            }
             dtpNgayChamCong.Value = DateTime.Now;
             Const.chamCong.NgayChamCong = DateTime.UtcNow;
+<<<<<<< HEAD
             bool check = false;
             //foreach (var chamCong in Const.danhSachChamCong)
             //{
@@ -46,71 +36,23 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             //    Const.danhSachChamCong.Add(Const.chamCong);
             //}
             //btnCheckOut.Enabled = false;
-        }
-
-        private void btnTintuyendung_Click(object sender, EventArgs e)
-        {
-        }
-        private void btnUngvien_Click(object sender, EventArgs e)
-        {
-        }
-        private void btnThemmoithongtintuyendung_Click(object sender, EventArgs e)
-        {
-        }
-        private void dtgtuyendung_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-        }
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void picBMenu_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
-            heThongQuanLy.ShowDialog();
-            this.Close();
-        }
-
-        private void btnBangChamCongCT_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            BangChamCongCT bangChamCongCT = new BangChamCongCT();
-            bangChamCongCT.ShowDialog();
-            this.Close();
-        }
-
-        private void btnQuanLyDonXinNghi_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            DonXinNghi donXinNghi = new DonXinNghi();
-            donXinNghi.ShowDialog();
-            this.Close();
-        }
-
-        private void txtCheckIn_TextChanged(object sender, EventArgs e)
-        {
-        }
-        private DateTime ConvertToVietnamTime(DateTime utcDateTime)
-        {
-            var vietnamTimeZone = TimeZoneInfo.FindSystemTimeZoneById("SE Asia Standard Time");
-            return TimeZoneInfo.ConvertTimeFromUtc(utcDateTime, vietnamTimeZone);
-        }
-
-        private void txtCheckOut_TextChanged(object sender, EventArgs e)
-        {
-
+=======
+            btnCheckOut.Enabled = false;
+>>>>>>> parent of e3d248a (up20)
         }
 
         private void btnCheckIn_Click(object sender, EventArgs e)
         {
             DateTime vietnamTime = ConvertToVietnamTime(DateTime.UtcNow);
+<<<<<<< HEAD
             Const.chamCong.CheckIn = DateTime.UtcNow.TimeOfDay; 
             txtCheckIn.Text = vietnamTime.ToString("HH:mm:ss");
             checkin = vietnamTime.ToString("HH:mm:ss");
+=======
+            Const.chamCong.CheckIn = DateTime.UtcNow.TimeOfDay;
+            //rtbCheckIn.Text = DateTime.UtcNow.TimeOfDay.ToString();
+            rtbCheckIn.Text = vietnamTime.ToString("HH:mm:ss");
+>>>>>>> parent of e3d248a (up20)
             btnCheckOut.Enabled = true;
             btnCheckIn.Enabled = false;
         }
@@ -118,18 +60,24 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
             DateTime vietnamTime = ConvertToVietnamTime(DateTime.UtcNow);
+<<<<<<< HEAD
             Const.chamCong.CheckOut = DateTime.UtcNow.TimeOfDay;
             checkout = vietnamTime.ToString("HH:mm:ss");
             txtCheckOut.Text = vietnamTime.ToString("HH:mm:ss");
+=======
+            Const.chamCong.CheckOut = DateTime.UtcNow.TimeOfDay;    
+            rtbCheckOut.Text = vietnamTime.ToString("HH:mm:ss");
+>>>>>>> parent of e3d248a (up20)
             _mongoDataAccess.InsertChamCong();
-
+        }
+        private DateTime ConvertToVietnamTime(DateTime utcDateTime)
+        {
+            var vietnamTimeZone = TimeZoneInfo.FindSystemTimeZoneById("SE Asia Standard Time");
+            return TimeZoneInfo.ConvertTimeFromUtc(utcDateTime, vietnamTimeZone);
         }
 
-        private void btnChamCong_Click(object sender, EventArgs e)
+        private void btnHuy_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ThucHienChamCong thucHien = new ThucHienChamCong();
-            thucHien.ShowDialog();
             this.Close();
         }
     }

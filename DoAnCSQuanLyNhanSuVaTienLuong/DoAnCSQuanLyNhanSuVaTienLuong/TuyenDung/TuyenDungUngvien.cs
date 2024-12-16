@@ -136,13 +136,5 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung
             }
 
         }
-
-        private void picBMenu_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
-            heThongQuanLy.ShowDialog();
-            this.Close();
-        }
     }
 }

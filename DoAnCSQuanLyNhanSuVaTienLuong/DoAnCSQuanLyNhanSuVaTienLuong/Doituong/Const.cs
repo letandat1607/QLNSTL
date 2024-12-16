@@ -10,7 +10,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Doituong
     public class Const
     {
         public static ClassChamCong chamCong = new ClassChamCong();
-        public static List<ClassChamCong> danhSachChamCong = new List<ClassChamCong>();
         public static TaiKhoan taiKhoanActive;
     }
 }

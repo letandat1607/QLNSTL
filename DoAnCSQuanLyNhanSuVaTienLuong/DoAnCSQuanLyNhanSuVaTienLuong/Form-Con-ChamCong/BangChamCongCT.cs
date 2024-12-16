@@ -1,7 +1,4 @@
-﻿using DoAnCSQuanLyNhanSuVaTienLuong.DataAccess;
-using DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong;
-using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DoAnCSQuanLyNhanSuVaTienLuong.DataAccess;
+using DoAnCSQuanLyNhanSuVaTienLuong.Doi_tuong;
+using MongoDB.Driver;
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
 {
-    partial class BangChamCongCT : Form
+    public partial class BangChamCongCT : Form
     {
         private readonly MongoDataAccess _dataAccess;
         private List<DanhSachChamCong> _danhSachBangChamCong;
@@ -54,31 +54,16 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             }
         }
 
-
-
-        private void btnTintuyendung_Click(object sender, EventArgs e)
-        {
-            BangChamCongCT formTuyendung = new BangChamCongCT();
-            this.Hide();
-            formTuyendung.ShowDialog();
-            this.Close();
-
-        }
-
-        private void btnUngvien_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ThucHienChamCong thucHienChamCong = new ThucHienChamCong();
-            thucHienChamCong.ShowDialog();
-            this.Close();
-        }
-        private void btnThemmoithongtintuyendung_Click(object sender, EventArgs e)
-        {
+            ThemBangChamCongCT themBangChamCongCT = new ThemBangChamCongCT();
+            themBangChamCongCT.Show();
         }
 
-        private void dtgtuyendung_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dtgvBangChamCongCT_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            if(e.RowIndex >= 0)
             {
                 var selectedBangChamCongCT = _danhSachBangChamCong[e.RowIndex];
                 var formDuLieu = new BangDuLieuChamCong(selectedBangChamCongCT);
@@ -86,28 +71,25 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             }
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
+        private void mitChamCong_Click(object sender, EventArgs e)
         {
+            ThucHienChamCong chamCong = new ThucHienChamCong();
+            chamCong.ShowDialog();
         }
 
-
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void mitDonNghi_Click(object sender, EventArgs e)
         {
+            //this.Hide();    
+            DonXinNghi donXinNghi = new DonXinNghi();
+            donXinNghi.ShowDialog();
+            //this.Close();
         }
 
-        private void picBMenu_Click(object sender, EventArgs e)
+        private void tsmiAll_Click(object sender, EventArgs e)
         {
             this.Hide();
             HeThongQuanLy heThongQuanLy = new HeThongQuanLy();
             heThongQuanLy.ShowDialog();
-            this.Close();
-        }
-
-        private void btnDonXinNghi_Click(object sender, EventArgs e)
-        {
-            this.Hide();    
-            DonXinNghi donXinNghi = new DonXinNghi();
-            donXinNghi.ShowDialog();
             this.Close();
         }
     }
