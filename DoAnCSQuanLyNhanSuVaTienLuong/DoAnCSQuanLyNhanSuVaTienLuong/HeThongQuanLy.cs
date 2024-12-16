@@ -24,6 +24,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             btnTienLuong.Enabled = false;
             btnTuyenDung.Enabled = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
             //btnBHXH.Enabled = false;
             //btnDanhGia.Enabled = false;
             //btnMucTieu.Enabled = false;
@@ -36,6 +37,13 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             btnThongTinNhanSu.Enabled = false;
             btnThueTNCN.Enabled = false;
 >>>>>>> parent of e3d248a (up20)
+=======
+            btnBHXH.Enabled = false;
+            btnDanhGia.Enabled = false;
+            btnMucTieu.Enabled = false;
+            //btnThongTinNhanSu.Enabled = false;
+            btnThueTNCN.Enabled = false;
+>>>>>>> parent of 2a3fcce (up21)
             loadFormHeThongQuanLy();
         }
 
@@ -67,36 +75,36 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
                 btnChamCong.Enabled = true;
                 btnTienLuong.Enabled = true;
                 btnTuyenDung.Enabled = true;
-                //btnBHXH.Enabled = true;
-                //btnDanhGia.Enabled = true;
-                //btnMucTieu.Enabled = true;
+                btnBHXH.Enabled = true;
+                btnDanhGia.Enabled = true;
+                btnMucTieu.Enabled = true;
                 btnThongTinNhanSu.Enabled = true;
-                //btnThueTNCN.Enabled = true;
+                btnThueTNCN.Enabled = true;
             }
             else if (Const.taiKhoanActive.LoaiTaiKhoan == "quanlyns")
             {
                     btnChamCong.Enabled = true;
                     btnTienLuong.Enabled = true;
-                    //btnBHXH.Enabled = true;
-                    //btnDanhGia.Enabled = true;
-                    //btnMucTieu.Enabled = true;
+                    btnBHXH.Enabled = true;
+                    btnDanhGia.Enabled = true;
+                    btnMucTieu.Enabled = true;
                     btnThongTinNhanSu.Enabled = true;
-                    //btnThueTNCN.Enabled = true;
+                    btnThueTNCN.Enabled = true;
             }
             else if (Const.taiKhoanActive.LoaiTaiKhoan == "hr")
             {
                 btnChamCong.Enabled = true;
                 btnTienLuong.Enabled = true;
-                //btnBHXH.Enabled = true;
-                //btnThueTNCN.Enabled = true;
+                btnBHXH.Enabled = true;
+                btnThueTNCN.Enabled = true;
                 btnTuyenDung.Enabled = true;
             }
             else
             {
                 btnChamCong.Enabled = true;
                 btnTienLuong.Enabled = true;
-                //btnBHXH.Enabled = true;
-                //btnThueTNCN.Enabled = true;
+                btnBHXH.Enabled = true;
+                btnThueTNCN.Enabled = true;
             }
         
         }
