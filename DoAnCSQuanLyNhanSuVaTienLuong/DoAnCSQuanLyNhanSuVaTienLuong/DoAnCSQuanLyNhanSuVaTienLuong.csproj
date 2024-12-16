@@ -393,6 +393,11 @@
     <Compile Include="HeThongQuanLy.Designer.cs">
       <DependentUpon>HeThongQuanLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinNhanSu\DanhSachNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -655,14 +660,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="TuyenDung\Thongtincanhan.resx">
       <DependentUpon>Thongtincanhan.cs</DependentUpon>
     </EmbeddedResource>
@@ -689,6 +689,18 @@
     <Analyzer Include="..\packages\AWSSDK.SecurityToken.3.7.100.14\analyzers\dotnet\cs\AWSSDK.SecurityToken.CodeAnalysis.dll" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Hinh\z6133993427931_2771a8a1ebd96f08609d5cfca420647c.jpg" />
+    <None Include="Hinh\z6133993428330_7a77a3ae14e98d1fe50e9d922cef17cc.jpg" />
+    <None Include="Hinh\z6133993428860_d3f26aaee7d172968e63f300bf416e2a.jpg" />
+    <None Include="Hinh\z6133993429421_274917b170c3a51e3cf26b4ce84eb346.jpg" />
+    <None Include="Hinh\z6133993430279_4ab77460cd5290a0f231f5a3bf77d9cb.jpg" />
+    <None Include="Hinh\tuyendung.png" />
+    <None Include="Hinh\z6133993428860_d3f26aaee7d172968e63f300bf416e2a-removebg-preview.png" />
+    <None Include="Hinh\z6133993429421_274917b170c3a51e3cf26b4ce84eb346-removebg-preview.png" />
+    <None Include="Hinh\z6133993430279_4ab77460cd5290a0f231f5a3bf77d9cb-removebg-preview.png" />
+    <None Include="Hinh\chamcong.png" />
+    <None Include="Hinh\tl.png" />
+    <None Include="Hinh\ns.png" />
     <Content Include="mongocrypt.dll" />
     <None Include="ThongTinNhanSu\Hinh\menu.jpg" />
     <None Include="ThongTinNhanSu\Hinh\Suco.png" />

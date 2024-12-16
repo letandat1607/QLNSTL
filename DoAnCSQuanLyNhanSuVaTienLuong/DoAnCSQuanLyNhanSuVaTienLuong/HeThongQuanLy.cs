@@ -24,11 +24,11 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
             //btnChamCong.Enabled = false;
             btnTienLuong.Enabled = false;
             btnTuyenDung.Enabled = false;
-            btnBHXH.Enabled = false;
-            btnDanhGia.Enabled = false;
-            btnMucTieu.Enabled = false;
+            //btnBHXH.Enabled = false;
+            //btnDanhGia.Enabled = false;
+            //btnMucTieu.Enabled = false;
             //btnThongTinNhanSu.Enabled = false;
-            btnThueTNCN.Enabled = false;
+            //btnThueTNCN.Enabled = false;
             loadFormHeThongQuanLy();
         }
 
@@ -70,36 +70,36 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
                 btnChamCong.Enabled = true;
                 btnTienLuong.Enabled = true;
                 btnTuyenDung.Enabled = true;
-                btnBHXH.Enabled = true;
-                btnDanhGia.Enabled = true;
-                btnMucTieu.Enabled = true;
+                //btnBHXH.Enabled = true;
+                //btnDanhGia.Enabled = true;
+                //btnMucTieu.Enabled = true;
                 btnThongTinNhanSu.Enabled = true;
-                btnThueTNCN.Enabled = true;
+                //btnThueTNCN.Enabled = true;
             }
             else if (Const.taiKhoanActive.LoaiTaiKhoan == "quanlyns")
             {
                     //btnChamCong.Enabled = true;
                     btnTienLuong.Enabled = true;
-                    btnBHXH.Enabled = true;
-                    btnDanhGia.Enabled = true;
-                    btnMucTieu.Enabled = true;
+                    //btnBHXH.Enabled = true;
+                    //btnDanhGia.Enabled = true;
+                    //btnMucTieu.Enabled = true;
                     btnThongTinNhanSu.Enabled = true;
-                    btnThueTNCN.Enabled = true;
+                    //btnThueTNCN.Enabled = true;
             }
             else if (Const.taiKhoanActive.LoaiTaiKhoan == "hr")
             {
                 //btnChamCong.Enabled = true;
                 btnTienLuong.Enabled = true;
-                btnBHXH.Enabled = true;
-                btnThueTNCN.Enabled = true;
+                //btnBHXH.Enabled = true;
+                //btnThueTNCN.Enabled = true;
                 btnTuyenDung.Enabled = true;
             }
             else
             {
                 //btnChamCong.Enabled = true;
                 btnTienLuong.Enabled = true;
-                btnBHXH.Enabled = true;
-                btnThueTNCN.Enabled = true;
+                //btnBHXH.Enabled = true;
+                //btnThueTNCN.Enabled = true;
             }
         
         }

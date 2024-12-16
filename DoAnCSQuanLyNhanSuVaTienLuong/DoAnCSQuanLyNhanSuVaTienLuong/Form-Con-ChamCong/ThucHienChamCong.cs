@@ -31,20 +31,21 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
                 btnBangChamCongCT.Visible = true;
             }
             dtpNgayChamCong.Value = DateTime.Now;
+            Const.chamCong.NgayChamCong = DateTime.UtcNow;
             bool check = false;
-            foreach (var chamCong in Const.danhSachChamCong)
-            {
-                if (chamCong.MaNhanVien == Const.taiKhoanActive.MaNhanVien)
-                {
-                    check = true;
-                }
-            }
-            if (!check) 
-            {
-                Const.chamCong.NgayChamCong = DateTime.UtcNow;
-                Const.danhSachChamCong.Add(Const.chamCong);
-            }
-            btnCheckOut.Enabled = false;
+            //foreach (var chamCong in Const.danhSachChamCong)
+            //{
+            //    if (chamCong.MaNhanVien == Const.taiKhoanActive.MaNhanVien)
+            //    {
+            //        check = true;
+            //    }
+            //}
+            //if (!check) 
+            //{
+            //    Const.chamCong.NgayChamCong = DateTime.UtcNow;
+            //    Const.danhSachChamCong.Add(Const.chamCong);
+            //}
+            //btnCheckOut.Enabled = false;
         }
 
         private void btnTintuyendung_Click(object sender, EventArgs e)
@@ -107,7 +108,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
         private void btnCheckIn_Click(object sender, EventArgs e)
         {
             DateTime vietnamTime = ConvertToVietnamTime(DateTime.UtcNow);
-            Const.chamCong.CheckIn = DateTime.UtcNow.TimeOfDay;
+            Const.chamCong.CheckIn = DateTime.UtcNow.TimeOfDay; 
             txtCheckIn.Text = vietnamTime.ToString("HH:mm:ss");
             checkin = vietnamTime.ToString("HH:mm:ss");
             btnCheckOut.Enabled = true;
@@ -118,8 +119,8 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
         {
             DateTime vietnamTime = ConvertToVietnamTime(DateTime.UtcNow);
             Const.chamCong.CheckOut = DateTime.UtcNow.TimeOfDay;
-            txtCheckOut.Text = vietnamTime.ToString("HH:mm:ss");
             checkout = vietnamTime.ToString("HH:mm:ss");
+            txtCheckOut.Text = vietnamTime.ToString("HH:mm:ss");
             _mongoDataAccess.InsertChamCong();
 
         }
