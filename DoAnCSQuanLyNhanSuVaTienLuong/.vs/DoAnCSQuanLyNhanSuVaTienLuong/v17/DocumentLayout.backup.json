@@ -4,8 +4,8 @@
   "Documents": [
     {
 <<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|f:\\project_dat\\sgu\\c#\\qlnstl\\doancsquanlynhansuvatienluong\\doancsquanlynhansuvatienluong\\hethongquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|solutionrelative:doancsquanlynhansuvatienluong\\hethongquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|f:\\project_dat\\sgu\\c#\\qlnstl\\doancsquanlynhansuvatienluong\\doancsquanlynhansuvatienluong\\form-con-chamcong\\bangchamcongct.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|solutionrelative:doancsquanlynhansuvatienluong\\form-con-chamcong\\bangchamcongct.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 =======
       "AbsoluteMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|f:\\project_dat\\sgu\\c#\\qlnstl\\doancsquanlynhansuvatienluong\\doancsquanlynhansuvatienluong\\thongtinnhansu\\danhsachnhanvienkhenthuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|solutionrelative:doancsquanlynhansuvatienluong\\thongtinnhansu\\danhsachnhanvienkhenthuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -33,6 +33,7 @@
     {
       "AbsoluteMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|f:\\project_dat\\sgu\\c#\\qlnstl\\doancsquanlynhansuvatienluong\\doancsquanlynhansuvatienluong\\form-con-chamcong\\donxinnghi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|solutionrelative:doancsquanlynhansuvatienluong\\form-con-chamcong\\donxinnghi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> parent of e3d248a (up20)
     },
     {
       "AbsoluteMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|f:\\project_dat\\sgu\\c#\\qlnstl\\doancsquanlynhansuvatienluong\\doancsquanlynhansuvatienluong\\form-con-chamcong\\pheduyetdonxinnghi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,6 +44,10 @@
       "RelativeMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|solutionrelative:doancsquanlynhansuvatienluong\\form-con-chamcong\\pheduyetdonxinnghi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|f:\\project_dat\\sgu\\c#\\qlnstl\\doancsquanlynhansuvatienluong\\doancsquanlynhansuvatienluong\\hethongquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|solutionrelative:doancsquanlynhansuvatienluong\\hethongquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
       "AbsoluteMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|f:\\project_dat\\sgu\\c#\\qlnstl\\doancsquanlynhansuvatienluong\\doancsquanlynhansuvatienluong\\form-con-chamcong\\bangdulieuchamcong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{710CC0E0-481C-4709-87C7-754282C03A25}|DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong.csproj|solutionrelative:doancsquanlynhansuvatienluong\\form-con-chamcong\\bangdulieuchamcong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -241,15 +246,11 @@
         {
           "DockedWidth": 200,
 <<<<<<< HEAD
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
 =======
           "SelectedChildIndex": 32,
 >>>>>>> parent of e3d248a (up20)
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -271,23 +272,34 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-<<<<<<< HEAD
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HeThongQuanLy.Designer.cs",
-              "DocumentMoniker": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.Designer.cs",
-              "RelativeDocumentMoniker": "DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.Designer.cs",
-              "ToolTip": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.Designer.cs",
-              "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.Designer.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAYwAAAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "BangChamCongCT.Designer.cs",
+              "DocumentMoniker": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\Form-Con-ChamCong\\BangChamCongCT.Designer.cs",
+              "RelativeDocumentMoniker": "DoAnCSQuanLyNhanSuVaTienLuong\\Form-Con-ChamCong\\BangChamCongCT.Designer.cs",
+              "ToolTip": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\Form-Con-ChamCong\\BangChamCongCT.Designer.cs",
+              "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\Form-Con-ChamCong\\BangChamCongCT.Designer.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAjwHMAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T13:26:01.474Z",
-=======
+              "WhenOpened": "2024-12-16T13:51:21.136Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 1,
+              "Title": "BangChamCongCT.cs [Design]",
+              "DocumentMoniker": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\Form-Con-ChamCong\\BangChamCongCT.cs",
+              "RelativeDocumentMoniker": "DoAnCSQuanLyNhanSuVaTienLuong\\Form-Con-ChamCong\\BangChamCongCT.cs",
+              "ToolTip": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\Form-Con-ChamCong\\BangChamCongCT.cs [Design]",
+              "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\Form-Con-ChamCong\\BangChamCongCT.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T13:51:11.238Z",
+=======
               "DocumentIndex": 4,
               "Title": "Themkhenthuong.cs [Design]",
               "DocumentMoniker": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\Themkhenthuong.cs",
@@ -359,22 +371,10 @@
               "ViewState": "AgIAAFYAAAAAAAAAAAAewGYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T16:46:18.083Z",
->>>>>>> parent of e3d248a (up20)
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 2,
-              "Title": "HeThongQuanLy.cs",
-              "DocumentMoniker": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.cs",
-              "RelativeDocumentMoniker": "DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.cs",
-              "ToolTip": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.cs",
-              "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAYwF0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:08:15.453Z",
-=======
               "DocumentIndex": 9,
               "Title": "BangDuLieuChamCong.cs [Design]",
               "DocumentMoniker": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\Form-Con-ChamCong\\BangDuLieuChamCong.cs",
@@ -383,10 +383,14 @@
               "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\Form-Con-ChamCong\\BangDuLieuChamCong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T16:44:34.198Z",
+>>>>>>> parent of e3d248a (up20)
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 2,
+=======
               "DocumentIndex": 11,
               "Title": "ThucHienChamCong.cs",
               "DocumentMoniker": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\Form-Con-ChamCong\\ThucHienChamCong.cs",
@@ -635,20 +639,17 @@
               "ViewState": "AgIAAIMBAAAAAAAAAAAmwIgBAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T15:45:47.373Z",
->>>>>>> parent of e3d248a (up20)
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-<<<<<<< HEAD
-=======
               "Title": "DanhSachNhanVienKhenThuong.cs",
               "DocumentMoniker": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\DanhSachNhanVienKhenThuong.cs",
               "RelativeDocumentMoniker": "DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\DanhSachNhanVienKhenThuong.cs",
-              "ToolTip": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\DanhSachNhanVienKhenThuong.cs*",
-              "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\DanhSachNhanVienKhenThuong.cs*",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAYwJcAAAAnAAAAAAAAAA==",
+              "ToolTip": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\DanhSachNhanVienKhenThuong.cs",
+              "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\DanhSachNhanVienKhenThuong.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAMBdwJcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T15:41:39.708Z",
               "EditorCaption": ""
@@ -672,8 +673,8 @@
               "Title": "DanhSachNhanVienKhenThuong.cs [Design]",
               "DocumentMoniker": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\DanhSachNhanVienKhenThuong.cs",
               "RelativeDocumentMoniker": "DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\DanhSachNhanVienKhenThuong.cs",
-              "ToolTip": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\DanhSachNhanVienKhenThuong.cs [Design]*",
-              "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\DanhSachNhanVienKhenThuong.cs [Design]*",
+              "ToolTip": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\DanhSachNhanVienKhenThuong.cs [Design]",
+              "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\DanhSachNhanVienKhenThuong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T15:41:00.75Z",
               "EditorCaption": " [Design]"
@@ -959,10 +960,36 @@
               "WhenOpened": "2024-12-15T18:08:00.656Z",
 =======
               "WhenOpened": "2024-12-14T13:40:17.132Z",
+>>>>>>> parent of e3d248a (up20)
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 3,
+              "Title": "HeThongQuanLy.Designer.cs",
+              "DocumentMoniker": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.Designer.cs",
+              "RelativeDocumentMoniker": "DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.Designer.cs",
+              "ToolTip": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.Designer.cs",
+              "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.Designer.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAYwAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T13:26:01.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HeThongQuanLy.cs",
+              "DocumentMoniker": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.cs",
+              "RelativeDocumentMoniker": "DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.cs",
+              "ToolTip": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.cs",
+              "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\HeThongQuanLy.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwF0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T18:08:15.453Z",
+              "EditorCaption": ""
+=======
               "DocumentIndex": 35,
               "Title": "Themphucloi.cs [Design]",
               "DocumentMoniker": "F:\\Project_Dat\\SGU\\C#\\QLNSTL\\DoAnCSQuanLyNhanSuVaTienLuong\\DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\Themphucloi.cs",
@@ -995,8 +1022,8 @@
               "RelativeToolTip": "DoAnCSQuanLyNhanSuVaTienLuong\\ThongTinNhanSu\\Suahoso.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T13:39:52.112Z",
->>>>>>> parent of e3d248a (up20)
               "EditorCaption": " [Design]"
+>>>>>>> parent of e3d248a (up20)
             }
           ]
         }
