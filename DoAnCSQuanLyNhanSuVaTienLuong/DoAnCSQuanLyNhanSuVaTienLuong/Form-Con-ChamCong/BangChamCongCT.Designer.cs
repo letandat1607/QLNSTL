@@ -92,7 +92,6 @@
             this.tsmiAll.Name = "tsmiAll";
             this.tsmiAll.Size = new System.Drawing.Size(150, 27);
             this.tsmiAll.Text = "Tất cả ứng dụng";
-            this.tsmiAll.Click += new System.EventHandler(this.tsmiAll_Click);
             // 
             // tsmiTongQuan
             // 
@@ -136,7 +135,7 @@
             // mitDonNghi
             // 
             this.mitDonNghi.Name = "mitDonNghi";
-            this.mitDonNghi.Size = new System.Drawing.Size(192, 28);
+            this.mitDonNghi.Size = new System.Drawing.Size(224, 28);
             this.mitDonNghi.Text = "Đơn xin nghỉ";
             this.mitDonNghi.Click += new System.EventHandler(this.mitDonNghi_Click);
             // 

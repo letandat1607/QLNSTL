@@ -8,10 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DoAnCSQuanLyNhanSuVaTienLuong.DataAccess;
-using DoAnCSQuanLyNhanSuVaTienLuong.TuyenDung;
 using DoAnCSQuanLyNhanSuVaTienLuong.Doituong;
-using DoAnCSQuanLyNhanSuVaTienLuong.ThongTinNhanSu;
-
 
 namespace DoAnCSQuanLyNhanSuVaTienLuong
 {
@@ -63,10 +60,7 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ThongTinNhanSuHoso thongTinNhanSuHoSo = new ThongTinNhanSuHoso();
-            thongTinNhanSuHoSo.ShowDialog();
-            this.Close();
+
         }
         public void loadFormHeThongQuanLy()
         {
@@ -111,9 +105,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong
 
         private void button7_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            TuyenDungTintuyendung tuyenDungTintuyendung = new TuyenDungTintuyendung();
-            tuyenDungTintuyendung.ShowDialog();
 
         }
     }

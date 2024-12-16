@@ -27,12 +27,6 @@ namespace DoAnCSQuanLyNhanSuVaTienLuong.Form_Con_ChamCong
             duLieuDonXinNghi = donXinNghi;
             LoadDonXinNghi();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void LoadDonXinNghi()
         {
             duLieuNhanVien = _mongoDataAccess.GetTatCaNhanVien();
